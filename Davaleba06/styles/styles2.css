@@ -573,7 +573,6 @@ hr {
 .RightTopicAround {
     /* background-color: purple; */
     width: 250px;
-    height: 1000px;
 }
 
 .RightTopic1Around {
@@ -636,6 +635,50 @@ hr {
 
 .RTopicBorder a:active {
     color: #0070bf;
+}
+
+.RTopicBorderAnthrVers {
+    margin-top: 15px;
+}
+
+.RTopicBorderAnthrVers p {
+    display: flex;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+
+.RTopicBorderAnthrVers a {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: auto;
+    font-size: 17px;
+    /* font-weight: bold; */
+    text-shadow: 0 2px 1px black;
+    padding: 10px;
+}
+
+.RTopicBorderAnthrVers a:link {
+    text-decoration: none;
+}
+
+.RTopicBorderAnthrVers a:visited {
+    text-decoration: none;
+}
+
+.RTopicBorderAnthrVers a:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: #59baff;
+}
+
+.RTopicBorderAnthrVers a:active {
+    color: #409fff;
+}
+
+.RTopicBorderAnthrVers:hover {
+    box-shadow: 0 1px 10px #737373;
 }
 
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
