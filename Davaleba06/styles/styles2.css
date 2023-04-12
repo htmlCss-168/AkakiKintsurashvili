@@ -411,80 +411,48 @@ hr {
     margin-bottom: 20px;
 }
 
-.TableAround hr {
-    margin: auto;
-    border: 0;
-    border-top: 1px solid #d9d9d9;
-}
-
-.RankTD {
-    width: 75px;
-}
-
-.CityTD {
-    width: 200px;
-}
-
-.TowerTD {
-    width: 225px;
-}
-
-.TableAround tr td {
-    height: 55px;
-    padding-left: 20px;
-    
-}
-
-.HeadTable {
-    background-color: #216dd9;
-    width: 700px;
-    height: 55px;
-    margin: auto;
+.TableAround table {
+    border-collapse: collapse;
     text-align: left;
-    border-radius: 15px 15px 0 0;
 }
 
-.HeadTable td {
+.TableAround th,td {
+    padding: 20px;
+}
+
+.HeadTH th {
     font-family: MrgvlovaniCaps;
     font-size: 14px;
     color: white;
+    font-weight: normal;
 }
 
-.TableLinked {
+.HeadTH {
+    background-color: #216dd9;
+}
+
+.ListTR {
+    color: #404040;
     background-color: white;
-    width: 700px;
-    text-align: left;
+    border-bottom: 1px solid #d9d9d9;
 }
 
-.TableLinked a {
-    color: #333333;
-}
-
-.TableLinked:hover {
-    background-color: #f2f2f2;
-    text-decoration: none;
-}
-
-.TableLinked:active {
-    background-color: #f2f2f2;
-    box-shadow: inset 0px 2px 15px #d9d9d9;
-    text-decoration: none;
-}
-
-.TableAround a:link {
-    text-decoration: none;
-}
-
-.TableAround a:hover {
-    color: black;
-}
-
-.TableAround a:active {
+.ListTR:hover {
     color: #005ad9;
+    background-color: #f2f2f2;
 }
 
-/* td {
-    background-color: red;
+.ListTR:active {
+    color: #00357f;
+    box-shadow: inset 0 5px 15px #d9d9d9;
+}
+
+/* .ListTR a:hover {
+    color: #216dd9;
+}
+
+.ListTR a:active {
+    color: black;
 } */
 
 /* .FullAuthorBar {
