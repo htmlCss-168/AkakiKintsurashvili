@@ -398,8 +398,6 @@ hr {
     /* background-color: yellow; */
     width: 700px;
     /* box-shadow: 0 5px #216dd9; */
-    border-bottom: 5px solid #216dd9;
-
 }
 
 .TableHeadtitle {
@@ -414,6 +412,9 @@ hr {
 .TableAround table {
     border-collapse: collapse;
     text-align: left;
+    background-color: #216dd9;
+    border-bottom: 5px solid #216dd9;
+    border-radius: 15px 15px 0 0;
 }
 
 .TableAround th,td {
@@ -425,10 +426,6 @@ hr {
     font-size: 14px;
     color: white;
     font-weight: normal;
-}
-
-.HeadTH {
-    background-color: #216dd9;
 }
 
 .ListTR {
