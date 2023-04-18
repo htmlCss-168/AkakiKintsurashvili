@@ -1,0 +1,1301 @@
+
+@font-face {
+    font-family: MrglovaniCaps;
+    src: url(fonts/bpg_mrgvlovani_caps_2010.ttf);
+}
+
+@font-face {
+    font-family: NewComictitleBold;
+    src: url(fonts/newcomictitlebold.ttf);
+}
+
+@font-face {
+    font-family: FiraGORegular;
+    src: url(fonts/FiraGO-Regular.otf);
+}
+
+@font-face {
+    font-family: FiraGOBold;
+    src: url(fonts/FiraGO-Bold.otf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+
+.BodyBackground {
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+}
+
+
+.EdgeContent {
+    background-color: white;
+    width: 1100px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.SocialMediaAround {
+    /* background-color: orange; */
+    height: 500px;
+    position: fixed;
+    top: 200px;
+    left: 0;
+}
+
+.FacebookLink {
+    /* background-color: black; */
+    display: flex;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.FacebookLink .SocialImg {
+    background-color: #3b5998;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.FacebookLink .SocialImg img {
+    margin: auto;
+    height: 20px;
+}
+
+.FacebookLink .SocialText {
+    /* background-color: #00a646; */
+    text-decoration: none;
+    display: none;
+    height: 50px;
+    margin: auto;
+}
+
+.FacebookLink .SocialText a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 0 20px 0 0;
+}
+
+.FacebookLink .SocialImg:hover + .SocialText {
+    background-color: #3b5998;
+    display: flex;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.MessengerLink {
+    /* background-color: black; */
+    display: flex;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.MessengerLink .SocialImg {
+    background-color: #006AFF;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.MessengerLink .SocialImg img {
+    margin: auto;
+    height: 20px;
+}
+
+.MessengerLink .SocialText {
+    /* background-color: #00a646; */
+    text-decoration: none;
+    display: none;
+    height: 50px;
+    margin: auto;
+}
+
+.MessengerLink .SocialText a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 0 20px 0 0;
+}
+
+.MessengerLink .SocialImg:hover + .SocialText {
+    background-color: #006AFF;
+    display: flex;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.InstagramLink {
+    /* background-color: black; */
+    display: flex;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.InstagramLink .SocialImg {
+    background-color: #d62976;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.InstagramLink .SocialImg img {
+    margin: auto;
+    height: 20px;
+}
+
+.InstagramLink .SocialText {
+    /* background-color: #00a646; */
+    text-decoration: none;
+    display: none;
+    height: 50px;
+    margin: auto;
+}
+
+.InstagramLink .SocialText a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 0 20px 0 0;
+}
+
+.InstagramLink .SocialImg:hover + .SocialText {
+    background-color: #d62976;
+    display: flex;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.TwitterLink {
+    /* background-color: black; */
+    display: flex;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.TwitterLink .SocialImg {
+    background-color: #00acee;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.TwitterLink .SocialImg img {
+    margin: auto;
+    height: 20px;
+}
+
+.TwitterLink .SocialText {
+    /* background-color: #00a646; */
+    text-decoration: none;
+    display: none;
+    height: 50px;
+    margin: auto;
+}
+
+.TwitterLink .SocialText a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 0 20px 0 0;
+}
+
+.TwitterLink .SocialImg:hover + .SocialText {
+    background-color: #00acee;
+    display: flex;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.GithubLink {
+    /* background-color: black; */
+    display: flex;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.GithubLink .SocialImg {
+    background-color: #171515;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.GithubLink .SocialImg img {
+    margin: auto;
+    height: 20px;
+}
+
+.GithubLink .SocialText {
+    /* background-color: #00a646; */
+    text-decoration: none;
+    display: none;
+    height: 50px;
+    margin: auto;
+}
+
+.GithubLink .SocialText a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 0 20px 0 0;
+}
+
+.GithubLink .SocialImg:hover + .SocialText {
+    background-color: #171515;
+    display: flex;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.NavmenuAround {
+    background-color: #e50013;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+}
+
+.NavmenuAround h2 {
+    /* background-color: red; */
+    font-family: NewComictitleBold;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+.Navmenu1 {
+    /* background-color: blue; */
+    display: flex;
+    margin: auto;
+}
+
+.Navmenu1 a {
+    /* background-color: red; */
+    padding: 25px 15px 25px 15px;
+    font-family: MrglovaniCaps;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+
+.Navmenu1 a:hover {
+    background-color: #a6000e;
+    box-shadow: inset 0 -2px 0 white;
+}
+
+.Navmenu1 a:active {
+    box-shadow: inset 0 2px 10px #400005;
+}
+
+.SearchAround {
+    /* background-color: rebeccapurple; */
+    width: 260px;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+.SearchAround input {
+    background-color: #f2f2f2;
+    font-family: calibri;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.SearchAround button {
+    /* background-color: red; */
+    background: none;
+    font-family: MrglovaniCaps;
+    color: white;
+    font-size: 12px;
+    max-width: 100%;
+    display: flex;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    padding-right: 10px;
+}
+
+.SearchAround button a {
+    margin: auto;
+}
+
+.SearchAround button img {
+    height: 16px;
+    margin: auto;
+    margin-right: 5px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.MainInfo {
+    /* background-color: aqua; */
+    max-width: 1100px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* .MainInfo .LeftArrowAround {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 40px;
+    height: 80px;
+    border-radius: 0px 10px 10px 0;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+
+.MainInfo .LeftArrowAround:hover {
+    background-color: black;
+}
+.MainInfo .LeftArrowAround:active {
+    background-color: #e50013;
+}
+
+.MainInfo .LeftArrowAround img {
+    width: 12px;
+    margin: auto;
+}
+
+.MainInfo .RightArrowAround {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 40px;
+    height: 80px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+}
+
+.MainInfo .RightArrowAround:hover {
+    background-color: black;
+}
+
+.MainInfo .RightArrowAround:active {
+    background-color: #e50013;
+}
+
+.MainInfo .RightArrowAround img {
+    width: 12px;
+    margin: auto;
+} */
+
+.MainInfo .TopicDesc {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    width: 400px;
+    margin-left: 65px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 45px;
+}
+
+.MainInfo h1 {
+    color: white;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.MainInfo p {
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.MainInfo h1, p {
+    text-shadow: 1px 1px 5px black;
+}
+
+.MainInfo button {
+    background-color: none;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #e50013;
+    border-radius: 40px;
+    font-family: MrglovaniCaps;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+}
+
+.MainInfo button:hover {
+    background: #e50013;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.EdgeInsider {
+    /* background-color: red; */
+    margin: auto;
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Centerside {
+    /* background-color: orchid; */
+    width: 600px;
+}
+
+.Topic2Around {
+    /* background-color: yellow; */
+    width: 600px;
+}
+
+.Topic2Around h1 {
+    /* font-family: FiraGOBold; */
+    margin: auto;
+    text-shadow: none;
+}
+
+.Topic2Around p {
+    margin: auto;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.Topic2Around p a {
+    text-decoration: none;
+    color: #0060bf;
+    text-shadow: none;
+}
+
+
+.Topic2Around p a:hover {
+    text-decoration: underline;
+    color: #0060bf;
+}
+
+.Topic2Around p a:active {
+    text-decoration: underline;
+    color: #e50013;
+}
+
+.Topic2Around p:visited {
+    text-decoration: none;
+}
+
+.Topic2Around img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.HeadtitleAndFulllist p {
+    /* background-color: yellow; */
+    text-decoration: none;
+    margin: auto;
+    margin-right: 0;
+}
+
+.HeadtitleAndFulllist p a {
+    text-decoration: none;
+    color: #0060bf;
+    font-weight: bold;
+}
+
+.HeadtitleAndFulllist {
+    /* background-color: red; */
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.HeadtitleAndFulllist h2 {
+    /* background-color: rebeccapurple; */
+    margin: auto;
+    margin-left: 0;
+}
+
+.HeadtitleAndFulllist p {
+    /* background-color: yellow; */
+    text-decoration: none;
+    margin: auto;
+    margin-right: 0;
+}
+
+.HeadtitleAndFulllist p a {
+    text-decoration: none;
+    color: #0060bf;
+    font-weight: bold;
+}
+
+.HeadtitleAndFulllist p a:hover {
+    text-decoration: underline;
+    color: #0060bf;
+}
+
+.HeadtitleAndFulllist p a:active {
+    text-decoration: underline;
+    color: #e50013;
+}
+
+.HeadtitleAndFulllist p:visited {
+    text-decoration: none;
+}
+
+.Topic2Around table {
+    background-color: #e50013;
+    width: 100%;
+    text-align: left;
+    border-bottom: 5px solid #e50013;
+    border-radius: 20px;
+}
+
+.Topic2Around table th {
+    /* background-color: red; */
+    color: white;
+    font-family: MrglovaniCaps;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 20px;
+}
+
+.Topic2Around table td {
+    /* background-color: rebeccapurple; */
+    color: black;
+    border-bottom: 1px solid #bfbfbf;
+    padding: 20px;
+}
+
+.Topic2Around table tr {
+    background-color: #f2f2f2;
+}
+
+.Topic2Around table tr:hover {
+    background-color: white;
+}
+
+.Topic2Around table {
+    border-collapse: collapse;
+}
+
+.Topic2Around .ForheighBorder {
+    border-right: 1px solid white;
+}
+
+.Topic2Around .MoneyTD:hover {
+    color: white;
+    background-color: #00a646;
+}
+
+.Topic2Around .RankTD:hover {
+    color: white;
+    background-color: #e5c10b;
+}
+
+.Topic2Around tr .NameTD:hover {
+    /* background-color: white; */
+    color: #e50013;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.SimilarTopics {
+    /* background-color: green; */
+    margin-top: 50px;
+    width: 600px;
+}
+
+.SimilarTopics a {
+    color: #0060bf;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SimilarTopics li {
+    margin-top: 20px;
+}
+
+.SimilarTopics li::marker {
+    color: #e50013;
+}
+
+.SimilarTopics a:hover {
+    text-decoration: underline;
+}
+
+.SimilarTopics a:active {
+    color: #e50013;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.AroundCommentArea {
+    background-color: #f2f2f2;
+    width: 600px;
+    padding-top: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 1px dotted #a6a6a6;
+    box-sizing: border-box;
+}
+
+.CommentAround {
+    /* background-color:  olivedrab; */
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.UserImage {
+    background-color: #e50013;
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.UserImage img {
+    display: flex;
+    margin: auto;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.RightCommentArea {
+    /* background-color: yellow; */
+    width: 455;
+}
+
+.RightCommentArea h2 {
+    /* background-color: orange; */
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* .RightCommentArea input {
+    width: 100%;
+    height: 100px;
+}
+
+.RightCommentArea input::placeholder {
+    line-height: 1.3em;
+} */
+
+.CommentText {
+    font-family: calibri;
+    color: #a6a6a6;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #a6a6a6;
+}
+
+.CommentText:focus {
+    outline: none;
+}
+
+.CommentText:hover {
+    background-color: white;
+    color: black;
+}
+
+.RightCommentArea .Buttons {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.Buttons button {
+    font-family: MrglovaniCaps;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.Buttons .Button1 {
+    background-color: #e50013;
+    color: white;
+    text-shadow: 1px 2px 0 #590007;
+    box-shadow: 0 3px 1px #590007;
+}
+
+.Buttons .Button1:hover {
+    background-color: #bf0010;
+}
+
+.Buttons .Button1:active {
+    box-shadow: 0 2px 2px #590007;
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+
+.Buttons .Button2 {
+    background-color: #008c23;
+    color: white;
+    text-shadow: 1px 2px 0 #004010;
+    box-shadow: 0 3px 2px #004010;
+}
+
+.Buttons .Button2:hover {
+    background-color: #00731d;
+}
+
+.Buttons .Button2:active {
+    box-shadow: 0 2px 2px #004010;
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+.rate {
+    /* background-color: blue; */
+    float: left;
+    /* position: relative; */
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.CommentAndButtons input {
+    width: 100%;
+    height: 100%;
+}
+
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+    -webkit-text-stroke: 0.5px #a6a6a6;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Leftside {
+    /* background-color: orange; */
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.LeftHR {
+    width: 170px; 
+    border: 0; 
+    border-top: 1px dotted #e50013;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Topic3Around {
+    /* background-color: green; */
+    width: 100%;
+    border: 1px solid #e50013;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.Topic3Around h2 {
+    font-family: MrglovaniCaps;
+    color: #e50013;
+    text-align: center;
+    margin: auto;
+}
+
+.Topic3Single {
+    /* background-color: yellow; */
+    width: 170px;
+    margin: auto;
+}
+
+.Topic3Single img {
+    object-fit: cover;
+    width: 100%;
+    height: 128px;
+}
+
+.Topic3Single a {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    color: #0060bf;
+    font-weight: bold;
+    width: 170px;
+}
+
+.Topic3Single a:hover {
+    text-decoration: underline;
+    color: #e50013;
+}
+
+.Topic3Single a:active {
+    color: black;
+}
+
+.Topic32Around {
+    background-color: #f2f2f2;
+    width: 100%;
+    border: 1px solid #e50013;
+    padding-top: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.Topic32Around h2 {
+    font-family: MrglovaniCaps;
+    /* background-color: #f2f2f2; */
+    /* padding-top: 15px; */
+    padding-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #e50013;
+}
+
+.Topic32Around .LeftHR2 {
+    margin: auto;
+    width: 100%;
+    border: none;
+    border-top: 1px dotted #e50013;
+}
+
+.Topic32Single {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Topic32Single:hover {
+    background-color: white;
+}
+
+.Topic32Single img {
+    object-fit: cover;
+    width: 170px;
+    height: 128px;
+    display: flex;
+    margin: auto;
+}
+
+.Topic32Single a {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    color: #0060bf;
+    font-weight: bold;
+    width: 170px;
+}
+
+.Topic32Single a:hover {
+    text-decoration: underline;
+    color: #e50013;
+}
+
+.Topic32Single a:active {
+    color: black;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Rightside {
+    /* background-color: orange; */
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.Addbanner { 
+    background-color: orangered;
+    width: 200px;
+    height: 250;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.RightTopic1Around {
+    /* background-color: #00a646; */
+    width: 100%;
+    margin-top: 50px;
+}
+
+.RightTopic1Around h2 {
+    /* background-color: gray; */
+    font-family: MrglovaniCaps;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: 1px solid #e50013;
+    border-radius: 10px;
+    color: #e50013;
+    text-align: center;
+    margin: auto;
+}
+
+.RightTopic1 {
+    /* background-color: yellow; */
+    border: 1px solid #e50013;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.RightTopic1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 128px;
+}
+
+.RightTopic1 a {
+    text-decoration: none;
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    color: #0060bf;
+    font-weight: bold;
+}
+
+.RightTopic1:hover {
+    background-color: #f2f2f2;
+}
+
+.RightTopic1 a:hover {
+    text-decoration: underline;
+    color: #e50013;
+}
+
+.RightTopic1 a:active {
+    color: black;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.RightTopic2Around {
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    width: 100%;
+    border: 1px dotted #e50013;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.LeftHR3 {
+    width: 170px; 
+    border: 0; 
+    border-top: 1px dotted #e50013;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.RightTopic2Around h2 {
+    /* background-color: yellow; */
+    font-family: MrglovaniCaps;
+    color: #e50013;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.RightTopic2Around img {
+    object-fit: cover;
+    width: 170px;
+    height: 128px;
+    display: flex;
+    margin: auto;
+}
+
+.RightTopic2Around a {
+    /* background-color: yellow; */
+    color: #0060bf;
+    text-decoration: none;
+    font-weight: bold;
+    width: 170px;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.RightTopic2Around a:hover {
+    text-decoration: underline;
+}
+
+.RightTopic2Around a:active {
+    color: #e50013;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.SimilarArticles {
+    background-color: #f2f2f2; 
+    width: 100%; 
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.SimilarArticles h1 {
+    font-family: MrglovaniCaps;
+    color: #e50013;
+    width: 1050px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.SimilarArticles .TopicsAround {
+    /* background-color: aqua; */
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.SimilarTopic1Around {
+    background-color: white;
+    width: 198px;
+}
+
+.SimilarTopic1Around img {
+    object-fit: cover;
+    width: 198px;
+    height: 149px;
+}
+.SimilarTopic1Around a {
+    color: #0060bf;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 188px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.SimilarTopic1Around a:hover {
+    text-decoration: underline;
+}
+
+.SimilarTopic1Around a:active {
+    color: #e50013;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.EndOfSiteAround {
+    background-color: #404040; 
+    width: 1100px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.EndOfSiteAround h1 {
+    /* background-color: red; */
+    font-family: MrglovaniCaps;
+    color: white;
+    font-weight: normal;
+    width: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+.EndofSiteTrio {
+    /* background-color: aqua; */
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.EndOfSiteLeft {
+    /* background-color: yellow; */
+    width: 275px;
+    margin-bottom: auto;
+}
+
+.EndOfSiteLeft h2 {
+    color: white;
+    display: flex;
+    margin: auto;
+}
+
+.EndOfSiteLeft a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.EndOfSiteLeft a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.EndOfSiteLeft a:active {
+    color: #26b7ff;
+}
+
+.EndOfSiteLeft li {
+    margin-top: 15px;
+}
+
+.EndOfSiteLeft li::marker {
+    color: #bfbfbf;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.EndOfSiteCenter {
+    /* background-color: orangered; */
+    width: 400px;
+    margin: auto;
+    margin-bottom: auto;
+}
+
+.EndOfSiteCenter h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.EndOfSiteCenter input {
+    font-family: calibri;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    width: 380px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.EndOfSiteCenter button {
+    font-family: MrglovaniCaps;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: none;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 40px;
+}
+
+.EndOfSiteCenter button:hover {
+    color: #26b7ff;
+    background: #1a1a1a;
+}
+
+.EndOfSiteCenter button:active {
+    margin-top: 16px;
+    margin-bottom: 4;
+    background: #1a1a1a;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.EndOfSiteRight {
+    /* background-color: orange; */
+    width: 250px;
+    padding-left: 50px;
+    margin-bottom: auto;
+}
+
+.EndOfSiteRight h2 {
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.EndOfSiteRight p {
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    text-shadow: none;
+}
