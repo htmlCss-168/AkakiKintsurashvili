@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: Termina;
+    src: url(fonts/TerminaTest-Regular.otf);
+}
+
+@font-face {
+    font-family: TerminaBold;
+    src: url(fonts/TerminaTest-Bold.otf);
+}
+
+
+
+body {
+    font-family: Termina;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+}
+
+.siteAround {
+    display: flex;
+    justify-content: center;
+}
+
+.insideBorder {
+    background-color: white;
+    width: 1440px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+
+.NavMenuAndLogo {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.WebNameAround {
+    /* background-color: blue; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.WebNameAround a {
+    color: black;
+    margin: auto;
+}
+
+.WebNameAround a:link {
+    text-decoration: none;
+}
+
+.WebNameAround a:visited {
+    text-decoration: none;
+}
+
+.MainNavMenu {
+    /* background-color: orangered; */
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.MainNavMenu a {
+    /* background-color: orange; */
+    border-radius: 28px;
+    margin: auto;
+    color: black;
+    padding: 20px 25px 20px 25px;
+}
+
+.MainNavMenu a:link {
+    text-decoration: none;
+}
+
+.MainNavMenu a:visited {
+    text-decoration: none;
+}
+
+.MainNavMenu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.MainNavMenu a:active {
+    background-color: #262626;
+ }
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around2nd {
+    background-color: #F3F3F3;
+    width: 1440px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.Around2nd h1 {
+    margin: auto;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around3rd {
+    /* background-color: orange; */
+    width: 1440px;
+    height: 670px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.ArticleAround {
+    /* background-color: aqua; */
+    width: 1340px;
+    height: 670px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ArticleAround img {
+    object-fit: cover;
+    width: 670px;
+    height: 100%;
+}
+
+.ArticleAround .Desc {
+    /* background-color: yellow; */
+    width: 565px;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.Desc a {
+    color: #C4C4C4;
+    margin-bottom: 50px;
+}
+
+.Desc p {
+    color: black;
+}
+
+.Desc .ButtonAround {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    margin-top: 20px;
+}
+
+.Desc button {
+    background-color: black;
+    font-family: Termina;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    border: none;
+    border-radius: 40px;
+    margin-right: auto;
+}
+
+.Desc button:hover {
+    background-color: #262626;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around4rd {
+    /* background-color: orange; */
+    width: 1440px;
+    display: flex;
+}
+
+.ArticleAround2 {
+    /* background-color: aqua; */
+    width: 1340px;
+    height: 670px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ArticleAround2 img {
+    object-fit: cover;
+    width: 670px;
+    height: 100%;
+}
+
+.ArticleAround2 .Desc2 {
+    /* background-color: yellow; */
+    width: 570px;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.Desc2 a {
+    color: #C4C4C4;
+    margin-bottom: 50px;
+}
+
+.Desc2 p {
+    color: black;
+}
+
+.Desc2 .ButtonAround {
+    /* background-color: red; */
+    display: flex;
+    margin-top: 20px;
+}
+
+.Desc2 button {
+    background-color: black;
+    color: white;
+    font-family: Termina;
+    padding: 20px 30px 20px 30px;
+    border: none;
+    border-radius: 40px;
+    margin-right: auto;
+}
+
+.Desc2 button:hover {
+    background-color: #262626;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around5th {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+.Around5th .ListAround {
+    /* background-color: rebeccapurple; */
+    width: 1340px;
+    margin-bottom: 50px;
+}
+
+.List5th {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 1340px;
+    margin-bottom: 50px;
+}
+
+.ListAround h1 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 45px;
+}
+
+.Single5thTopicAround {
+    width: 299px;
+}
+
+.Single5thTopicAround a {
+    color: black;
+    margin: auto;
+    text-align: left;
+}
+
+.Single5thTopicAround a:link {
+    text-decoration: none;
+}
+.Single5thTopicAround a:visited {
+    text-decoration: none;
+}
+
+.Single5thTopicAround a:hover {
+    text-decoration: underline;
+}
+
+.Single5thTopicAround .Around5thImage {
+    height: 279px;
+    overflow: hidden;
+}
+
+.Single5thTopicAround .Around5thImage img {
+    transition: transform 0.4s ease;
+}
+
+.Single5thTopicAround .Around5thImage img:hover {
+    transform: scale(1.05);
+}
+
+.Single5thTopicAround p {
+    /* background-color: yellow; */
+    padding-top: 15px;
+    text-align: left;
+    margin: auto;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around6th {
+    background-color: #F3F3F3;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.Nav2Menu {
+    /* background-color: rebeccapurple; */
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.Nav2Menu a {
+    /* background-color: orangered; */
+    border-radius: 26px;
+    color: black;
+    text-align: center;
+    padding:  15px 25px 15px 25px;
+}
+
+.Nav2Menu a:link {
+    text-decoration: none;
+}
+
+.Nav2Menu a:visited {
+    text-decoration: none;
+}
+
+.Nav2Menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.Nav2Menu a:active {
+    background-color: #262626;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around7th {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.insideAround7th {
+    /* background-color: yellow; */
+    width: 1340px;
+}
+
+.insideAround7th h1 {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 65px;
+}
+
+.profileAround7th {
+    /* background-color: blue; */
+    width: 1340px;
+    height: 670px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProfilePicture7th {
+    width: 670px;
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+}
+
+.TextAround7th {
+    /* background-color: purple; */
+    width: 620px;
+    margin-top: auto;
+}
+
+.img7thAround {
+    background-color: rgba(196, 196, 196, 0.7);
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    margin-right: 30px;
+}
+
+.img7thAround:hover {
+    background-color: #c4c4c4;
+}
+
+.img7thAround:active {
+    background-color: #ababab;
+}
+
+.img7thAround img {
+    margin: auto 27px auto auto;
+    height: 30px;
+}
+
+.TextAround7th h1 {
+    text-align: left;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around8th {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+}
+
+.Around8thinside {
+    /* background-color: blue; */
+    width: 1340px;
+    text-align: center
+}
+
+.Around8thinside h2 {
+    margin-top: 65px;
+}
+
+.Around8thIcons {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 100px;
+}
+
+.Around8thIcons img {
+    /* background-color: red; */
+    padding: 0 25px 0 25px;
+    height: 35px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Around9th {
+    /* background-color: red; */
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.Around9thInside {
+    /* background-color: orange; */
+    width: 1340px;
+    height: 60px;
+    display: flex;
+}
+
+.Around9thInside p {
+    /* background-color: aqua; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */

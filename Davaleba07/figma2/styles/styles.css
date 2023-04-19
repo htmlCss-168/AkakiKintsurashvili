@@ -1,0 +1,404 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+body {
+    background-color: black;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+.siteAround {
+    display: flex;
+    justify-content: center;
+}
+
+.insideBorder {
+    background-color: #212121;
+    width: 1440px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.HeadSite {
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    width: 1440px;
+    height: 690px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.NavMenuAndLogo {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 80px;
+}
+
+.SaitLogoAround, .SaitLogoAround img {
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.MainNavMenu {
+    /* background-color: orangered; */
+    display: flex;
+}
+
+.MainNavMenu a {
+    /* background-color: orange; */
+    color: white;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 27px 20px 26px 20px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.MainNavMenu a:link {
+    text-decoration: none;
+}
+
+.MainNavMenu a:visited {
+    text-decoration: none;
+}
+
+.MainNavMenu a:hover {
+    background-color: #4c70ef;
+    text-shadow: none;
+}
+
+.MainNavMenu a:active {
+    background-color: #38405A;
+    color: #4c70ef;
+    text-shadow: none;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.MiddleHeadsite {
+    /* background-color: aqua; */
+    margin-bottom: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.MiddleHeadsite h1 {
+    text-align: center;
+    font-size: 55px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.MiddleHeadsite p {
+    text-align: center;
+    font-size: 23px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.HeadsiteMiddleIcons {
+    /* background-color: red; */
+    margin: auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AroundHedsiteMiddleIcons {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    width: 42px;
+    height: 42px;
+}
+
+.AroundHedsiteMiddleIcons:hover {
+    box-shadow: 0 0px 10px 1px gray;
+}
+
+.HeadsiteMiddleIcons img {
+    margin: auto;
+    height: 20px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Inside1Around {
+    /* background-color: orange; */
+    width: 1180px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 105px;
+}
+
+.WhiteBorderBehindIMG {
+    display: block;
+}
+
+.WhiteBorderBehindIMG img {
+    object-fit: cover;
+    width: 525px;
+    height: 380px;
+    border-radius: 24px;
+    position: absolute;
+}
+
+.WhiteBorderBehindIMG a {
+    /* background-color: aqua; */
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 24px;
+    display: flex;
+    width: 525px;
+    height: 380px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.Inside1TextAround {
+    /* background-color: red; */
+    margin-top: 30px;
+    width: 100%;
+    height: 380px;
+    margin-left: 45px;
+}
+
+h2 {
+    color: #4C70EF;
+    margin-top: auto;
+}
+
+h1 {
+    color: white;
+    margin-bottom: auto;
+}
+
+.Inside1TextAround p {
+    color: #B0ADAD;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Inside2Around {
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 125px;
+    width: 980px;
+    text-align: center;
+}
+
+.MinInfoAroundAround {
+    /* background-color: yellow; */
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.MinInfoAround {
+    background-color: #292C36;
+    width: 480px;
+    display: grid;
+    justify-content: left;
+    border-radius: 15px;
+}
+
+.MinInfoAround p {
+    color: #B0ADAD;
+    text-align: left;
+    margin: 25px;
+    margin-top: 0;
+}
+
+.MininfoHeadtitle {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: left;
+    margin: 25px;
+}
+
+.MininfoHeadtitle h2 {
+    /* background-color: red; */
+    width: 220px;
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+    color: white;
+    text-align: left;
+}
+
+.MininfoHeadtitle a:link {
+    text-decoration: none;
+}
+
+.MininfoHeadtitle a:visited {
+    text-decoration: none;
+}
+
+.MininfoHeadtitle a h2:hover {
+    text-decoration: underline;
+}
+
+.MininfoHeadtitle .H2uX {
+    width: 125px;
+}
+
+.MininfoHeadtitle img {
+    background-color: #38405A;
+    margin-right: 15px;
+    width: 42px;
+    height: 42px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Inside3Around {
+    /* background-color: yellow; */
+    margin: auto;
+    margin-top: 125px;
+    width: 1180px;
+    text-align: center;
+}
+
+.Inside3Around h2, h1 {
+    letter-spacing: 5px;
+} 
+
+.ProjectsAround {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin-top: 45px;
+}
+
+.ProjectsAround img {
+    object-fit: cover;
+    width: 380px;
+    height: 285px;
+    border-radius: 15px 15px 0 0;
+}
+
+.singleProjectAround {
+    /* background-color: rebeccapurple; */
+    text-align: left;
+    width: 380px;
+}
+
+.TextAndButtonAround {
+    margin-top: 0;
+    background-color: #292C36;
+    width: 380px;
+    border-radius: 0 0 15px 15px;
+}
+
+.TextAndButtonAround p {
+    color: white;
+    font-size: 23px;
+    margin: auto;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.TextAndButtonAround button {
+    background-color: #558FFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding: 15px 20px 15px 20px;
+}
+
+.TextAndButtonAround button:hover {
+    background-color: #4878d9;
+}
+
+.TextAndButtonAround button:active {
+    background-color: #38405A;
+    color: #558FFF;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Inside4Around {
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+.Inside4Around .Border {
+    background-color: #292C36;
+    width: 980px;
+    height: 280px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+}
+
+.Inside4Around h1 {
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin: auto;
+    margin-top: 75;
+}
+
+.Inside4Around button {
+    background-color: #558FFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 15px 20px 15px 20px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.Inside4Around button:hover {
+    background-color: #4878d9;
+}
+
+.Inside4Around button:active {
+    background-color: #38405A;
+    color: #558FFF;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.Inside5Around {
+    background-color: #292C36;
+    margin-top: 125px;
+    text-align: center;
+}
+
+.Inside5Around img {
+    margin: auto;
+    width: 50px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.Inside5Around p {
+    margin: auto;
+    padding-bottom: 35px;
+    color: white;
+    font-weight: bold;
+}
