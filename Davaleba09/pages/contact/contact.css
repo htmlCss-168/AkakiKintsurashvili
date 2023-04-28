@@ -1,0 +1,453 @@
+
+@font-face {
+    font-family: WEB-001;
+    src: url(fonts/bpg_web_001_caps.ttf);
+}
+
+@font-face {
+    font-family: MrgvlovaniCaps;
+    src: url(fonts/bpg_mrgvlovani_caps_2010.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    /* background-color: aqua; */
+    width: 1200px;
+    margin: auto;
+}
+
+.BefornavAndLine {
+    /* background-color: aqua; */
+    width: 1200px;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.LineAround {
+    /* background-color: yellow; */
+    border-radius: 50px;
+    width: 100%;
+    height: 23px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.LineAround b {
+    /* background-color: olivedrab; */
+    font-family: MrgvlovaniCaps;
+    color: #FF4633;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    /* font-size: 15px; */
+    text-align: center;
+    animation: CourierTimeStarting;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+
+
+@keyframes CourierTimeStarting {
+    0% {transform: translateX(145%);}
+    100% {transform: translateX(-130%);}
+}
+
+.uparoundButtons {
+    /* background-color: orange; */
+    display: flex;
+}
+
+.uparoundButtons .upButton1 {
+    background-color: #FF4633;
+    margin-left: 15px;
+}
+
+.uparoundButtons .upButton1:hover {
+    background-color: #f2230c;
+}
+
+.uparoundButtons .upButton2 {
+    background-color: #00a600;
+    margin-left: 5px;
+}
+
+.uparoundButtons .upButton2:hover {
+    background-color: #008c00;
+}
+
+.uparoundButtons button {
+    font-family: MrgvlovaniCaps;
+    color: white;
+    font-size: 12px;
+    /* font-weight: bold; */
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.uparoundButtons button:active {
+    padding-top: 12px;
+    margin-bottom: -2px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.NavPlusLogo {
+    background-color: #0D47A1;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.NavPlusLogo img {
+    /* background-color: brown; */
+    font-family: Calcio;
+    height: 40px;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.NavPlusLogo nav {
+    /* background-color: rebeccapurple; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.NavPlusLogo nav a {
+    /* background-color: orangered; */
+    font-family: MrgvlovaniCaps;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 22px 15px;
+    transition: 0.1s;
+}
+
+.NavPlusLogo nav a:hover {
+    background-color: #FF4633;
+}
+
+.NavPlusLogo nav a:active {
+    box-shadow: inset 0 2px 10px #bf3626;
+}
+
+.NavPlusLogo nav a img {
+    margin: auto;
+    height: 14px;
+    margin-right: 7px;
+}
+
+.searchAround {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    margin-left: 20px;
+}
+
+.searchAround input {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    outline: none;
+}
+
+.searchAround button {
+    background: url(icons/searchblack.png);
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    min-width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.ContactAround {
+    /* background-color: red; */
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.ContactAround p {
+    /* background-color: yellow; */
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.ContactAround p a {
+    font-family: MrgvlovaniCaps;
+    text-decoration: none;
+    color: #0D47A1;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.ContactAround p a:hover {
+    text-decoration: underline;
+    color: #FF4633;
+}
+
+.ContactAround h1 {
+    /* background-color: red; */
+    font-family: MrgvlovaniCaps;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.ContactCitiesAround {
+    /* background-color: aqua; */
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.ContactCitiesAround h3 {
+    /* background-color: rebeccapurple; */
+    font-family: MrgvlovaniCaps;
+    width: 285px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.contactInventar {
+    /* background-color: gray; */
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactTopicAround {
+    /* background-color: green; */
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 285px;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.contacttopInner {
+    /* background-color: yellow; */
+    margin: auto;
+    width: 245px;
+}
+
+.contacttopicIMG {
+    width: 245px;
+    height: 205px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contacttopicIMG img {
+    object-fit: cover;
+    width: 245px;
+    height: 205px;
+    transition: 0.2s;
+}
+
+.contacttopicIMG img:hover {
+    transform: scale(1.1);
+}
+
+.contacttopInner p {
+    font-size: 14px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.contacttopInner p b {
+    font-family: MrgvlovaniCaps;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+footer {
+    background-color: #f2f2f2;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.FooterInsider {
+    /* background-color: red; */
+    width: 1100px;
+}
+
+.FooterInfo {
+    /* background-color: green; */
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSection1 {
+    /* background-color: aqua; */
+    width: 380px;
+    margin-right: 50px;
+}
+
+.footerSection1 h1 {
+    /* background-color: orange; */
+    color: black;
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.footerSection1 p {
+    /* background-color: orange; */
+    color: black;
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.footerSection1 input {
+    background: none;
+    outline: none;
+    color: black;
+    border: 1px solid #737373;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.footerSection1 input::placeholder {
+    color: #404040;
+}
+
+.footerSection1 button {
+    background-color: black;
+    font-family: MrgvlovaniCaps;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footerSection1 button:hover {
+    background-color: #FF4633;
+}
+
+.footerSection1 button:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+.section1Socials {
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.section1Socials a {
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.section1Socials a img {
+    object-fit: cover;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.section1Socials a:hover {
+    transform: rotate(360deg); border-radius: 50%;
+}
+
+.footerSections {
+    /* background-color: aqua; */
+    width: 200px;
+}
+
+.footerSections h3 {
+    font-family: MrgvlovaniCaps;
+    color: black;
+    margin: 0 0;
+}
+
+.footerSections a {
+    text-decoration: none;
+    color: #0D47A1;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+
+.footerSections a:hover {
+    text-decoration: underline;
+    color: #FF4633;
+}
+
+.footerSections a:active {
+    margin-top: 11px;
+    margin-bottom: -1px;
+}
+
+.footerHR {
+    border: none;
+    border-top: 1px dotted #b3b3b3;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+}
+
+.FooterInsider h5 {
+    /* background-color: green; */
+    font-family: MrgvlovaniCaps;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+}
