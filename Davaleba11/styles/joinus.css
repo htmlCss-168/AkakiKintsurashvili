@@ -856,3 +856,67 @@ main .sectionhead {
     width: 30px;
     height: auto;
 }
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.aroundSocialv2fixed {
+    background-color: var(--lightGreen);
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-720px);
+        -ms-transform: translateX(-720px);
+            transform: translateX(-720px);
+    padding: 10px;
+    border-radius: 200px;
+}
+
+.aroundSocialv2fixed img {
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.aroundSocialv2fixed a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.aroundSocialv2fixed img {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.aroundSocialv2fixed img:hover {
+    -webkit-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+            transform: scale(1.25); rotate: 360deg;
+}
+
