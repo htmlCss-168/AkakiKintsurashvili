@@ -1,0 +1,400 @@
+
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url(fonts/Montserrat-Medium.otf);
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin: 0;
+}
+
+:root {
+    --verylight1: #F9FDFF;
+    --veryLight2: #DDEEFE;
+    --veryLightBlue: #8EC2F2;
+    --almostBlue: #5D5DF9;
+    --darkBlue: #26335D;
+    --lightGreen: #1BC768;
+    --orange1: #E74040;
+    --oranged2: #FD7E7C;
+    --Grey1: #252B42;
+    --Grey2: #737373;
+    --Grey3: #BDBDBD;
+}
+
+header {
+    /* background-color: #26335D; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navanddown {
+    background-color: var(--darkBlue);
+    width: 1440px;
+}
+
+.navpmenuplus {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+    margin-left: 195px;
+    margin-right: 279px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* .sitelogoaround {
+    background-color: black;
+    width: 200px;
+} */
+
+.sitelogoaround a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 43px;
+}
+
+.navmenu1 {
+    /* background-color: black; */
+    color: white;
+    display: flex;
+}
+
+.navmenu1 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navmenu1 a:hover {
+    background-color: var(--lightGreen);
+    border-radius: 5px;
+    color: white;
+}
+
+.joinButtons {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.joinButtons a {
+    text-decoration: none;
+    color: white;
+}
+
+.joinButtons a:hover {
+    color: var(--lightGreen);
+}
+
+.joinusButton {
+    background-color: var(--lightGreen);
+    border-radius: 5px;
+    width: 137px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.joinusButton:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+.joinusButton p {
+    color: white;
+    margin: 0;
+    /* margin-left: 25px; */
+}
+
+.joinusButton div {
+    width: auto;
+    margin-left: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.joinusButton div img {
+    width: auto;
+    height: 14px;
+}
+
+.joinusButton:hover div {
+    transform: translateX(5px);
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.coverareaaround {
+    /* background-color: aqua; */
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 132px;
+    margin-top: 75px;
+    margin-bottom: 28px;
+}
+
+.coverareaaround .coverTextArea {
+    /* background-color: antiquewhite; */
+    width: 540px;
+}
+
+.coverareaaround .coverTextArea .p1v1 {
+    color: var(--lightGreen);
+    font-size: 14px;
+    margin: 0;
+}
+
+.coverareaaround .coverTextArea h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.coverareaaround .coverTextArea .p1v2 {
+    font-family: MontserratMedium;
+    color: var(--veryLight2);
+    font-size: 20px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+.coverareaaround img {
+    object-fit: cover;
+    width: 640px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+main .sectionspecial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .sectionspecial div {
+    background-color: white;
+    width: 1440px;
+    height: 500px;
+    border-bottom: 5px solid var(--lightGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .sectionspecial div h2 {
+    color: var(--almostBlue);
+    font-size: 40px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.section4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section4 .sec4outAround {
+    background-color: var(--darkBlue);
+    width: 1440px;
+    height: 594px;
+}
+
+.section4 .sec4outAround .p1 {
+    color: var(--lightGreen);
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    margin-top: 160px;
+}
+
+.section4 .sec4outAround h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.section4 .sec4outAround .p2 {
+    font-family: MontserratMedium;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 439px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.section4 .sec4outAround .sec4subscribtionAround {
+    /* background-color: yellow; */
+    width: 688px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.sec4subscribtionAround input {
+    width: 100%;
+    height: 58px;
+    padding: 0 20px;
+    outline: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.sec4subscribtionAround button {
+    background-color: var(--lightGreen);
+    font-family: Montserrat;
+    color: white;
+    font-size: 14px;
+    width: 117px;
+    height: 58px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4subscribtionAround button:hover {
+    letter-spacing: 0.5px;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.footer1 {
+    background-color: white;
+    width: 1440px;
+    height: 272px;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+}
+
+.footer1 .aroundwindow {
+    /* background-color: yellow; */
+    margin-top: 50px;
+}
+
+.footer1 .aroundwindow h3 {
+    font-size: 16px;
+    color: var(--Grey1);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer1 .aroundwindow a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--Grey2);
+    margin-top: 15px;
+}
+
+.footer1 .aroundwindow a:hover {
+    color: var(--orange1);
+}
+
+.aroundwindow div {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.aroundwindow div img {
+    width: 30px;
+    height: 30px;
+}
+
+.aroundwindow div p {
+    color: var(--Grey2);
+    font-size: 14px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.footer2 {
+    background-color: #FAFAFA;
+    width: 1440px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.footerSocialCopyright {
+    /* background-color: yellow; */
+    width: 100%;
+    margin-left: 195px;
+    margin-right: 258px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSocialCopyright p {
+    margin: 0;
+    color: var(--Grey2);
+}
+
+.aroundSocial {
+    /* background-color: black; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.aroundSocial a {
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.aroundSocial a:hover {
+    transform: scale(1.2);
+}
+
+.aroundSocial a img {
+    width: 30px;
+    height: auto;
+}
