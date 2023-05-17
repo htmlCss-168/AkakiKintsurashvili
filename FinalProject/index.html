@@ -1,0 +1,1570 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="movies, tv shows, animation, anime, ფილმები, სერიალები, ანიმაცია, ანიმე">
+        <meta name="keywords" content="movies, tv shows, animation, anime, free online, cinema, movie-news, news, ფილმები, სერიალები, ანიმაცია, ანიმე, ონლაინში, კინოსიახლე, სიხლეები">
+        <meta name="author" content="Akaki Kintsurashvili">
+        <title>Final Website</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    </head>
+
+
+
+    <body>
+
+        <div class="sidesocialbar">
+            <a href="https://www.facebook.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #1877f2;">FACEBOOK</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.facebook.png">
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ee2a7b;">INSTAGRAM</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.instagram.png">
+                </div>
+            </a>
+
+            <a href="https://www.messenger.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #0084ff;">MESSENGER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.messanger.png">
+                </div>
+            </a>
+
+            <a href="https://twitter.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #03a9f4;">TWITTER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.twitter.png">
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ff0000;">YOUTUBE</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.youtube.png">
+                </div>
+            </a>
+        </div>
+
+        <header>
+            <div class="mobNavmenu1SpeciialBorder">
+
+                <div class="mobNavmenu1">
+                
+                    <div class="burgernavmenuMob1">
+                        <div class="burgnavmeni1Button" id="burgnavmeni1Button" onclick="openSidenav1()">
+                            <!-- <i class="fa-solid fa-bars fa-2xl"></i> -->
+                            <div class="burgnuvButtonBackrounder"></div>
+                        </div>
+                        <ul id="burgnavList" class="burgnavList">
+                            <div class="burgermenu1LogoButton">
+                                <h2>ნავიგაცია</h2>
+                                <!-- <img src="styles/icons/sitelogo.png" alt="saitlogo"> -->
+                                <i class="fa-solid fa-xmark fa-xl" id="sidebarCloseButton" onclick="closeSidenav1()"></i>
+                            </div>
+                            <li><a href="index.html"><i class="fa fa-home"></i>მთავარი</a></li>
+                            <li><a href="movies.html"><i class="fa-solid fa-video"></i>ფილმები</a></li>
+                            <li><a href="tvshow.html"><i class="fa-solid fa-film"></i>სერიალი</a></li>
+                            <li><a href="animation.html"><i class="fa-solid fa-photo-film"></i>ანიმაცია</a></li>
+                            <li><a href="news.html"><i class="fa-solid fa-file-pen"></i></i>სიახლეები</a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i>კონტაქტი</a></li>
+                            <li><a href="account.html"><i class="fa-solid fa-user"></i>ანგარიში</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- <div class="mobsearchAround">
+                        <input type="search" placeholder="მოძებნე ფილმი">
+                        <button><img src="styles/icons/search2buttonv2.png"></button>
+                    </div> -->
+
+                    <div class="navmenPlusSearchv2Around">
+                        <div class="specialsearchv2siteLogoAround">
+                            <a href="index.html" class="specialsearchv2siteLogoInsider">
+                                <img src="styles/icons/sitelogo.png" class="specialsearchv2siteLogo">
+                            </a>
+                        </div>
+
+                        <a href="account.html" class="searchv2specialHome">
+                            <i class="fa-solid fa-user-large"></i>
+                        </a>
+
+                        <div class="navPlusSearchButtonAround">
+                            <button class="specialbuttonv2search" onclick="extendedSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="navplusSerchv2Container" id="navplusSerchv2Container">
+                                <input type="placeholder" placeholder="საიტზე ძებნა...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            </div>
+
+            <script type="text/Javascript">
+
+                function openSidenav1() {
+                    document.getElementById("burgnavList").style.left = "0";
+                    document.getElementById("burgnavList").style.opacity = "1";
+                }
+
+                function closeSidenav1() {
+                    document.getElementById("burgnavList").style.left = "-220px";
+                    document.getElementById("burgnavList").style.opacity = "0";
+                }
+
+
+                function extendedSearch() {
+                    var x = document.getElementById("navplusSerchv2Container");
+                    if (x.style.display === "flex") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "flex";
+                    }
+                }
+
+            </script>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <div class="navbarArounder">
+
+                <a href="index.html" class="logo1here"><img id="logo1here" src="styles/icons/sitelogo.png"></a>
+
+                <nav class="navbar1">
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="movies.html">ფილმები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">ქართულად</a>
+                                    <a href="movies.html">ინგლისურად</a>
+                                    <a href="movies.html">სხვა ენა</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">კრიმინალური</a>
+                                    <a href="movies.html">თრილერი</a>
+                                    <a href="movies.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">სათავგადასავლო</a>
+                                    <a href="movies.html">ისტორიული</a>
+                                    <a href="movies.html">საომარი</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="tvshow.html">სერიალი</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">ქართულად</a>
+                                    <a href="tvshow.html">ინგლისურად</a>
+                                    <a href="tvshow.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">დრამა</a>
+                                    <a href="tvshow.html">თრილერი</a>
+                                    <a href="tvshow.html">სათავგადასავლო</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="animation.html">ანიმაცია</a></li>
+                        <li><a href="news.html">სიახლეები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="news.html">ფილმები</a>
+                                    <a href="news.html">სერიალი</a>
+                                    <a href="news.html">ანიმაცია</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="news.html">მსახიობები</a>
+                                    <a href="news.html">ჰოლივუდი</a>
+                                    <a href="news.html">სხვა</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                        <li><a href="account.html">ანგარიში</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="account.html">შესვლა</a>
+                                    <a href="account.html">რეგისტრაცია</a>
+                                    <a href="account.html">აღდგენა</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="search1Around">
+                    <input type="hearch" placeholder="მოძებვნე ფილმი">
+                    <button>ძებნა</button>
+                </div>
+
+            </div>
+
+            <!-- <div class="navmenuBackcolor">
+                <div class="aroundNavmenu">
+
+                    <div class="sitelogo" id="sitelogo">
+                        <a href="index.html"><img src="styles/icons/sitelogo.png" alt=""></a>
+                    </div>
+
+                    <nav>
+                        <a href="index.html">მთავარი</a>
+                        <a class="movies1Dropdown" href="index.html">ფილმები</a>
+                        <a href="index.html">სერიალები</a>
+                        <a href="index.html">ანიმაცია</a>
+                        <a href="index.html">სიახლეები</a>
+                        <a href="index.html">ტელევიზია</a>
+                        <a href="index.html">კონტაქტი</a>
+                        <a href="index.html">ანგარიში</a>
+                    </nav>
+
+                    <div class="navmenuSearchv1" id="navmenuSearchv1">
+                        <input type="placeholder" name="searchplace" placeholder="მოძებნე ფილმი">
+                        <button>ძებნა</button>
+                    </div>
+
+                </div>
+            </div> -->
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <div class="sliderAround">
+                <div class="sliderInsider">
+
+                    <a class="sliderBorder" id="lonelyslider1" href="filmpage.html" style="background-image: url(styles/slider/avatarv4.jpg);">
+                        <div class="sliderInfoAround">
+                            <h2 class="sliderinfoHedtitle">ავატარი: წყლის გზა</h2>
+                            <p class="sliderinfoSomedetails">2023, სათავგადასავლო, iMDb: 7.7</p>
+                            <p class="sliderinfoDescription">ჯეიკ სალი ცხოვრობს თავის ახალშექმნილ ოჯახთან ერთად, რომელიც შეიქმნა მზის მთვარე პანდორაზე. როგორც კი ნაცნობი საფრთხე დაბრუნდება, რათა დაასრულოს ის, რაც ადრე იყო დაწყებული, ჯეიკმა უნდა იმუშაოს ნეიტირისთან და ნავის რასის არმიასთან, რათა დაიცვან თავიანთი სახლი.</p>
+                        </div>
+                    </a>
+
+                    <a class="sliderBorder" id="lonelyslider2" href="filmpage.html" style="background-image: url(styles/slider/antman3.jpg);">
+                        <div class="sliderInfoAround">
+                            <h2 class="sliderinfoHedtitle">ადამიანი ჭიანჭველა და ფუტკარი: კვანტუმანია</h2>
+                            <p class="sliderinfoSomedetails">2023, სათავგადასავლო, iMDb: 6.2</p>
+                            <p class="sliderinfoDescription">სკოტ ლენგი და ჰოუპ ვან დანი კვანტურ სამეფოში გადაიყვანეს ჰოუპის მშობლებთან და სკოტის ქალიშვილ კესისთან ერთად. მათ ერთად უნდა იპოვონ გაქცევის გზა, მაგრამ რა საიდუმლოს მალავს ჰოუპის დედა? და ვინ არის იდუმალი კანგი?</p>
+                        </div>
+                    </a>
+
+                    <a class="sliderBorder" id="lonelyslider3" href="filmpage.html" style="background-image: url(styles/slider/johnwick4v1.jpg);">
+                        <div class="sliderInfoAround">
+                            <h2 class="sliderinfoHedtitle">ჯონ ვიკი: თავი 4</h2>
+                            <p class="sliderinfoSomedetails">2023, მძაფრ-სიუჟეტიანი, iMDb: 8.2</p>
+                            <p class="sliderinfoDescription">ჯონ ვიკი ხსნის გზას მაღალი მაგიდის დამარცხებისკენ. მაგრამ სანამ თავისუფლებას მოიპოვებს, ვიკი უნდა შეებრძოლოს ახალ მტერს ძლიერი ალიანსებით მთელს მსოფლიოში და ძალებით, რომლებიც ძველ მეგობრებს მტრებად აქცევენ.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <main>
+
+            <div class="searchv2splitter">
+                
+                <div class="searchv2Around">
+                    <img class="img1" src="styles/icons/sitelogov2.png">
+                    <div class="searchv2">
+                        <div class="searchv2zoomiconAround">
+                            <img src="styles/icons/searchzoomicon.png" alt="searchico">
+                        </div>
+                        <input type="placeholder" name="searchplace" placeholder="მოძებნე ფილმი">
+                        <button class="searchv2buttonv1">ძებნა</button>
+                        <button class="searchv2buttonv2"><img src="styles/icons/search2buttonv2.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="section1Movies">
+                <div class="sectioninsider1">
+
+                    <div class="headtitlePlus">
+                        <div class="headtitlePlusInsider">
+
+                            <h2 class="sec1v1headtitle">ბოლოს დამატებული</h2>
+                            <h2 class="sec1v2headtitle">ახალი</h2>
+
+                            <div class="headerArrowAround">
+                                <a class="headerarrowLeft" href="#"></a>
+                                <a class="headerarrowRight" href="#"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionlistBefore">
+
+                        <!-- <div class="arrowLeftAround" style="margin-right: 15px;">
+                            <a class="arrowleftinsider" href="#"></a>
+                        </div> -->
+
+                        <div class="sectionlistAround">
+
+
+                            <a class="movietopicAround" id="movietopicAround1" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOWFlMzVlMzEtYTEzNi00OTk5LTlkMGItZDExYjRhNjVkMTc5XkEyXkFqcGdeQXVyNzg5MjYxOTU@._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Demon Slayer: Kimetsu no Yaiba</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>JAP</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>დემონების მკვლელი მახვილი</p>
+                                    <div class="movieinfodownline">
+                                        <p>სეზ.03 / სერია 04</p>
+                                        <!-- <p class="mparating">17+</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround2" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BYjg5YmUwN2ItNTE2MS00MGUzLThjZDYtODRlNDViMDdhZmYxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Ant-Man and the Wasp: Quantumania</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ადამიანი ჭიანჭველა და ფუტკარი: კვანტუმანია</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround3" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODkzMmQ1OGItYTZkNi00NGMxLWJiMjMtZmY0YzdjNDE3NWRjXkEyXkFqcGdeQXVyMjAwNzczNTU@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Murder Mystery 2</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>იდუმალი მკვლელობა 2</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">კომედია</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround4" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOWVhYjVmNWQtMDdkYy00MTczLWE1ZmYtN2VkZGJmZTNhMzFhXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Last Sentinel</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>უკანასკნელი სიმაგრე</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">მძაფრ-სიუჟეტიანი</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround5" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Last Kingdom: Seven Kings Must Die</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>უკანასკნელი სამეფო: შვიდი მეფე უნდა მოკვდეს</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">17+</p> -->
+                                        <p style="margin-left: 10px;">ისტორიული</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround6" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODE5OWM4ZjUtN2FjMy00ZWUyLWEyMWItM2IyOTU3MDRjMGMxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Lockwood & Co</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ლოქვუდი და კომპანია</p>
+                                    <div class="movieinfodownline">
+                                        <p>პირველი სეზონი</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround7" href="#">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Doctor Strange in the Multiverse of Madness</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>დოქტორი სტრეინჯი სიგიჟის მულტისამყაროში</p>
+                                    <div class="movieinfodownline">
+                                        <p>2022</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- <div class="arrowRightAround" style="margin-left: 15px;">
+                            <a class="arrowrightinsider" href="#"></a>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="section1Movies">
+                <div class="sectioninsider1">
+
+                    <div class="headtitlePlus">
+                        <div class="headtitlePlusInsider">
+
+                            <h2>ფილმები</h2>
+
+                            <div class="headerArrowAround">
+                                <a class="headerarrowLeft" href="#"></a>
+                                <a class="headerarrowRight" href="#"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionlistBefore">
+
+                        <!-- <div class="arrowLeftAround" style="margin-right: 15px;">
+                            <a class="arrowleftinsider" href="#"></a>
+                        </div> -->
+
+                        <div class="sectionlistAround">
+
+
+                            <a class="movietopicAround" id="movietopicAround1" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BYjg5YmUwN2ItNTE2MS00MGUzLThjZDYtODRlNDViMDdhZmYxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Ant-Man and the Wasp: Quantumania</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ადამიანი ჭიანჭველა და ფუტკარი: კვანტუმანია</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround2" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODkzMmQ1OGItYTZkNi00NGMxLWJiMjMtZmY0YzdjNDE3NWRjXkEyXkFqcGdeQXVyMjAwNzczNTU@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Murder Mystery 2</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>იდუმალი მკვლელობა 2</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">კომედია</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround3" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOWVhYjVmNWQtMDdkYy00MTczLWE1ZmYtN2VkZGJmZTNhMzFhXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Last Sentinel</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>უკანასკნელი სიმაგრე</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">მძაფრ-სიუჟეტიანი</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround4" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Last Kingdom: Seven Kings Must Die</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>უკანასკნელი სამეფო: შვიდი მეფე უნდა მოკვდეს</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">17+</p> -->
+                                        <p style="margin-left: 10px;">ისტორიული</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround5" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Doctor Strange in the Multiverse of Madness</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>დოქტორი სტრეინჯი სიგიჟის მულტისამყაროში</p>
+                                    <div class="movieinfodownline">
+                                        <p>2022</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround6" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNjA5ZTUyYjYtZTY1ZS00MTM1LWEwMjktZDY4N2Q5NjBmOThiXkEyXkFqcGdeQXVyNzA4NTc5MjE@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Avatar: The Way of Water</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ავატარი: წყლის გზა</p>
+                                    <div class="movieinfodownline">
+                                        <p>2022</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround7" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMzM4ZDJhYjYtZGY5Ny00NTk0LWI4ZTYtNjczZDFiMGI2ZjEzXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>All Quiet on the Western Front</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>დასავლეთის ფრონტი უცვლელია</p>
+                                    <div class="movieinfodownline">
+                                        <p>2023</p>
+                                        <!-- <p class="mparating">18+</p> -->
+                                        <p style="margin-left: 10px;">ისტორიული</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- <div class="arrowRightAround" style="margin-left: 15px;">
+                            <a class="arrowrightinsider" href="#"></a>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="section1Movies">
+                <div class="sectioninsider1">
+
+                    <div class="headtitlePlus">
+                        <div class="headtitlePlusInsider">
+
+                            <h2>სერიალები</h2>
+
+                            <div class="headerArrowAround">
+                                <a class="headerarrowLeft" href="#"></a>
+                                <a class="headerarrowRight" href="#"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionlistBefore">
+
+                        <!-- <div class="arrowLeftAround" style="margin-right: 15px;">
+                            <a class="arrowleftinsider" href="#"></a>
+                        </div> -->
+
+                        <div class="sectionlistAround">
+
+
+                            <a class="movietopicAround" id="movietopicAround1" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODE5OWM4ZjUtN2FjMy00ZWUyLWEyMWItM2IyOTU3MDRjMGMxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Lockwood & Co</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ლოქვუდი და კომპანია</p>
+                                    <div class="movieinfodownline">
+                                        <p>პირველი სეზონი</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround2" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMjE3NTQ1NDg1Ml5BMl5BanBnXkFtZTgwNzY2NDA0MjI@._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Game of Thrones</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>სამეფო კარის თამაშები</p>
+                                    <div class="movieinfodownline">
+                                        <p>ყველა სეზონი</p>
+                                        <!-- <p class="mparating">17+</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround3" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNGU1Yzc4MzctMDYzNS00YTU5LWFkZTAtMzU2NjBiZTJhNzM5XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UY500_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Mandalorian</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>მანდალორელი</p>
+                                    <div class="movieinfodownline">
+                                        <p>მესამე სეზონი</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround4" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTY0ZjliOGUtMDFiZS00YzcwLWFiZWYtMzg4MWZkMWIwYzYwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Shadow and Bone</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ჩრდილი და ძვალი</p>
+                                    <div class="movieinfodownline">
+                                        <p>პირველი სეზონი</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround5" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BYzQyN2MxNDgtMzA1OC00NmFmLWFkYTktNGFhMjdhYWZjMDM5XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Summer I Turned Pretty</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ზაფხული როდესაც გავლამაზდი</p>
+                                    <div class="movieinfodownline">
+                                        <p>პირველი სეზონი</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround6" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTAzMDkyOTMzNzBeQTJeQWpwZ15BbWU4MDA4NzgxNDYz._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Boys</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ბიჭები</p>
+                                    <div class="movieinfodownline">
+                                        <p>მესამე სეზონი</p>
+                                        <!-- <p class="mparating">17+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround7" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTQ3NTEzODcyNl5BMl5BanBnXkFtZTgwNjY1NzU2NDE@._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Last Man on Earth</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>უკანასკნელი ადამიანი დედამიწაზე</p>
+                                    <div class="movieinfodownline">
+                                        <p>მეოთხე სეზონი</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- <div class="arrowRightAround" style="margin-left: 15px;">
+                            <a class="arrowrightinsider" href="#"></a>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="section1Movies">
+                <div class="sectioninsider1">
+
+                    <div class="headtitlePlus">
+                        <div class="headtitlePlusInsider">
+
+                            <h2>ანიმაცია</h2>
+
+                            <div class="headerArrowAround">
+                                <a class="headerarrowLeft" href="#"></a>
+                                <a class="headerarrowRight" href="#"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionlistBefore">
+
+                        <!-- <div class="arrowLeftAround" style="margin-right: 15px;">
+                            <a class="arrowleftinsider" href="#"></a>
+                        </div> -->
+
+                        <div class="sectionlistAround">
+
+
+                            <a class="movietopicAround" id="movietopicAround1" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOWFlMzVlMzEtYTEzNi00OTk5LTlkMGItZDExYjRhNjVkMTc5XkEyXkFqcGdeQXVyNzg5MjYxOTU@._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Demon Slayer: Kimetsu no Yaiba</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>JAP</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>დემონების მკვლელი მახვილი</p>
+                                    <div class="movieinfodownline">
+                                        <p>სეზ.03 / სერია 04</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround2" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BM2U3OWU5NjYtY2JkNS00MmZkLTk2YjUtY2I4ZDdlMzA3YTJmXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Nier: Automata Ver1.1a</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>JAP</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ნიერი: ავტომატა. ვერსია 1.1a</p>
+                                    <div class="movieinfodownline">
+                                        <p>სეზ.01 / სერია 08</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround3" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZWQ4YjAzMGEtZjRiOS00MzBlLTllYjctZjkxYjdhNWQ5OGI1XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Record of Ragnarok / Shûmatsu no Valkyrie</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>JAP</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>რაგნაროკის ჩანაწერები</p>
+                                    <div class="movieinfodownline">
+                                        <p>პირველი სეზონი</p>
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround4" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMjAzMjU2MjYzMl5BMl5BanBnXkFtZTgwNTQ4Nzk1NjM@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Castlevania</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>კასტელვანია</p>
+                                    <div class="movieinfodownline">
+                                        <p>მესამე სეზონი</p>
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround5" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMDVlNDFkMTEtMDgzMC00YTViLTk1YjItMmNmMWM4YzVmMGY1XkEyXkFqcGdeQXVyMTA5ODEyNTc5._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Strange World</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>უცნაური სამყარო</p>
+                                    <div class="movieinfodownline">
+                                        <p>2022</p>
+                                        <!-- <p class="mparating">15+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround6" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTA4Y2QyYmYtMDQxOC00Y2MxLWI1Y2UtNjE3ZWU0MjJjYTk5XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_FMjpg_UX300_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Dota: Dragon's Blood</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>დოტა: დრაკონის სისხლი</p>
+                                    <div class="movieinfodownline">
+                                        <p>მესამე სეზონი</p>
+                                        <!-- <p style="margin-left: 10px;">01სთ 46წთ</p> -->
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround7" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNmIxNGY5M2ItMjg0MC00ZWM1LTljYTUtMGI3ZDFiNWYwMmFiXkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_FMjpg_UY450_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Encanto</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ენკანტო</p>
+                                    <div class="movieinfodownline">
+                                        <p>2021</p>
+                                        <!-- <p class="mparating">14+</p> -->
+                                        <p style="margin-left: 10px;">სათავგადასავლო</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- <div class="arrowRightAround" style="margin-left: 15px;">
+                            <a class="arrowrightinsider" href="#"></a>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="sectionNews">
+                <div class="sectionnewsinsider1">
+
+                    <div class="headtitlePlus">
+                        <div class="headtitlePlusInsider">
+
+                            <h2 class="newsHedttitle">სიახლეები</h2>
+
+                            <div class="headerArrowAround">
+                                <a class="headerarrowLeft" href="#"></a>
+                                <a class="headerarrowRight" href="#"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="topiclistAround">
+                        
+                        <div class="newsMainLeftAround">
+                            <a class="newsMainLeftSingleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/dune-part-two-trailer.png?resize=800,600);">
+                                <p>"დუნია: მეორე ნაწილი" ახალ თრეილერში ასახულია პოლ ატრეიდესის მოგზურობა</p>
+                            </a>
+                        </div>
+
+                        <div class="newslistrightAroundBefore">
+                            <div class="newslistrightAround">
+
+                                <div class="newlistTopicOne" id="newstopicSingle1">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/justice-league-warworld.png?resize=640,480);">
+                                        <p>სამართლიანობის ლიგა ძალადობრივი სცენების გამო იღებს +18 რეიტინგს</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle2">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/03/john-wick-4-header.png?resize=640,480);">
+                                        <p>ჯონ ვიკი 4-ს ბლურეის გამოშვების თარიღი და სხვა დეტალები</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle3">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/flash-batman-e1683136547818.jpg?resize=640,480);">
+                                        <p>ფლეში 2023-ს ახალ ვიდეოში მაიკლ კიტონის ბეტმენი გარკვევით გამოჩნდა</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle4">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/the-clearing-e1683120827960.jpg?w=640);">
+                                        <p>ტერეზა პალმერი ჰულუს "თრილერ-დრამა" სერიალებში ლიდერობს</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle5">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Theresa-Randle-Bad-Boys-Recasting.jpg?resize=640,480);">
+                                        <p>ცუდი ბიჭები 4-ში ტერეზა ლენდრი ითამაშებს მარტინის ცოლის როლს</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle6">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/kevin-costner-header.png?resize=640,480);">
+                                        <p>კევინ კოსტნერი დატოვებს "იელოუსტონს" მეხუთე სეზონის შემდეგ</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle7">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/nick-fury-pic-e1683147175394.jpg?resize=640,480);">
+                                        <p>რას ფიქრობს სემუელ ელ-ჯექსონი ნიკ ფიურის მომავალზე მარველში</p>
+                                    </a>
+                                </div>
+                                <div class="newlistTopicOne" id="newstopicSingle8">
+                                    <a class="newstopicSignleContainer" href="news.html" style="background-image: url(https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/black-superman-dc-comics.png?resize=640,480);">
+                                        <p>ჯეიმს განი საუბრობს შავი სუპერმენის ეკრანიზაციაზე</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="section1Movies">
+                <div class="sectioninsider1">
+
+                    <div class="headtitlePlus">
+                        <div class="headtitlePlusInsider">
+
+                            <h2>კოლექცია</h2>
+
+                            <div class="headerArrowAround">
+                                <a class="headerarrowLeft" href="#"></a>
+                                <a class="headerarrowRight" href="#"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionlistBefore">
+
+                        <!-- <div class="arrowLeftAround" style="margin-right: 15px;">
+                            <a class="arrowleftinsider" href="#"></a>
+                        </div> -->
+
+                        <div class="sectionlistAround">
+
+
+                            <a class="movietopicAround" id="movietopicAround1" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://static.posters.cz/image/350/art-photo/the-lord-of-the-rings-sam-and-frodo-i130069.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Hobbit / The Lord of the Rings</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ჰობიტი და ბეჭდების მბრძანებელი</p>
+                                    <div class="movieinfodownline">
+                                        <p>კოლექცია</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">(6 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround2" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://a.wattpad.com/cover/93975862-256-k818365.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>The Avengers</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>შურისმაძიებლები</p>
+                                    <div class="movieinfodownline">
+                                        <p>კოლექცია</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">(4 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround3" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/I/91T-XqPEEIL._AC_UF894,450_QL100_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Spider-Man</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ადამიანი ობობა</p>
+                                    <div class="movieinfodownline">
+                                        <p>ქოლექცია</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">(9 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround4" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://i.pinimg.com/736x/cd/cf/9a/cdcf9abb750473e17b47784054316e4b--william-wallace-braveheart.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Historical and War</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ისტორიული და საომარი</p>
+                                    <div class="movieinfodownline">
+                                        <p>კოლექცია</p>
+                                        <!-- <p class="mparating">17+</p> -->
+                                        <p style="margin-left: 10px;">(10 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround5" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://i.pinimg.com/originals/80/a2/3d/80a23dd3a6d589535a9db39efa974ec1.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Space Adventures</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>კოსმოსური თავგადასავლები</p>
+                                    <div class="movieinfodownline">
+                                        <p>კოლექცია</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">(10 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround6" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://m.media-amazon.com/images/I/81nQez7A1yL._AC_UF894,450_QL100_.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Star Wars</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>ვარსკვლავური ომები</p>
+                                    <div class="movieinfodownline">
+                                        <p>კოლექცია</p>
+                                        <!-- <p class="mparating">13+</p> -->
+                                        <p style="margin-left: 10px;">(9 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="movietopicAround" id="movietopicAround7" href="filmpage.html">
+                                <div class="posterimgAround" style="background-image: url(https://www.stripemovies.com/wp-content/uploads/2017/01/Up-for-love-Un-homme-à-la-hauteur.jpg);">
+                                    <div class="insidePoster">
+                                        <div class="informationButtonArea">
+                                            <div class="watchlaterbutton"></div>
+                                            <div class="informationbutton"></div>
+                                        </div>
+                                        <div class="insidePosterHeadtitle">
+                                            <p>Comedy and Melodrama</p>
+                                        </div>
+                                        <div class="languageposterArea">
+                                            <p>GEO</p>
+                                            <p>ENG</p>
+                                            <p>RUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="posterimgdownTitles">
+                                    <p>კომედია და მელოდრამა</p>
+                                    <div class="movieinfodownline">
+                                        <p>კოლექცია</p>
+                                        <!-- <p class="mparating">18+</p> -->
+                                        <p style="margin-left: 10px;">(25 ფილმი)</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- <div class="arrowRightAround" style="margin-left: 15px;">
+                            <a class="arrowrightinsider" href="#"></a>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <footer class="footer1Large">
+
+            <div class="midFooter">
+                <div class="footer1">
+                    <a href="index.html"><img src="styles/icons/sitelogo.png" alt="sitelogo"></a>
+                    <div class="footerSocials">
+                        <a href="https://www.facebook.com/" id="facebook"><img src="styles/icons/01.facebook.png"></a>
+                        <a href="https://www.instagram.com/" id="Instagram"><img src="styles/icons/01.instagram.png"></a>
+                        <a href="https://www.messenger.com/" id="Messenger"><img src="styles/icons/01.messanger.png"></a>
+                        <a href="https://twitter.com/" id="Twitter"><img src="styles/icons/01.twitter.png"></a>
+                        <a href="https://www.youtube.com/" id="Youtube"><img src="styles/icons/01.youtube.png"></a>
+                    </div>
+                    <input type="placeholder" placeholder="გამოიწერე სიახლეები მეილზე">
+                    <button>სიახლის გამოწერა</button>
+                </div>
+
+                <div class="footer2">
+                    <h4>ფილმები</h4>
+                    <a href="index.html">კომედია</a>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">მძაფრ-სიუჟეტიანი</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ფენტეზი</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer3">
+                    <h4>სერიალები</h4>
+                    <a href="index.html">კრიმინალური</a>
+                    <a href="index.html">თრილერი</a>
+                    <a href="index.html">დრამა</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer4">
+                    <h4>ანიმაციები</h4>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">საოჯახო</a>
+                    <a href="index.html">კომედი</a>
+                    <a href="index.html">ანიმე</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">ფენტეზი</a>
+                </div>
+
+                <div class="footer5">
+                    <h4>სიახლეები</h4>
+                    <a href="index.html">კინო</a>
+                    <a href="index.html">სერიალი</a>
+                    <a href="index.html">თეატრები</a>
+                    <a href="index.html">ჰოლივუდი</a>
+                    <a href="index.html">მსასხიობები</a>
+                    <a href="index.html">კინოსტუდია</a>
+                </div>
+            </div>
+
+            <div></div>
+        </footer>
+        <footer class="footer2copyright">
+            <p>2023 ©საავტორო უფლებები: აკაკი კინწურაშვილი</p>
+        </footer>
+
+    </body>
+</html>

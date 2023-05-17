@@ -1,0 +1,3206 @@
+
+@font-face {
+    font-family: MrgvlovaniCaps;
+    src: url(fonts/bpg_mrgvlovani_caps_2010.ttf);
+}
+
+@font-face {
+    font-family: Mrgvlovani;
+    src: url(fonts/bpg_mrgvlovani_2010.ttf);
+}
+
+body {
+    background-color: var(--backColorGrey95);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+
+    --fontColorGrey65: #a6a6a6;
+
+    --displaymomeGriddiv: none;
+    --gridtopicBorder: 1px solid #cccccc;
+    --gridtopicBradius: 5px;
+    --gridwindow1imgBradius: 3px;
+
+    --linkedTextsBlue: #034694;
+    --linkedTextHover: #CC0000;
+    --NavmenuColor: #1d1160;
+    --DeepSkyBlue: #00BFFF;
+
+    --fontcolorBlack: black;
+    --fontcolorGrey15: #262626;
+    --fontcolorGrey25: #404040;
+    --fontcolorGrey45: #737373;
+    --fontcolorGrey75: #bfbfbf;
+    --colorGrey80: #cccccc;
+
+    --backColorGrey95: #f2f2f2;
+
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.sidesocialbar {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 2px;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 0;
+    margin-right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2000;
+}
+
+.sidesocialSingleAround {
+    height: fit-content;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.socialbarSingleHedtitle {
+    /* background-color: orchid; */
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 0;
+    position: absolute;
+    /* transform: translateX(180px); */
+    opacity: 0;
+    transform: scale(0.3);
+    transition: 0.3s;
+}
+
+.sidesocialSingleAround:hover .socialbarSingleHedtitle {
+    transform: translateX(-50px); opacity: 1; padding: 0 5px; width: fit-content;
+}
+
+.socialbarSingleHedtitle h1 {
+    font-family: Anton;
+}
+
+.sideSocialimgArounder {
+    /* background-color: yellow; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2001;
+    transition: 0.3s;
+}
+
+.sidesocialSingleAround:hover .sideSocialimgArounder {
+    transform: rotate(360deg); border-radius: 50%;
+}
+
+.sideSocialimgArounder img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Display Resolutions for max - 1023px*/
+@media screen and (max-width: 1023px) {
+
+    .sidesocialbar {
+        display: none;
+    }
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.mobNavmenu1SpeciialBorder {
+    /* background-color: rebeccapurple; */
+    display: none;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobNavmenu1 {
+    background-color: var(--NavmenuColor);
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+
+.mobNavmenu1 .burgernavmenuMob1 {
+    /* background-color: aqua; */
+    padding: 0;
+}
+
+.burgernavmenuMob1 .burgnavmeni1Button {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.burgernavmenuMob1 .burgnavmeni1Button .burgnuvButtonBackrounder {
+    background-image: url(icons/burgermenusvgWhite2v1.svg);
+    background-position: center;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+}
+
+.burgernavmenuMob1:Hover .burgnuvButtonBackrounder {
+    background-image: url(icons/burgermenusvgWhite2v1hover.svg);
+    transition: 0.2s;
+}
+
+/* .burgernavmenuMob1 .burgnavmeni1Button img {
+    width: auto;
+    height: 26px;
+} */
+
+/* .burgernavmenuMob1 .burgnavmeni1Button i {
+    color: white;
+} */
+
+.burgernavmenuMob1 ul {
+    background-color: #034694;
+    width: 220px;
+    list-style: none;
+    position: absolute;
+    /* padding: 15px 0; */
+    z-index: 999;
+    left: -220px; 
+    /* opacity: 0; */
+    transition: 0.3s;
+}
+
+.burgernavmenuMob1 ul .burgermenu1LogoButton {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    /* margin-bottom: 15px; */
+}
+
+.burgernavmenuMob1 ul .burgermenu1LogoButton h2 {
+    font-family: MrgvlovaniCaps;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.burgernavmenuMob1 ul .burgermenu1LogoButton img {
+    height: 24px;
+}
+
+.burgernavmenuMob1 ul .burgermenu1LogoButton i {
+    /* background-color: #fff; */
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} 
+
+/* .burgernavmenuMob1:hover #burgnavList {
+    left: 0; opacity: 1;
+} */
+
+
+.mobNavmenu1 .burgernavmenuMob1 ul li {
+    font-family: MrgvlovaniCaps;
+    padding: 15px 25px 15px 35px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-top: 1px dotted #02346e;
+}
+
+.mobNavmenu1 .burgernavmenuMob1 ul li:hover {
+    padding-left: 45px;
+}
+
+.mobNavmenu1 .burgernavmenuMob1 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobNavmenu1 .burgernavmenuMob1 ul li i {
+    margin-right: 10px;
+}
+
+.mobNavmenu1 .mobsearchAround {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0 2px;
+    margin-right: 10px;
+}
+
+.mobsearchAround input {
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+}
+
+.mobsearchAround button {
+    border: none;
+    background-color: rebeccapurple;
+    border-radius: 3px;
+    padding: 9px;
+}
+
+.mobsearchAround button img {
+    width: 18px;
+    height: auto;
+}
+
+.navmenPlusSearchv2Around {
+    /* background-color: yellow; */
+    width: 100%;
+    /* height: 40px; */
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 1px;
+    /* justify-content: right;
+    align-items: center; */
+    margin-right: 10px;
+}
+
+.specialsearchv2siteLogoAround {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialsearchv2siteLogoInsider {
+    /* background-color: aqua; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialsearchv2siteLogo {
+    width: auto;
+    height: 20px;
+}
+
+.searchv2specialHome {
+    background-color: var(--NavmenuColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    /* margin-right: 1px; */
+}
+
+.searchv2specialHome:hover {
+    background-color: #fff;
+}
+
+.searchv2specialHome i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.searchv2specialHome:hover i {
+    color: var(--NavmenuColor);
+}
+
+.navPlusSearchButtonAround {
+    /* background-color: #fff; */
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: right;
+}
+
+.specialbuttonv2search {
+    background-color: var(--NavmenuColor);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navPlusSearchButtonAround:hover .specialbuttonv2search,
+.navPlusSearchButtonAround:hover .specialbuttonv2search:focus {
+    background-color: #fff;
+}
+
+.specialbuttonv2search i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navPlusSearchButtonAround:hover .specialbuttonv2search i {
+    color: var(--NavmenuColor);
+}
+
+.navplusSerchv2Container {
+    background-color: #fff;
+    border: 1px solid rebeccapurple;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 50px;
+    left: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* .navPlusSearchButtonAround:hover .navplusSerchv2Container {
+    display: flex;
+} */
+
+.navplusSerchv2Container input {
+    font-family: Mrgvlovani;
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 34px;
+    padding: 0 10px;
+    margin-left: 3px;
+}
+
+.navplusSerchv2Container button {
+    background-color: rebeccapurple;
+    border: none;
+    width: 44px;
+    height: 34px;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.navplusSerchv2Container button i {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.navbarArounder {
+
+    background-color: #1d1160;
+    width: 100%;
+    box-shadow: inset 0 -2px 8px -5px #007eff;
+    position: relative;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+.navbarArounder .logo1here {
+    margin-right: 25px;
+}
+
+.navbarArounder #logo1here {
+    height: 30px;
+}
+
+.navbarArounder .navbar1 {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+.navbarArounder .navbar1 ul {
+    list-style: none;
+}
+
+.navbarArounder .navbar1 ul li {
+    position: relative;
+    float: left;
+}
+
+.navbarArounder .navbar1 ul li a {
+    font-family: MrgvlovaniCaps;
+    font-size: 13px;
+    color: #fff;
+    padding: 25px 25px;
+    display: block;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.navbarArounder .navbar1 ul li:hover a {
+    background-color: #fff;
+    color: #333;
+    z-index: 1000;
+}
+
+.navbarArounder .navbar1 ul li .nav1columer {
+    background-color: #fff;
+    display: none;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbarArounder .navbar1 ul li .nav1columer a {
+    font-family: Mrgvlovani;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 13px;
+    padding: 15px 20px;
+}
+
+/* .navbarArounder .navbar1 ul li:focus-within > .nav1columer, */
+.navbarArounder .navbar1 ul li:hover > .nav1columer {
+    display: grid;
+}
+
+.navbarArounder .navbar1 ul li:hover > .nav1columer a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.search1Around {
+    background-color: var(--backColorGrey95);
+    width: 350px;
+    height: 40px;
+    border-radius: 3px;
+    display: none;
+    justify-content: left;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.search1Around:hover {
+    background-color: white;
+}
+
+.search1Around input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 36px;
+    padding: 0 15px;
+}
+
+.search1Around input::placeholder {
+    color: var(--fontcolorGrey45);
+}
+
+.search1Around button {
+    background-color: rebeccapurple;
+    font-family: MrgvlovaniCaps;
+    color: white;
+    font-size: 12px;
+    height: 36px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.search1Around button:hover {
+    background-color: red;
+}
+
+.search1Around button:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.searchv2splitter {
+    background-color: var(--backColorGrey95);
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--fontcolorGrey75);
+}
+
+.searchv2Around {
+    /* background-color: yellow; */
+    width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchv2Around .img1 {
+    display: none;
+    width: auto;
+    height: 30px;
+    margin-right: 25px;
+}
+
+.searchv2Around .searchv2 {
+    background-color: var(--backColorGrey95);
+    border: 1px solid var(--fontcolorGrey75);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.searchv2:hover {
+    background-color: white;
+}
+
+.searchv2 .searchv2zoomiconAround {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.searchv2zoomiconAround img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+.searchv2 input {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    /* margin-left: 3px; */
+}
+
+.searchv2 .searchv2buttonv1 {
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 3px;
+    font-family: MrgvlovaniCaps;
+    color: white;
+    font-size: 12px;
+    width: auto;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 2px;
+}
+
+.searchv2 .searchv2buttonv1:hover {
+    background-color: red;
+}
+
+.searchv2 .searchv2buttonv1:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+.searchv2 .searchv2buttonv2 {
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 3px;
+    width: auto;
+    height: 34px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-right: 2px;
+}
+
+.searchv2 .searchv2buttonv2 img {
+    width: 16px;
+    height: 16px;
+}
+
+.searchv2 .searchv2buttonv2:hover {
+    background-color: red;
+}
+
+.searchv2 .searchv2buttonv2:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.fullmovieAround {
+    font-family: Mrgvlovani;
+}
+
+.fullmovieAround .movieHedtitleinfoAround {
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.movieHedtitleinfoAround .movieHeadtitleinfoInsider {
+    /* background-color: aqua; */
+    width: 1380px;
+}
+
+.movieHeadtitleinfoInsider .movieKaTitle {
+    color: var(--fontcolorGrey15);
+    font-size: 25px;
+    /* font-weight: normal; */
+    margin: 0;
+}
+
+.movieHeadtitleinfoInsider .movieOriginalTitle {
+    color: var(--fontcolorGrey45);
+    font-size: 15px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.movieHeadtitleinfoInsider .movieOriginalTitle::before {
+    content: 'ორიგინალი დასახელება: ';
+    font-weight: bold;
+}
+
+.movieHeadtitleinfoInsider .movieinsideGenres {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.movieHeadtitleinfoInsider .movieinsideGenres a {
+    background-color: var(--backColorGrey95);
+    text-decoration: none;
+    color: var(--fontcolorGrey15);
+    font-size: 13px;
+    border: 1px solid var(--fontColorGrey65);
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin: 0;
+    margin-right: 5px;
+    padding: 8px 12px;
+    transition: 0.2s;
+}
+
+.movieHeadtitleinfoInsider .movieinsideGenres a:hover {
+    color: var(--linkedTextsBlue);
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.movieHeadtitleinfoInsider .movieTimeAndRating {
+    /* background-color: aqua; */
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.movieTimeAndRating p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.movieTimeAndRating .moviereleaseDatev2 {
+    text-decoration: none;
+    color: var(--fontcolorGrey15);
+}
+
+.movieTimeAndRating .moviereleaseDatev2:hover {
+    color: var(--linkedTextsBlue);
+}
+
+.movieTimeAndRating .movieAgerating {
+    /* background-color: var(--fontcolorGrey45); */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: var(--fontcolorGrey25);
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid var(--fontcolorGrey25);
+    box-sizing: border-box;
+    /* border-radius: 5px; */
+    padding: 2px 5px;
+}
+
+.movieTimeAndRatingHR {
+    width: 5px;
+    border: none;
+    border-top: 5px dotted var(--fontColorGrey65);
+    margin: 0 15px;
+}
+
+.movieTimeAndRating .imdbratingAround {
+    /* background-color: orchid; */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: auto; */
+}
+
+.movieTimeAndRating .imdbratingAround img {
+    height: 21px;
+    margin-right: 5px;
+}
+
+.movieTimeAndRating .imdbratingAround p {
+    color: var(--fontcolorGrey45);
+    margin: 0;
+}
+
+.movieTimeAndRating .imdbratingAround p b {
+    color: #000;
+}
+
+.movieHeadtitleinfoInsider .moviepageSharemovie {
+    background-color: #03C03C;
+    display: flex;
+    height: 21px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 7px;
+    transition: 0.2s;
+}
+
+.movieHeadtitleinfoInsider .moviepageSharemovie:hover {
+    background-color: #228B22;
+}
+
+.movieHeadtitleinfoInsider .moviepageSharemovie img {
+    height: 13px;
+    margin-right: 5px;
+}
+
+.movieHeadtitleinfoInsider .moviepageSharemovie p {
+    font-family: MrgvlovaniCaps;
+    color: #fff;
+    font-size: 13px;
+    /* letter-spacing: 0.5px; */
+    margin: 0;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.moviePosterAndPlayerArpund {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 480px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+    margin-top: 25px;
+}
+
+/* .moviePosterAndPlayerArpund .moviePosterplace {
+    background-color: rebeccapurple;
+    width: auto;
+    height: auto;
+} */
+
+.moviePosterAndPlayerArpund .moviePosterplace img {
+    object-fit: cover;
+    width: 320px;
+    height: 480px;
+}
+
+.moviePosterAndPlayerArpund .movieplayerplace {
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    height: 100%;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.movieHeadtitleinfoInsider .movietvshowEpisodesArounder {
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid var(--colorGrey80);
+    box-sizing: border-box;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.movietvshowEpisodesArounder .movietvshowEpisodesArrows {
+    /* background-color: yellow; */
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .movietvshowEpisodesArrows .tvshowSeasonsButtonAround {
+    background-color: rebeccapurple;
+} */
+
+.tvshowSeasonsButtonAround .movietvshowSeasonButton {
+    background-color: var(--fontcolorGrey45);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.tvshowSeasonsButtonAround:hover .movietvshowSeasonButton {
+    background-color: var(--fontcolorGrey25);
+    border-radius: 5px 5px 0 0;
+}
+
+.tvshowSeasonsButtonAround:hover .movietvshowSeasonButton #fafaArrow {
+    transform: rotate(-180deg);
+    transition: 0.2s;
+}
+
+.tvshowSeasonsButtonAround .movietvshowSeasonButton i {
+    color: white;
+}
+
+.tvshowSeasonsButtonAround .movietvshowSeasonButton p {
+    font-family: MrgvlovaniCaps;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px 0 15px;
+}
+
+.tvshowSeasonsButtonAround ul {
+    background-color: var(--fontcolorGrey25);
+    font-family: MrgvlovaniCaps;
+    display: none;
+    width: 165px;
+    height: 212px;
+    list-style: none;
+    position: absolute;
+    z-index: 500;
+    /* border-bottom: 5px solid var(--fontcolorGrey15); */
+    overflow-y: scroll;
+}
+
+.tvshowSeasonsButtonAround ul::-webkit-scrollbar {
+    background-color: var(--fontcolorGrey15);
+    width: 12px;
+}
+
+.tvshowSeasonsButtonAround ul::-webkit-scrollbar-thumb {
+    background-color: var(--fontcolorGrey45);
+    border: 4px solid var(--fontcolorGrey15);
+    /* border-top: none;
+    border-bottom: none; */
+}
+
+.tvshowSeasonsButtonAround ul li {
+    padding: 10px 25px;
+    cursor: pointer;
+    border-top: 1px solid var(--fontcolorGrey15);
+}
+
+.tvshowSeasonsButtonAround ul li a {
+    color: #fff;
+    /* font-weight: bold; */
+    font-size: 15px;
+}
+
+.tvshowSeasonsButtonAround:hover ul {
+    display: block;
+}
+
+.tvshowSeasonsButtonAround:hover ul li:hover {
+    background-color: var(--fontcolorGrey15);
+}
+
+.movietvshowEpisodesArrows .movietvshowArrows {
+    /* background-color: aqua; */
+    width: 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movietvshowArrows i {
+    color: var(--fontColorGrey65);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.movietvshowArrows i:hover {
+    color: red;
+}
+
+.movietvshowEpisodesArounder .movietvshoeepisodesOverflow {
+    /* background-color: red; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    margin-top: 15px;
+}
+
+.movietvshowEpisodesArounder .movietvshowEpisodes {
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 9px;
+}
+
+.movietvshowEpisodes .movietvshowEpisodeArounder {
+    text-decoration: none;
+    width: 100%;
+}
+
+.movietvshowEpisodeArounder .movietvshowEpisodeImage {
+    background-position: center;
+    background-size: cover;
+    width: 182px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+.movietvshowEpisodeImage div {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.movietvshowEpisodeImage div i {
+    color: white;
+}
+
+.movietvshowEpisodeArounder:hover .movietvshowEpisodeImage div {
+    opacity: 1; transition: 0.2s;
+}
+
+.movietvshowEpisodeArounder p {
+    margin: 0;
+    /* padding: 0 5px; */
+}
+
+.movietvshowEpisodeArounder .episodtitleGEO {
+    font-family: MrgvlovaniCaps;
+    color: var(--fontcolorGrey15);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.movietvshowEpisodeArounder:hover .episodtitleGEO {
+    color: var(--linkedTextsBlue);
+}
+
+.movietvshowEpisodeArounder .episodtitleENG {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--fontColorGrey65);
+    font-size: 14px;
+}
+
+.movieHeadtitleinfoInsider .movieSummery1 {
+    /* background-color: white; */
+    color: var(--fontcolorGrey15);
+    margin: 0;
+    margin-top: 50px;
+}
+
+.movieHeadtitleinfoInsider .movieSummerySpecial {
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+    margin-top: 25px;
+}
+
+.movieSummerySpecial img {
+    object-fit: cover;
+    width: 100px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.movieSummerySpecial .movieSummery2 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.movieHeadtitleinfoInsider .actorlistHeadtitle {
+    font-family: MrgvlovaniCaps;
+    color: var(--fontcolorGrey15);
+    font-weight: normal;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.movieHeadtitleinfoInsider .ActorsMoreinfo {
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    column-gap: 25px;
+    margin-top: 25px;
+}
+
+.actorsColumer .actorlistAround {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
+.actorlistAround .actorlistinsider {
+    /* background-color: rebeccapurple; */
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+}
+
+.actorlistinsider .actorinfoAround {
+    /* background-color: white; */
+    text-decoration: none;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+}
+
+.actorinfoAround .actorimageArounder {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actorimageArounder img {
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+    transition: 0.2s;
+}
+
+.actorlistinsider .actorinfoAround:hover .actorimageArounder img {
+    transform: scale(1.1);
+}
+
+/* .actorinfoAround .actornameAround {
+    background-color: aqua;
+} */
+
+.actornameAround p {
+    margin: 0;
+}
+
+.actornameAround .actornameGEO {
+    color: var(--linkedTextsBlue);
+}
+
+.actorlistinsider .actorinfoAround:hover .actornameAround .actornameGEO {
+    color: var(--linkedTextHover);
+}
+
+.actornameAround .actornameENG {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--fontColorGrey65);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* .ActorsMoreinfo .moredetailsColumer {
+    background-color: greenyellow;
+} */
+
+.moredetailsColumer .moredetailsInsider {
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid var(--colorGrey80);
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px; */
+}
+
+.moredetailsInsider .hrForMoreinfoInside {
+    border: none;
+    border-top: 1px dotted var(--fontcolorGrey75);
+    margin: 15px 0;
+}
+
+.moredetailsColumer .moredetailsInsider p a {
+    text-decoration: none;
+    color: var(--linkedTextsBlue);
+}
+
+.moredetailsInsider p {
+    color: var(--fontcolorGrey15);
+    /* font-size: 15px; */
+    margin: 0;
+}
+
+.moredetailsInsider p a:hover {
+    color: var(--linkedTextHover);
+}
+
+.moredetailsInsider .moredetailsReleaseDate::before {
+    color: var(--fontcolorGrey25);
+    content: 'თარიღი: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsDuration::before {
+    color: var(--fontcolorGrey25);
+    content: 'ხანგრძლივობა: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsCountry::before {
+    color: var(--fontcolorGrey25);
+    content: 'ქვეყანა: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsGenres::before {
+    color: var(--fontcolorGrey25);
+    content: 'ჟანრი: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsDirector::before {
+    color: var(--fontcolorGrey25);
+    content: 'რეჟისორი: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsWriter::before {
+    color: var(--fontcolorGrey25);
+    content: 'სცენარი: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsMusic::before {
+    color: var(--fontcolorGrey25);
+    content: 'კომპოზიტორი: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsBudget::before {
+    color: var(--fontcolorGrey25);
+    content: 'ბიუჯეტი: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsGross::before {
+    color: var(--fontcolorGrey25);
+    content: 'მოგება: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+.moredetailsInsider .moredetailsStudio::before {
+    color: var(--fontcolorGrey25);
+    content: 'სტუდია: ';
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.reviewAndCommentsAround {
+    /* background-color: yellow; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 25px;
+    margin-top: 50px;
+}
+
+.reviewAndCommentsAround .addCommentArea {
+    background-color: #fff;
+    width: 100%;
+    padding: 25px;
+    border: 1px solid var(--colorGrey80);
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.addCommentArea h3 {
+    font-family: MrgvlovaniCaps;
+    color: var(--fontcolorGrey15);
+    margin: 0;
+
+}
+
+.addCommentArea textarea {
+    background-color: var(--backColorGrey95);
+    border: 1px solid var(--fontcolorGrey75);
+    outline: none;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    resize: none;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.addCommentArea textarea:hover, .addCommentArea textarea:focus {
+    background-color: #fff;
+}
+
+.addCommentArea .addcommentbuttonAround {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.addcommentbuttonAround p {
+    color: var(--fontColorGrey65);
+    font-size: 12px;
+    margin: 0;
+}
+
+.addcommentbuttonAround button {
+    background-color: #03C03C;
+    font-family: MrgvlovaniCaps;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.addcommentbuttonAround button:hover {
+    background-color: #228B22;
+    color: #fff;
+}
+
+.addcommentbuttonAround button:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.reviewAndCommentsAround .viewsStatisticAround {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--colorGrey80);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.viewstatisticInsider .hrviewsStatisticSpecial {
+    width: 100%;
+    border: none;
+    border-top: 1px dotted var(--fontcolorGrey75);
+    margin: 15px 0;
+}
+
+.viewsStatisticAround .viewstatisticInsider {
+    width: 100%;
+    padding: 25px;
+}
+
+.viewstatisticInsider h3 {
+    font-family: MrgvlovaniCaps;
+    color: var(--fontcolorGrey15);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.viewstatisticInsider .viewstatisticNumberAround {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.viewstatisticNumberAround i {
+    color: var(--fontcolorGrey45);
+    margin-right: 10px;
+}
+
+.viewstatisticNumberAround b {
+    font-family: MrgvlovaniCaps;
+    color: var(--fontcolorGrey15);
+    margin-right: 15px;
+}
+
+.viewstatisticNumberAround p {
+    color: var(--fontcolorGrey25);
+    margin: 0;
+    margin-left: auto;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.reviewAndCommentsAround .addStarRatings {
+    background-color: white;
+    /* width: 400px; */
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--colorGrey80);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.addStarRatings h3 {
+    font-family: MrgvlovaniCaps;
+    color: var(--fontcolorGrey15);
+    margin: 0;
+}
+
+.addStarRatings .starfinalResult {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.addStarRatings .hrspecialforStarRating {
+    width: 100%;
+    border: none;
+    border-top: 1px dotted var(--fontcolorGrey75);
+    margin: 15px 0;
+}
+
+.starfinalResult i {
+    color: #FDCC0D;
+    margin-right: 15px;
+}
+
+.starfinalResult h2, h3, p {
+    margin: 0;
+    color: var(--fontcolorGrey45);
+}
+
+.starfinalResult h2 {
+    color: var(--fontcolorGrey15);
+}
+
+.starfinalResult h3 {
+    font-weight: normal;
+}
+
+.starfinalResult p {
+    margin-left: 50px;
+}
+
+.addStarRatings .starlinesRating5 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.starlinesRating5 b {
+    color: var(--fontcolorGrey25);
+    margin-right: 5px;
+}
+
+.starlinesRating5 i {
+    color: #FDCC0D;
+    margin-right: 5px;
+}
+
+.starlinesRating5 .starlinesRatinginside1 {
+    background-color: var(--fontcolorGrey75);
+    width: 100%;
+    height: 8px;
+}
+
+.starlinesRatinginside1 .starlinesRatinginside2 {
+    background-color: #FDCC0D;
+    width: 75%;
+    height: 8px;
+}
+
+.starlinesRatinginside1 .starlinesRatinginside3 {
+    background-color: #FDCC0D;
+    width: 10%;
+    height: 8px;
+}
+
+.starlinesRatinginside1 .starlinesRatinginside4 {
+    background-color: #FDCC0D;
+    width: 15%;
+    height: 8px;
+}
+
+.starlinesRating5 p {
+    color: var(--fontcolorGrey25);
+    font-size: 14px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.addStarRatings .addyourRate {
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addyourRate .starRateAround {
+    /* background-color: olivedrab; */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.starRateAround i {
+    color: var(--fontcolorGrey75);
+    cursor: pointer;
+}
+
+.starRateAround i:hover ~ i::before,
+.starRateAround i:hover::before {
+    color: #E68801;
+    transition: 0.2s;
+}
+
+.addyourRate button {
+    background-color: #F1C000;
+    font-family: MrgvlovaniCaps;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.addyourRate button:hover {
+    background-color: #E68801;
+    transition: 0.2s;
+}
+
+.addyourRate button:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.section1Movies {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectioninsider1 {
+    /* background-color: aqua; */
+    width: auto;
+}
+
+.headtitlePlus {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.headtitlePlusInsider {
+    /* background-color: lawngreen; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 55px; */
+}
+
+.headtitlePlus h2 {
+    font-family: MrgvlovaniCaps;
+    font-weight: normal;
+    margin: 0;
+}
+
+.sec1v2headtitle {
+    display: none;
+}
+
+.sectionlistBefore {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+
+.sectionlistBefore .sectionlistAround {
+    /* background-color: olivedrab; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.movietopicAround {
+    text-decoration: none;
+    font-family: Mrgvlovani;
+    font-size: 14px;
+}
+
+.movietopicAround .posterimgAround {
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movietopicAround .posterimgAround .insidePoster {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 180px;
+    height: 270px;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 10px;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.movietopicAround:hover .posterimgAround .insidePoster {
+    opacity: 100%;
+}
+
+.posterimgAround .insidePoster .informationButtonArea {
+    /* background-color: yellow; */
+    width: 160px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posterimgAround .insidePoster .informationButtonArea .watchlaterbutton {
+    background-image: url(icons/watchlater.png);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.posterimgAround .insidePoster .informationButtonArea .watchlaterbutton:hover {
+    background-image: url(icons/watchlaterhover.png);
+}
+
+.posterimgAround .insidePoster .informationButtonArea .informationbutton {
+    background-image: url(icons/info.png);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.posterimgAround .insidePoster .informationButtonArea .informationbutton:hover {
+    background-image: url(icons/infohover.png);
+}
+
+.posterimgAround .insidePoster .insidePosterHeadtitle {
+    /* background-color: olivedrab; */
+    font-weight: bold;
+    font-size: 18px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posterimgAround .insidePoster .insidePosterHeadtitle p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.movietopicAround .posterimgAround .insidePoster .languageposterArea {
+    /* background-color: orange; */
+    color: black;
+    width: 160px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.posterimgAround .insidePoster .languageposterArea p {
+    background-color: #fff;
+    color: black;
+    padding: 2px 5px;
+    margin: 0;
+}
+
+.posterimgdownTitles {
+    /* background-color: orchid; */
+    padding-top: 10px;
+    width: 180px;
+}
+
+.posterimgdownTitles p {
+    color: black;
+    margin: 0;
+}
+
+.movietopicAround:hover .posterimgdownTitles p {
+    color: var(--linkedTextsBlue);
+}
+
+.movieinfodownline {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.movieinfodownline p {
+    color: var(--fontColorGrey65);
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.movietopicAround:hover .movieinfodownline p {
+    color: var(--fontColorGrey65);
+}
+
+.movieinfodownline .mparating {
+    background-color: var(--fontcolorGrey75);
+    font-size: 10px;
+    color: white;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.movietopicAround:hover .movieinfodownline .mparating {
+    color: white;
+}
+
+/* .arrowLeftAround {
+    background-color: gray;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 40px;
+    height: 50px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowLeftAround:hover {
+    background-color: #e5e5e5;
+}
+
+.arrowLeftAround .arrowleftinsider {
+    background-image: url(icons/arrowleft.png);
+    background-position: center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}
+
+.arrowLeftAround:hover .arrowleftinsider {
+    background-image: url(icons/arrowlefthover.png);
+}
+
+.arrowRightAround {
+    background-color: gray;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 40px;
+    height: 50px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowRightAround:hover {
+    background-color: #e5e5e5;
+}
+
+.arrowRightAround .arrowrightinsider {
+    background-image: url(icons/arrowright.png);
+    background-position: center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}
+
+.arrowRightAround:hover .arrowrightinsider {
+    background-image: url(icons/arrowrighthover.png);
+} */
+
+
+.headerArrowAround {
+    /* background-color: aqua; */
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerArrowAround .headerarrowLeft {
+    background-image: url(icons/arrowleftv2.png);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.headerArrowAround .headerarrowLeft:hover {
+    background-image: url(icons/arrowleftv2hover.png);
+}
+
+.headerArrowAround .headerarrowRight {
+    background-image: url(icons/arrowrighv2.png);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.headerArrowAround .headerarrowRight:hover {
+    background-image: url(icons/arrowrighv2thover.png);
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.sectionNews {
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionNews .sectionnewsinsider1 {
+    /* background-color: blueviolet; */
+    width: 1380px;
+}
+
+.sectionnewsinsider1 .headtitlePlus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionnewsinsider1 .headtitlePlus .headtitlePlusInsider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionnewsinsider1 .NewstitlePlus .headtitlePlusInsider .newsHedttitle, .headerArrowAround a {
+    margin: 0;
+}
+
+.NewstitlePlus .headtitlePlusInsider .newsHedttitle {
+    font-family: MrgvlovaniCaps;
+    font-weight: normal;
+    color: var(--fontcolorGrey15);
+}
+
+.sectionNews .topiclistAround {
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.topiclistAround .newsMainLeftAround {
+    /* background-color: orange; */
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newsMainLeftAround .newsMainLeftSingleContainer {
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
+    font-family: Mrgvlovani;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.newsMainLeftAround .newsMainLeftSingleContainer p {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.newsMainLeftAround .newsMainLeftSingleContainer:hover p {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--DeepSkyBlue);
+    padding-bottom: 40px;
+}
+
+.newslistrightAroundBefore {
+    display: flex;
+    justify-content: left;
+}
+
+.newslistrightAroundBefore .newslistrightAround {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.newslistrightAroundBefore .newslistrightAround .newlistTopicOne {
+    /* background-color: olivedrab; */
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newlistTopicOne .newstopicSignleContainer {
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
+    font-family: Mrgvlovani;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.newlistTopicOne .newstopicSignleContainer p {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.newlistTopicOne .newstopicSignleContainer:hover p {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--DeepSkyBlue);
+    padding-bottom: 20px;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+footer {
+    width: 100%;
+}
+
+.footer1Large {
+    background-color: var(--NavmenuColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 75px;
+}
+
+.footer1Large .midFooter {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 50px;
+}
+
+/* .midFooter .footer1 {
+    background-color: yellow;
+} */
+
+.midFooter .footer1 a img {
+    width: 280px;
+}
+
+.midFooter .footer1 .footerSocials {
+    /* background-color: aqua; */
+    width: 280px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.midFooter .footer1 .footerSocials a {
+    transition: 0.2s;
+    margin: 0;
+}
+
+.midFooter .footer1 .footerSocials a:hover {
+    transform: rotate(360deg); border-radius: 50%; overflow: hidden;
+}
+
+.midFooter .footer1 .footerSocials a img {
+    width: auto;
+    height: 50px;
+}
+
+.footer1 input {
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 25px;
+    width: 280px;
+    height: 40px;
+    padding: 0 15px;
+    display: block;
+}
+
+.footer1 input::placeholder {
+    color: white;
+}
+
+.footer1 button {
+    font-family: MrgvlovaniCaps;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 100px;
+    width: 280px;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.footer1 button:active {
+    margin-top: 6px;
+    margin-bottom: -1px;
+}
+
+/* .footer1Large .midFooter div {
+    background-color: aqua;
+} */
+
+.midFooter .footer2, .footer3, .footer4, .footer5 {
+    padding-top: 15px;
+}
+
+.footer1Large .midFooter div h4 {
+    font-family: MrgvlovaniCaps;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer1Large .midFooter div a {
+    text-decoration: none;
+    font-family: Mrgvlovani;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+
+.footer1Large .midFooter div a:hover {
+    color: var(--DeepSkyBlue);
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaa */
+
+.footer2copyright {
+    background-color: var(--NavmenuColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    padding: 25px 0;
+}
+
+.footer2copyright p {
+    font-family: MrgvlovaniCaps;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* Display Resolutions for 1600x1920*/
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+
+    .search1Around {
+        display: flex;
+    }
+
+    main section {
+        margin-top: 75px;
+    }
+}
+
+/* Display Resolutions for 1365x1599*/
+@media screen and (min-width: 1365px) and (max-width: 1599px) {
+
+    .sliderAround {
+        height: 300px;
+    }
+
+    .sliderAround .sliderBorder {
+        height: 300px;
+        box-shadow: inset 0 50px 75px -60px black;
+    }
+    
+    .sliderBorder .sliderInfoAround {
+        width: 1047px;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle, .sliderinfoSomedetails, .sliderinfoDescription {
+        width: 50%;
+    }
+    
+
+    .sliderInfoAround .sliderinfoHedtitle {
+        font-size: 25px;
+    }
+
+    .sliderInfoAround .sliderinfoSomedetails {
+        font-size: 18px;
+    }
+    
+    .sliderInfoAround .sliderinfoDescription {
+        font-size: 16px;
+    }
+
+    @keyframes maincoverSlider {
+        0% {position: absolute; top: -600px}
+        33% {position: absolute; top: -600px;}
+        35% {position: absolute; top: -300px;}
+        66% {position: absolute; top: -300px;}
+        68% {position: absolute; top: 0px;}
+        100% {position: absolute; top: 0px;}
+    }
+
+    .searchv2splitter {
+        display: flex;
+    }
+
+    main section {
+        margin-top: 55px;
+    }
+
+    .movieHedtitleinfoAround .movieHeadtitleinfoInsider {
+        width: 1180px;
+    }
+
+    .moviePosterAndPlayerArpund {
+    height: 420px;
+    }
+
+    .moviePosterAndPlayerArpund .moviePosterplace img {
+        object-fit: cover;
+        width: 280px;
+        height: 420px;
+    }
+
+    .tvshowSeasonsButtonAround ul {
+        height: 210px;
+    }
+
+    .movietvshowEpisodesArounder .movietvshowEpisodes {
+        margin-bottom: 15px;
+    }
+
+    .headtitlePlus {
+        margin-bottom: 20px;
+    }
+
+    .sectionlistBefore {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sectionlistBefore .sectionlistAround {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #movietopicAround7 {
+        display: none;
+    }
+
+    .sectionNews .sectionnewsinsider1 {
+        width: 1180px;
+    }
+
+    .topiclistAround .newslistrightAround {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .topiclistAround .newslistrightAround .newlistTopicOne {
+        width: 230px;
+        height: 220px;
+    }
+
+    .newslistrightAround #newstopicSingle7, #newstopicSingle8 {
+        display: none;
+    }
+
+}
+
+/* Display Resolutions for 1280x1364*/
+@media screen and (min-width: 1280px) and (max-width: 1364px) {
+
+    .navmenuSearchv1 {
+        display: none;
+    }
+
+    .sliderAround {
+        height: 300px;
+    }
+
+    .sliderAround .sliderBorder {
+        height: 300px;
+        box-shadow: inset 0 50px 75px -60px black;
+    }
+
+    .sliderBorder .sliderInfoAround {
+        width: 1047px;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle, .sliderinfoSomedetails, .sliderinfoDescription {
+        width: 50%;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle {
+        font-size: 23px;
+    }
+
+    .sliderInfoAround .sliderinfoSomedetails {
+        font-size: 18px;
+    }
+    
+    .sliderInfoAround .sliderinfoDescription {
+        font-size: 16px;
+    }
+
+    @keyframes maincoverSlider {
+        0% {position: absolute; top: -600px}
+        33% {position: absolute; top: -600px;}
+        35% {position: absolute; top: -300px;}
+        66% {position: absolute; top: -300px;}
+        68% {position: absolute; top: 0px;}
+        100% {position: absolute; top: 0px;}
+    }
+
+    .searchv2splitter {
+        display: flex;
+    }
+
+    .searchv2Around {
+        width: 980px;
+    }
+
+    main section {
+        margin-top: 50px;
+    }
+
+    .movieHedtitleinfoAround .movieHeadtitleinfoInsider {
+        width: 980px;
+    }
+
+    .moviePosterAndPlayerArpund {
+    height: 420px;
+    }
+
+    .moviePosterAndPlayerArpund .moviePosterplace img {
+        object-fit: cover;
+        width: 280px;
+        height: 420px;
+    }
+
+    .movietvshowEpisodesArounder .movietvshowEpisodes {
+        margin-bottom: 15px;
+    }
+
+    .movieHeadtitleinfoInsider .ActorsMoreinfo {
+        grid-template-columns: 62% 1fr;
+
+    }
+
+    .tvshowSeasonsButtonAround ul {
+        height: 210px;
+    }
+
+    .reviewAndCommentsAround {
+        column-gap: 15px;
+    }
+
+    .headtitlePlus {
+        margin-bottom: 20px;
+    }
+
+    .sectionlistBefore {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sectionlistBefore .sectionlistAround {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #movietopicAround6, #movietopicAround7 {
+        display: none;
+    }
+
+    .sectionNews .sectionnewsinsider1 {
+        width: 980px;
+    }
+
+    .topiclistAround .newslistrightAround {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .topiclistAround .newslistrightAround .newlistTopicOne {
+        width: 250px;
+        height: 220px;
+    }
+
+    .newslistrightAround #newstopicSingle5, #newstopicSingle6, #newstopicSingle7, #newstopicSingle8 {
+        display: none;
+    }
+
+    .footer1Large .midFooter {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .footer1Large .midFooter .footer5 {
+        display: none;
+    }
+
+}
+
+/* Display Resolutions for 0x1023*/
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+
+    .navbarArounder .navbar1 ul li:hover > .nav1columer {
+        display: none;
+    }
+}
+
+/* Display Resolutions for 980x1279*/
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+
+    .navbarArounder .logo1here {
+        display: none;
+    }
+
+    .sliderAround {
+        height: 300px;
+    }
+
+    .sliderAround .sliderBorder {
+        height: 300px;
+        box-shadow: inset 0 50px 75px -60px black;
+    }
+
+    .sliderBorder .sliderInfoAround {
+        width: 809px;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle, .sliderinfoSomedetails {
+        width: 55%;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle {
+        font-size: 23px;
+    }
+
+    .sliderInfoAround .sliderinfoSomedetails {
+        font-size: 18px;
+    }
+    
+    .sliderInfoAround .sliderinfoDescription {
+        display: none;
+    }
+
+    @keyframes maincoverSlider {
+        0% {position: absolute; top: -600px}
+        33% {position: absolute; top: -600px;}
+        35% {position: absolute; top: -300px;}
+        66% {position: absolute; top: -300px;}
+        68% {position: absolute; top: 0px;}
+        100% {position: absolute; top: 0px;}
+    }
+
+    .searchv2splitter {
+        display: flex;
+    }
+
+    .searchv2Around {
+        width: 780px;
+    }
+
+    .searchv2Around .img1 {
+        display: flex;
+    }
+
+    .searchv2 .searchv2zoomiconAround {
+        display: none;
+    }
+
+    .searchv2 input {
+        padding: 0 15px;
+    }
+
+    main section {
+        margin-top: 50px;
+    }
+
+    .movieHedtitleinfoAround .movieHeadtitleinfoInsider {
+        width: 780px;
+    }
+
+    .moviePosterAndPlayerArpund {
+    height: 360px;
+    }
+
+    .moviePosterAndPlayerArpund .moviePosterplace img {
+        object-fit: cover;
+        width: 240px;
+        height: 360px;
+    }
+
+    .tvshowSeasonsButtonAround ul {
+        height: 210px;
+    }
+
+    .movietvshowEpisodesArounder .movietvshowEpisodes {
+        margin-bottom: 15px;
+    }
+
+    .movieHeadtitleinfoInsider .ActorsMoreinfo {
+        grid-template-columns: 1fr auto;
+        row-gap: 50px;
+
+    }
+
+    .reviewAndCommentsAround {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 15px;
+    }
+
+    .reviewAndCommentsAround .addCommentArea {
+        grid-column: 1 / 3;
+    }
+
+
+    .headtitlePlus {
+        margin-bottom: 20px;
+    }
+
+    .sectionlistBefore {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sectionlistBefore .sectionlistAround {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #movietopicAround5, #movietopicAround6, #movietopicAround7 {
+        display: none;
+    }
+
+    .sectionNews .sectionnewsinsider1 {
+        width: 780px;
+    }
+
+    .topiclistAround .newsMainLeftAround {
+        display: none;
+    }
+
+    .topiclistAround .newslistrightAround {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .topiclistAround .newslistrightAround .newlistTopicOne {
+        width: 250px;
+        height: 250px;
+    }
+
+    .newlistTopicOne .newstopicSignleContainer p {
+        padding: 15px;
+    }
+
+    .newlistTopicOne .newstopicSignleContainer:hover p {
+        padding-bottom: 30px;
+    }
+
+    .newslistrightAround #newstopicSingle7, #newstopicSingle8 {
+        display: none;
+    }
+
+    .footer1Large .midFooter {
+        grid-template-columns: auto auto auto;
+    }
+
+    .footer1Large .midFooter .footer4, .footer5 {
+        display: none;
+    }
+
+}
+
+/* Display Resolutions for 768x979*/
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+    .navbarArounder .navbar1 ul li a {
+        font-size: 13px;
+        color: #fff;
+        padding: 20px 15px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbarArounder .navbar1 ul li .nav1columer a {
+        font-family: Mrgvlovani;
+        color: #333;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+
+    .navbarArounder .logo1here {
+        display: none;
+    }
+
+    .sliderAround {
+        height: 270px;
+    }
+
+    .sliderAround .sliderBorder {
+        height: 270px;
+        box-shadow: inset 0 50px 75px -60px black;
+    }
+
+    .sliderBorder .sliderInfoAround {
+        width: 689px;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle, .sliderinfoSomedetails {
+        width: 55%;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle {
+        font-size: 22px;
+    }
+
+    .sliderInfoAround .sliderinfoSomedetails {
+        font-size: 17px;
+    }
+    
+    .sliderInfoAround .sliderinfoDescription {
+        display: none;
+    }
+
+    @keyframes maincoverSlider {
+        0% {position: absolute; top: -540px}
+        33% {position: absolute; top: -540px;}
+        35% {position: absolute; top: -270px;}
+        66% {position: absolute; top: -270px;}
+        68% {position: absolute; top: 0px;}
+        100% {position: absolute; top: 0px;}
+    }
+
+    .navmenuSearchv1 {
+        display: none;
+    }
+
+    .searchv2splitter {
+        display: flex;
+    }
+
+    .searchv2Around {
+        width: 100%;
+        margin: 0 50px;
+    }
+
+    .searchv2Around .img1 {
+        display: flex;
+    }
+
+    .searchv2 .searchv2zoomiconAround {
+        display: none;
+    }
+
+    .searchv2 input {
+        padding: 0 15px;
+    }
+
+    main section {
+        width: unset;
+        padding: 0 45px;
+        margin-top: 50px;
+    }
+
+    .movieHedtitleinfoAround .movieHeadtitleinfoInsider {
+        width: 100%;
+    }
+
+    .moviePosterAndPlayerArpund {
+    height: 300px;
+    }
+
+    .moviePosterAndPlayerArpund .moviePosterplace img {
+        object-fit: cover;
+        width: 200px;
+        height: 300px;
+    }
+
+    .tvshowSeasonsButtonAround ul {
+        height: 220px;
+    }
+
+    .movietvshowEpisodesArounder .movietvshowEpisodes {
+        margin-bottom: 25px;
+    }
+
+    .movieHeadtitleinfoInsider .ActorsMoreinfo {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .reviewAndCommentsAround {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 15px;
+    }
+
+    .reviewAndCommentsAround .addCommentArea {
+        grid-column: 1 / 3;
+    }
+
+    .starfinalResult p {
+        margin-left: auto;
+    }
+
+    .headtitlePlus {
+        width: unset;
+        margin-bottom: 20px;
+    }
+
+    .section1Movies {
+        width: unset;
+    }
+
+    .sectioninsider1 {
+        width: 100%;
+    }
+
+    .headtitlePlusInsider {
+        width: 100%;
+    }
+
+    .sectionlistBefore {
+        width: unset;
+        overflow: auto;
+    }
+
+    .sectionlistAround {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .sec1v1headtitle {
+        display: none;
+    }
+
+    .sec1v2headtitle {
+        display: block;
+    }
+
+    .movieinfodownline {
+        display: none;
+    }
+
+    .sectionNews {
+        width: unset;
+    }
+
+    .sectionNews .sectionnewsinsider1 {
+        width: 100%;
+    }
+
+    .sectionnewsinsider1 .NewstitlePlus {
+        width: 100%;
+    }
+
+    .NewstitlePlus .headtitlePlusInsider {
+        width: 100%;
+    }
+
+    .sectionnewsinsider1 .topiclistAround {
+        width: 100%;
+    }
+
+    .topiclistAround .newsMainLeftAround {
+        display: none;
+    }
+
+    .topiclistAround .newslistrightAroundBefore {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .newslistrightAroundBefore .newslistrightAround {
+        margin-bottom: 15px;
+    }
+
+    .footer1Large .midFooter {
+        grid-template-columns: auto auto;
+    }
+
+    .footer1Large .midFooter .footer3, .footer4, .footer5 {
+        display: none;
+    }
+
+}
+
+/* Display Resolutions for 279x767*/
+@media screen and (min-width: 279px) and (max-width: 767px) {
+
+    .mobNavmenu1SpeciialBorder {
+        display: flex;
+    }
+
+    .mobNavmenu1 {
+        display: flex;
+    }
+
+    .Navmenu300-767 {
+        display: none;
+    }
+
+    .nav300logoAround {
+        display: none;
+    }
+
+    .nav300searcharound {
+        display: none;
+    }
+
+    .navbarArounder {
+        display: none;
+    }
+    
+    .sliderAround {
+        display: none;
+    }
+
+    .searchv2splitter {
+        display: none;
+    }
+    
+    /* .searchv2splitter {
+        width: unset;
+        display: flex;
+        padding: 15px;
+    } */
+
+    .searchv2Around .img1 {
+        display: none;
+    }
+
+    .searchv2 .searchv2zoomiconAround {
+        display: none;
+    }
+
+    .searchv2 input {
+        padding: 0 15px;
+    }
+
+    .searchv2 .searchv2buttonv1 {
+        display: none;
+    }
+
+    .searchv2 .searchv2buttonv2 {
+        display: flex;
+    }
+
+    main section {
+        width: unset;
+        padding: 0 20px;
+        margin-top: 45px;
+    }
+
+    .movieHedtitleinfoAround .movieHeadtitleinfoInsider {
+        width: 100%;
+    }
+
+    .movieHeadtitleinfoInsider .movieKaTitle {
+        font-size: 17px;
+    }
+
+    .movieHeadtitleinfoInsider .movieOriginalTitle {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .movieHeadtitleinfoInsider .movieOriginalTitle::before {
+        content: unset;
+    }
+
+    .movieTimeAndRating .movieRuntime {
+        display: none;
+    }
+
+    .movieTimeAndRating .movieAgerating {
+        display: none;
+    }
+
+    .movieHeadtitleinfoInsider .movieTimeAndRating {
+        justify-content: space-between;
+    }
+
+    .movieTimeAndRating .movieTimeAndRatingHR {
+        display: none;
+    }
+
+    .movieHeadtitleinfoInsider .moviepageSharemovie {
+        display: none;
+    }
+
+    .moviePosterAndPlayerArpund {
+        /* background-color: yellow; */
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: unset;
+        margin-top: 25px;
+    }
+
+    .moviePosterAndPlayerArpund .moviePosterplace {
+        display: none;
+    }
+
+    .movieHeadtitleinfoInsider .movietvshowEpisodesArounder {
+        padding: 15px;
+    }
+
+    .movietvshowSeasonButton #fafaListIco {
+        display: none;
+    }
+
+    .tvshowSeasonsButtonAround .movietvshowSeasonButton p {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .movietvshowEpisodesArrows .movietvshowArrows {
+        width: 40px;
+        height: fit-content;
+    }
+
+    .tvshowSeasonsButtonAround ul {
+        width: 139px;
+        height: 134px;
+    }
+
+    .tvshowSeasonsButtonAround ul li {
+        padding: 10px 20px;
+    }
+
+    .tvshowSeasonsButtonAround ul li a {
+        font-size: 14px;
+    }
+
+    .movietvshowEpisodeArounder .movietvshowEpisodeImage {
+        width: 120px;
+        height: 80px;
+    }
+
+    .movietvshowEpisodeArounder .episodtitleENG {
+        display: none;
+    }
+
+    .movietvshowEpisodesArounder .movietvshowEpisodes {
+        margin-bottom: 15px;
+    }
+
+    .movieHeadtitleinfoInsider .movieSummery1 {
+        display: none;
+    }
+
+    .movieHeadtitleinfoInsider .movieSummerySpecial {
+        display: inline-block;
+    }
+
+    .movieHeadtitleinfoInsider .ActorsMoreinfo {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .actorsColumer .actorlistAround {
+        grid-template-columns: 1fr;
+    }
+
+    .actorlistAround #actorlistinsider2 {
+        display: none;
+    }
+
+    .moredetailsColumer .moredetailsInsider {
+        row-gap: 15px;
+    }
+
+    .moredetailsInsider p {
+        font-size: 12px;
+    }
+
+    .reviewAndCommentsAround {
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    .starfinalResult p {
+        margin-left: auto;
+    }
+
+    .reviewAndCommentsAround {
+        grid-template-columns: auto;
+        row-gap: 10px;
+    }
+
+    .reviewAndCommentsAround .addCommentArea {
+        padding: 15px;
+    }
+
+    .addCommentArea textarea {
+        min-height: 50px;
+        margin-top: 10px;
+    }
+
+    .addCommentArea .addcommentbuttonAround {
+        justify-content: right;
+        margin-top: 5px;
+    }
+
+    .addcommentbuttonAround p {
+        display: none;
+    }
+
+    .viewstatisticInsider .hrviewsStatisticSpecial {
+        margin: 10px 0;
+    }
+
+    .viewsStatisticAround .viewstatisticInsider {
+        padding: 15px;
+    }
+
+    .viewstatisticInsider h3 {
+        margin-bottom: 10px;
+    }
+
+    .viewstatisticNumberAround i, b, p {
+        font-size: 13px;
+    }
+
+    .reviewAndCommentsAround .addStarRatings {
+        padding: 15px;
+    }
+
+    .addStarRatings .starfinalResult {
+        margin-top: 10px;
+    }
+
+    .addStarRatings .hrspecialforStarRating {
+        margin: 10px 0;
+    }
+
+    .starfinalResult i {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+    .starfinalResult h2 {
+        font-size: 16px;
+    }
+    
+    .starfinalResult h3 {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
+    .starfinalResult p {
+        font-size: 13px;
+        margin-left:auto;
+    }
+
+    .addyourRate .starRateAround {
+        /* background-color: olivedrab; */
+        height: 20px;
+        column-gap: 3px;
+    }
+    
+    .starRateAround i {
+        font-size: 12px;
+    }
+
+    .section1Movies {
+        width: unset;
+    }
+
+    .sectioninsider1 {
+        width: 100%;
+    }
+
+    .headtitlePlus {
+        width: unset;
+        margin-bottom: 15px;
+    }
+
+    .headtitlePlusInsider {
+        width: 100%;
+    }
+
+    .sectionlistBefore {
+        width: unset;
+        overflow: auto;
+    }
+
+    .sectionlistAround {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .sec1v1headtitle {
+        display: none;
+    }
+
+    .sec1v2headtitle {
+        display: block;
+    }
+
+    .movieinfodownline {
+        display: none;
+    }
+
+    .sectionNews {
+        width: unset;
+    }
+
+    .sectionNews .sectionnewsinsider1 {
+        width: 100%;
+    }
+
+    .sectionnewsinsider1 .NewstitlePlus {
+        width: 100%;
+    }
+
+    .NewstitlePlus .headtitlePlusInsider {
+        width: 100%;
+    }
+
+    .sectionnewsinsider1 .topiclistAround {
+        width: 100%;
+    }
+
+    .topiclistAround .newsMainLeftAround {
+        display: none;
+    }
+
+    .topiclistAround .newslistrightAroundBefore {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .newslistrightAroundBefore .newslistrightAround {
+        margin-bottom: 15px;
+    }
+    
+    .footer1Large {
+        display: none;
+    }
+
+    .footer2copyright {
+        padding: 25px 0;
+        margin-top: 50px;
+    }
+
+    .footer2copyright p {
+        font-size: 8px;
+    }
+}
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* Display Resolutions for 0x278*/
+@media screen and (max-width: 278px) {
+    body {
+        display: none;
+    }
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* Display Resolutions for 1920+*/
+@media screen and (min-width: 1921px) {
+    header, main, footer {
+        max-width: 1920px;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .search1Around {
+        display: flex;
+    }
+
+    .sliderAround {
+        height: 480px;
+    }
+
+    .sliderAround .sliderBorder {
+        height: 480px;
+        box-shadow: inset 0 50px 75px -60px black;
+    }
+    
+    .sliderBorder .sliderInfoAround {
+        width: 1423px;
+    }
+
+    .sliderInfoAround .sliderinfoHedtitle, .sliderinfoSomedetails, .sliderinfoDescription {
+        width: 45%;
+    }
+    
+
+    .sliderInfoAround .sliderinfoHedtitle {
+        font-size: 30px;
+    }
+
+    .sliderInfoAround .sliderinfoSomedetails {
+        font-size: 22px;
+    }
+    
+    .sliderInfoAround .sliderinfoDescription {
+        font-size: 20px;
+    }
+
+    @keyframes maincoverSlider {
+        0% {position: absolute; top: -960px}
+        33% {position: absolute; top: -960px;}
+        35% {position: absolute; top: -480px;}
+        66% {position: absolute; top: -480px;}
+        68% {position: absolute; top: 0px;}
+        100% {position: absolute; top: 0px;}
+    }
+
+    main section {
+        margin-top: 75px;
+    }
+}

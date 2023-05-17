@@ -1,0 +1,1518 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="movies, tv shows, animation, anime, ფილმები, სერიალები, ანიმაცია, ანიმე">
+        <meta name="keywords" content="movies, tv shows, animation, anime, free online, cinema, movie-news, news, ფილმები, სერიალები, ანიმაცია, ანიმე, ონლაინში, კინოსიახლე, სიხლეები">
+        <meta name="author" content="Akaki Kintsurashvili">
+        <title>Final Website</title>
+        <link rel="stylesheet" href="styles/movies.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    </head>
+
+
+
+    <body>
+
+        <div class="sidesocialbar">
+            <a href="https://www.facebook.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #1877f2;">FACEBOOK</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.facebook.png">
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ee2a7b;">INSTAGRAM</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.instagram.png">
+                </div>
+            </a>
+
+            <a href="https://www.messenger.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #0084ff;">MESSENGER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.messanger.png">
+                </div>
+            </a>
+
+            <a href="https://twitter.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #03a9f4;">TWITTER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.twitter.png">
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ff0000;">YOUTUBE</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.youtube.png">
+                </div>
+            </a>
+        </div>
+
+        <header>
+            <div class="mobNavmenu1SpeciialBorder">
+
+                <div class="mobNavmenu1">
+                
+                    <div class="burgernavmenuMob1">
+                        <div class="burgnavmeni1Button" id="burgnavmeni1Button" onclick="openSidenav1()">
+                            <!-- <i class="fa-solid fa-bars fa-2xl"></i> -->
+                            <div class="burgnuvButtonBackrounder"></div>
+                        </div>
+                        <ul id="burgnavList" class="burgnavList">
+                            <div class="burgermenu1LogoButton">
+                                <h2>ნავიგაცია</h2>
+                                <!-- <img src="styles/icons/sitelogo.png" alt="saitlogo"> -->
+                                <i class="fa-solid fa-xmark fa-xl" id="sidebarCloseButton" onclick="closeSidenav1()"></i>
+                            </div>
+                            <li><a href="index.html"><i class="fa fa-home"></i>მთავარი</a></li>
+                            <li><a href="movies.html"><i class="fa-solid fa-video"></i>ფილმები</a></li>
+                            <li><a href="tvshow.html"><i class="fa-solid fa-film"></i>სერიალი</a></li>
+                            <li><a href="animation.html"><i class="fa-solid fa-photo-film"></i>ანიმაცია</a></li>
+                            <li><a href="news.html"><i class="fa-solid fa-file-pen"></i></i>სიახლეები</a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i>კონტაქტი</a></li>
+                            <li><a href="account.html"><i class="fa-solid fa-user"></i>ანგარიში</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- <div class="mobsearchAround">
+                        <input type="search" placeholder="მოძებნე ფილმი">
+                        <button><img src="styles/icons/search2buttonv2.png"></button>
+                    </div> -->
+
+                    <div class="navmenPlusSearchv2Around">
+                        <div class="specialsearchv2siteLogoAround">
+                            <a href="index.html" class="specialsearchv2siteLogoInsider">
+                                <img src="styles/icons/sitelogo.png" class="specialsearchv2siteLogo">
+                            </a>
+                        </div>
+
+                        <a href="account.html" class="searchv2specialHome">
+                            <i class="fa-solid fa-user-large"></i>
+                        </a>
+
+                        <div class="navPlusSearchButtonAround">
+                            <button class="specialbuttonv2search" onclick="extendedSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="navplusSerchv2Container" id="navplusSerchv2Container">
+                                <input type="placeholder" placeholder="საიტზე ძებნა...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            </div>
+
+            <script type="text/Javascript">
+
+
+                //ბურგერ მენიუს ფუნქცია
+
+                function openSidenav1() {
+                    document.getElementById("burgnavList").style.left = "0";
+                    document.getElementById("burgnavList").style.opacity = "1";
+                }
+
+                function closeSidenav1() {
+                    document.getElementById("burgnavList").style.left = "-100%";
+                    document.getElementById("burgnavList").style.opacity = "0";
+                }
+
+                // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                //გაფართოებულიძებნის ფუნქცია
+
+                function openExtendedSearch() {
+                    document.getElementById("extendeSearchHiddenMenu").style.left = "0";
+                    document.getElementById("extendeSearchHiddenMenu").style.opacity = "1";
+                }
+
+                function closeExtendedSearch() {
+                    document.getElementById("extendeSearchHiddenMenu").style.left = "-280px";
+                    document.getElementById("extendeSearchHiddenMenu").style.opacity = "0";
+                }
+
+                function extendedSearch() {
+                    var x = document.getElementById("navplusSerchv2Container");
+                    if (x.style.display === "flex") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "flex";
+                    }
+                }
+
+            </script>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <div class="navbarArounder">
+
+                <a href="index.html" class="logo1here"><img id="logo1here" src="styles/icons/sitelogo.png"></a>
+
+                <nav class="navbar1">
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="movies.html">ფილმები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">ქართულად</a>
+                                    <a href="movies.html">ინგლისურად</a>
+                                    <a href="movies.html">სხვა ენა</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">კრიმინალური</a>
+                                    <a href="movies.html">თრილერი</a>
+                                    <a href="movies.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">სათავგადასავლო</a>
+                                    <a href="movies.html">ისტორიული</a>
+                                    <a href="movies.html">საომარი</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="tvshow.html">სერიალი</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">ქართულად</a>
+                                    <a href="tvshow.html">ინგლისურად</a>
+                                    <a href="tvshow.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">დრამა</a>
+                                    <a href="tvshow.html">თრილერი</a>
+                                    <a href="tvshow.html">სათავგადასავლო</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="animation.html">ანიმაცია</a></li>
+                        <li><a href="news.html">სიახლეები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="news.html">ფილმები</a>
+                                    <a href="news.html">სერიალი</a>
+                                    <a href="news.html">ანიმაცია</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="news.html">მსახიობები</a>
+                                    <a href="news.html">ჰოლივუდი</a>
+                                    <a href="news.html">სხვა</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                        <li><a href="account.html">ანგარიში</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="account.html">შესვლა</a>
+                                    <a href="account.html">რეგისტრაცია</a>
+                                    <a href="account.html">აღდგენა</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="search1Around">
+                    <input type="hearch" placeholder="მოძებვნე ფილმი">
+                    <button>ძებნა</button>
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <main>
+
+            <div class="searchv2splitter">
+                
+                <div class="searchv2Around">
+                    <img class="img1" src="styles/icons/sitelogov2.png">
+                    <div class="searchv2">
+                        <div class="searchv2zoomiconAround">
+                            <img src="styles/icons/searchzoomicon.png" alt="searchico">
+                        </div>
+                        <input type="placeholder" name="searchplace" placeholder="მოძებნე ფილმი">
+                        <button class="searchv2buttonv1">ძებნა</button>
+                        <button class="searchv2buttonv2"><img src="styles/icons/search2buttonv2.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="AdvancedSearchAreaSection">
+                <div class="SectionInsiderAlways">
+                    
+                    <div class="advancedGenresAround">
+                        <div class="advancedGenresColumer">
+                            <a>ანიმაცია</a>
+                            <a>ბიოგრაფიული</a>
+                            <a>დოკუმენტური</a>
+                            <a>დრამა</a>
+                            <a>დეტექტივი</a>
+                            <a>ვესტერნები</a>
+                            <a>თრილერი</a>
+                            <a>ისტორიული</a>
+                            <a>კრიმინალური</a>
+                            <a>მელოდრამა</a>
+                            <!-- <a>მძაფრ-სიუჟეტიანი</a> -->
+                            <a>მუსიკალური</a>
+                            <a>რომანტიული</a>
+                            <a>საბრძოლო</a>
+                            <a>სათავგადასავლო</a>
+                            <!-- <a>სამეცნიერო-ფანტასტიკა</a> -->
+                            <a>საომარი</a>
+                            <a>საშინელებათა</a>
+                            <a>ფანტასტიკა</a>
+                            <a>ფენტეზი</a>
+                            <a>ფსიქოლოგიური</a>
+                        </div>
+                    </div>
+
+                    <div class="moreExtendedFiltersAround">
+                        <div class="extendedfilterMenuDropdown">
+                            <div class="extendedMenuDropdownButton">
+                                <p>გახმოვანება</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>გახმოვანება</li>
+                                <li>ქართული</li>
+                                <li>ინგლისური</li>
+                                <li>რუსული</li>
+                                <li>ფრანგული</li>
+                                <li>გერმანული</li>
+                            </ul>
+                        </div>
+
+                        <div class="extendedfilterMenuDropdown">
+                            <div class="extendedMenuDropdownButton">
+                                <p>ქვეყანა</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>ქვეყანა</li>
+                                <li>საქართველო</li>
+                                <li>აშშ</li>
+                                <li>ბრიტანეთი</li>
+                                <li>საფრანგეთი</li>
+                                <li>გერმანია</li>
+                                <li>ინდოეთი</li>
+                                <li>კორეა</li>
+                                <li>ჩინეთი</li>
+                                <li>იაპონია</li>
+                            </ul>
+                        </div>
+
+                        <div class="extendedfilterMenuDropdown">
+                            <div class="extendedMenuDropdownButton">
+                                <p>რეიტინგი</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>რეიტინგი</li>
+                                <li><b>iMDb:</b> 01-დან</li>
+                                <li><b>iMDb:</b> 02-დან</li>
+                                <li><b>iMDb:</b> 03-დან</li>
+                                <li><b>iMDb:</b> 04-დან</li>
+                                <li><b>iMDb:</b> 05-დან</li>
+                                <li><b>iMDb:</b> 06-დან</li>
+                                <li><b>iMDb:</b> 07-დან</li>
+                                <li><b>iMDb:</b> 08-დან</li>
+                                <li><b>iMDb:</b> 09-დან</li>
+                                <li><b>iMDb:</b> 10-დან</li>
+                            </ul>
+                        </div>
+                        <div class="extendedfilterMenuDropdown" id="extendedfilterRatingTO">
+                            <div class="extendedMenuDropdownButton">
+                                <p>რეიტინგი</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>რეიტინგი</li>
+                                <li><b>iMDb:</b> 01-მდე</li>
+                                <li><b>iMDb:</b> 02-მდე</li>
+                                <li><b>iMDb:</b> 03-მდე</li>
+                                <li><b>iMDb:</b> 04-მდე</li>
+                                <li><b>iMDb:</b> 05-მდე</li>
+                                <li><b>iMDb:</b> 06-მდე</li>
+                                <li><b>iMDb:</b> 07-მდე</li>
+                                <li><b>iMDb:</b> 08-მდე</li>
+                                <li><b>iMDb:</b> 09-მდე</li>
+                                <li><b>iMDb:</b> 10-მდე</li>
+                            </ul>
+                        </div>
+
+                        <div class="extendedfilterMenuDropdown">
+                            <div class="extendedMenuDropdownButton">
+                                <p>თარიღი</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>თარიღი</li>
+                                <li>2023-დან</li>
+                                <li>2022-დან</li>
+                                <li>2021-დან</li>
+                                <li>2020-დან</li>
+                                <li>2019-დან</li>
+                                <li>2018-დან</li>
+                                <li>2017-დან</li>
+                                <li>2016-დან</li>
+                                <li>2015-დან</li>
+                                <li>2014-დან</li>
+                                <li>2013-დან</li>
+                                <li>2012-დან</li>
+                                <li>2011-დან</li>
+                                <li>2010-დან</li>
+                            </ul>
+                        </div>
+                        <div class="extendedfilterMenuDropdown" id="extendedfilterDateTO">
+                            <div class="extendedMenuDropdownButton">
+                                <p>თარიღი</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>თარიღი</li>
+                                <li>2023-მდე</li>
+                                <li>2022-მდე</li>
+                                <li>2021-მდე</li>
+                                <li>2020-მდე</li>
+                                <li>2019-მდე</li>
+                                <li>2018-მდე</li>
+                                <li>2017-მდე</li>
+                                <li>2016-მდე</li>
+                                <li>2015-მდე</li>
+                                <li>2014-მდე</li>
+                                <li>2013-მდე</li>
+                                <li>2012-მდე</li>
+                                <li>2011-მდე</li>
+                                <li>2010-მდე</li>
+                            </ul>
+                        </div>
+
+                        <div class="extendedfilterMenuDropdown" style="display: flex; justify-content: right; margin: 0; margin-left: auto; font-size: 15px;">
+                            <div class="extendedMenuDropdownButton">
+                                <p>განლაგება</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul style="margin-top: 43px;">
+                                <li>განლაგება</li>
+                                <li>ბოლოს დამატებული</li>
+                                <li>გამოშვების თარიღი</li>
+                                <li>პოპულარული</li>
+                                <li>რეიტინგული</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="sectioninsiderForResponsive">
+                    <div class="extendedSearchButtonArounder">
+
+                        <button onclick="openExtendedSearch()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>ფილტრი</p>
+                        </button>
+
+                        <div class="extendeSearchHiddenMenu" id="extendeSearchHiddenMenu">
+
+                            <div class="extendedsearchHiddenMenuInside">
+                                <div class="extendedSearchHeadtitle">
+                                    <h4>გაფართოებული ძებნა</h4>
+                                    <div class="extendedsearchCloseButton" onclick="closeExtendedSearch()">
+                                        <i class="fa-solid fa-xmark fa-xl"></i>
+                                    </div>
+                                </div>
+
+                                <hr class="extendedsearchSpecialHR">
+
+                                <div class="extendedsearchGenresAround">
+                                    <a>ანიმაცია</a>
+                                    <a>ბიოგრაფიული</a>
+                                    <a>დოკუმენტური</a>
+                                    <a>დრამა</a>
+                                    <a>დეტექტივი</a>
+                                    <a>ვესტერნები</a>
+                                    <a>თრილერი</a>
+                                    <a>ისტორიული</a>
+                                    <a>კრიმინალური</a>
+                                    <a>მელოდრამა</a>
+                                    <!-- <a>მძაფრ-სიუჟეტიანი</a> -->
+                                    <a>მუსიკალური</a>
+                                    <a>რომანტიული</a>
+                                    <a>საბრძოლო</a>
+                                    <a>სათავგადასავლო</a>
+                                    <!-- <a>სამეცნიერო-ფანტასტიკა</a> -->
+                                    <a>საომარი</a>
+                                    <a>საშინელებათა</a>
+                                    <a>ფანტასტიკა</a>
+                                    <a>ფენტეზი</a>
+                                    <a>ფსიქოლოგიური</a>
+                                </div>
+
+                                <hr class="extendedsearchSpecialHR" style="margin-bottom: 0;">
+
+                                <div class="extendedsearchfiltersDropdownAround">
+
+                                    <ul>
+                                        <li>გახმოვანება
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>გახმოვანება</li>
+                                                <li>ქართული</li>
+                                                <li>ინგლისრუი</li>
+                                                <li>რუსული</li>
+                                                <li>ფრანგული</li>
+                                                <li>გერმანული</li>
+                                            </ul>
+                                        </li>
+                                        <li>ქვეყანა
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>ქვეყანა</li>
+                                                <li>საქართველო</li>
+                                                <li>აშშ</li>
+                                                <li>ინგლისი</li>
+                                                <li>საფრანგეთი</li>
+                                                <li>გერმანია</li>
+                                                <li>ინდოეთი</li>
+                                                <li>კორეა</li>
+                                                <li>ჩინეთი</li>
+                                                <li>იაპონია</li>
+                                            </ul>
+                                        </li>
+                                        <li>თარიღი-დან
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>თარიღი</li>
+                                                <li>2023-დან</li>
+                                                <li>2022-დან</li>
+                                                <li>2021-დან</li>
+                                                <li>2020-დან</li>
+                                                <li>2019-დან</li>
+                                                <li>2018-დან</li>
+                                                <li>2017-დან</li>
+                                                <li>2016-დან</li>
+                                                <li>2015-დან</li>
+                                                <li>2014-დან</li>
+                                                <li>2013-დან</li>
+                                                <li>2012-დან</li>
+                                                <li>2011-დან</li>
+                                                <li>2010-დან</li>
+                                            </ul>
+                                        </li>
+                                        <li>თარიღი-მდე
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>თარიღი</li>
+                                                <li>2023-მდე</li>
+                                                <li>2022-მდე</li>
+                                                <li>2021-მდე</li>
+                                                <li>2020-მდე</li>
+                                                <li>2019-მდე</li>
+                                                <li>2018-მდე</li>
+                                                <li>2017-მდე</li>
+                                                <li>2016-მდე</li>
+                                                <li>2015-მდე</li>
+                                                <li>2014-მდე</li>
+                                                <li>2013-მდე</li>
+                                                <li>2012-მდე</li>
+                                                <li>2011-მდე</li>
+                                                <li>2010-მდე</li>
+                                            </ul>
+                                        </li>
+                                        <li>ჟანრი
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>ანიმაცია</li>
+                                                <li>ბიოგრაფიული</li>
+                                                <li>დოკუმენტური</li>
+                                                <li>დრამა</li>
+                                                <li>დეტექტივი</li>
+                                                <li>ვესტერნები</li>
+                                                <li>თრილერი</li>
+                                                <li>ისტორიული</li>
+                                                <li>კრიმინალური</li>
+                                                <li>მელოდრამა</li>
+                                                <li>მძაფრ-სიუჟეტიანი</li>
+                                                <li>მუსიკალური</li>
+                                                <li>რომანტიული</li>
+                                                <li>საბრძოლო</li>
+                                                <li>სათავგადასავლო</li>
+                                                <li>სამეცნიერო-ფანტასტიკა</li>
+                                                <li>საომარი</li>
+                                                <li>საშინელებათა</li>
+                                                <li>ფანტასტიკა</li>
+                                                <li>ფენტეზი</li>
+                                                <li>ფსიქოლოგიური</li>
+                                            </ul>
+                                        </li>
+                                        <li>რეიტინგი-დან
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>რეიტინგი</li>
+                                                <li><b>iMDb:</b> 01-დან</li>
+                                                <li><b>iMDb:</b> 02-დან</li>
+                                                <li><b>iMDb:</b> 03-დან</li>
+                                                <li><b>iMDb:</b> 04-დან</li>
+                                                <li><b>iMDb:</b> 05-დან</li>
+                                                <li><b>iMDb:</b> 06-დან</li>
+                                                <li><b>iMDb:</b> 07-დან</li>
+                                                <li><b>iMDb:</b> 08-დან</li>
+                                                <li><b>iMDb:</b> 09-დან</li>
+                                                <li><b>iMDb:</b> 10-დან</li>
+                                            </ul>
+                                        </li>
+                                        <li>რეიტინგი-მდე
+                                            <ul id="extendedsearchHiddenUlLidropdown">
+                                                <li>რეიტინგი</li>
+                                                <li><b>iMDb:</b> 01-მდე</li>
+                                                <li><b>iMDb:</b> 02-მდე</li>
+                                                <li><b>iMDb:</b> 03-მდე</li>
+                                                <li><b>iMDb:</b> 04-მდე</li>
+                                                <li><b>iMDb:</b> 05-მდე</li>
+                                                <li><b>iMDb:</b> 06-მდე</li>
+                                                <li><b>iMDb:</b> 07-მდე</li>
+                                                <li><b>iMDb:</b> 08-მდე</li>
+                                                <li><b>iMDb:</b> 09-მდე</li>
+                                                <li><b>iMDb:</b> 10-მდე</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <div class="extendedsearchmenuDownbuttonArounds">
+                                        <div class="hiddensearchmenuButton2">
+                                            <p>გასუფთავება</p>
+                                        </div>
+                                        <div class="hiddensearchmenuButton1">
+                                            <p>გაფილტვრა</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sectioninsiderViewArounder1">
+                        <div class="sectioninsiderViewAround">
+                            <div class="sectioninsiderViewButton">
+                                <p>განლაგება</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul>
+                                <li>განლაგება</li>
+                                <li>ბოლოს დამატებული</li>
+                                <li>გამოშვების თარიღი</li>
+                                <li>პოპულარული</li>
+                                <li>რეიტინგული</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="moviesectionmiddle">
+                <div class="moviesectionInsider1">
+
+                    <div class="wholemovieArounderOut" id="themovietopic1">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMzdjNjI5MmYtODhiNS00NTcyLWEzZmUtYzVmODM5YzExNDE3XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">მენიუ</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>თრილერი</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Menu</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">კომედია</a>
+                                <a href="movies.html">თრილერი</a>
+                                <a href="movies.html">საშინელებათა</a>
+                                <b>IMDB: 7.2</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion1">
+                                <p>ახალგაზრდა წყვილი მიემგზავრება შორეულ კუნძულზე საჭმელად ექსკლუზიურ რესტორანში, სადაც შეფმა მოამზადა მდიდრული მენიუ, შოკისმომგვრელი სიურპრიზებით.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic2">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMDI1NWM1ZDItNDFhMi00YWRhLTg1YzItNTNhY2M2N2QzY2FkXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ენოლა ჰოლმსი 2</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Enola Holmes 2</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">მძაფრ-სიუჟეტიანი</a>
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <!-- <a href="movies.html">კრიმინალური</a> -->
+                                <b>IMDB: 6.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion2">
+                                <p>ახლა დაქირავებული დეტექტივი, ენოლა ჰოლმსი იღებს თავის პირველ ოფიციალურ საქმეს დაკარგული გოგონას პოვნის მიზნით, რადგან საშიში შეთქმულების ნაპერწკლები აანთებს საიდუმლოს, რომელიც მოითხოვს მეგობრების - და თავად შერლოკის - დახმარებას.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic3">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZDg2YThlMTItYzhhMy00OWE3LTljYTAtYTExMDM5NzRjOGFhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX400_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ღია ცისფერი თვალი</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>მისტიკა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Pale Blue Eye</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">კრიმინალური</a>
+                                <!-- <a href="movies.html">საშინელებათა</a> -->
+                                <a href="movies.html">მისტიკა</a>
+                                <b>IMDB: 6.8</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion3">
+                                <p>მსოფლიოში დაღლილი დეტექტივი დაქირავებულია ვესტ პოინტის იუნკერის მკვლელობის გამოსაძიებლად. იუნკერების დუმილის კოდექსით შეფერხებული, ის ითხოვს ერთ მათგანს საქმის გარკვევაში - ახალგაზრდა კაცი, რომელსაც მსოფლიო ედგარ ალან პოს სახელით იცნობდა.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic4">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@._V1_FMjpg_UX350_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">უკანასკნელი სამეფო: შვიდი მეფე უნდა მოკვდეს</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2023</p>
+                                <p>ისტორიული</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Last Kingdom: Seven Kings Must Die</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <!-- <a href="movies.html">მძაფრ-სიუჟეტიანი</a> -->
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">ისტორიული</a>
+                                <b>IMDB: 6.9</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion4">
+                                <p>მეფე ედუარდის გარდაცვალების შემდეგ, უჰტრედ ბებანბურგელი და მისი ამხანაგები თავგადასავალს აწარმოებენ დაშლილ სამეფოში იმ იმედით, რომ საბოლოოდ გააერთიანებენ ინგლისს.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic5">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMmExYjczMTQtYzc3OS00MDA2LWFkZjItZjE0NGM4YTRhYTY2L2ltYWdlXkEyXkFqcGdeQXVyNjMzMjk3ODc@._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">გაქცევა შოუშენკიდან</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1994</p>
+                                <p>დრამა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Shawshank Redemption</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">კრიმინალური</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 9.3</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion5">
+                                <p>რამდენიმე წლის განმავლობაში, ორი მსჯავრდებული აყალიბებს მეგობრობას, ეძებენ ნუგეშს და, საბოლოოდ, გამოსყიდვას ძირითადი თანაგრძნობით.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic6">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODkyYTRlMDItMDlhMC00MzkzLWI3NzQtOGVlMjdjYThlNDM3XkEyXkFqcGdeQXVyMTA1OTcyNDQ4._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ზღვის ურჩხული</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Sea Beast</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <a href="movies.html">ანიმაცია</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 7.1</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion6">
+                                <p>როდესაც ახალგაზრდა გოგონა ლეგენდარული ზღვის მონსტრების მონადირის გემზე ჩერდება, ისინი ეპიკურ მოგზაურობას იწყებენ ამოუცნობ წყლებში - და ქმნიან ისტორიას.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic7">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">შეშლილი მაქსი: მრისხანე გზა</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2015</p>
+                                <p>მძაფრ-სიუჟეტიანი</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Mad Max: Fury Road</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">მძაფრ-სიუჟეტიანი</a>
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 8.1</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion7">
+                                <p>პოსტ-აპოკალიფსური უდაბნოში, ქალი აჯანყდება ტირანი მმართველის წინააღმდეგ სამშობლოს საძიებლად, პატიმრების ჯგუფის, ფსიქოტური თაყვანისმცემლისა და მაქსის დახმარებით.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic1">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ბეჭდების მბრძანებელი: ბეჭდის საძმო</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2001</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Lord of the Rings: The Fellowship of the Ring</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <a href="movies.html">ფენტეზი</a>
+                                <a href="movies.html">დრამა</a>
+                                <b>IMDB: 8.8</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion1">
+                                <p>თვინიერი ჰობიტი შაირიდან და რვა თანამგზავრი გაემგზავრნენ მოგზაურობაში, რათა გაანადგურონ ძლიერი ერთი ბეჭედი და გადაარჩინონ შუა დედამიწა ბნელი ლორდი საურონისგან.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic2">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">მოხუცების ადგილი აქ არ არის</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2007</p>
+                                <p>კრიმინალური</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>No Country for Old Men</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">კრიმინალური</a>
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">თრილერი</a>
+                                <b>IMDB: 8.2</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion2">
+                                <p>ძალადობა და არეულობა ხდება მას შემდეგ, რაც მონადირე რიო გრანდეს მახლობლად ნარკოტიკების გარიგებას და ორ მილიონ დოლარზე მეტ ფულს წააწყდება.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic3">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">უნაკლო გონების მარადიული სინათლე</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2004</p>
+                                <p>დრამა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Eternal Sunshine of the Spotless Mind</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">რომანტიული</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 8.3</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion3">
+                                <p>როდესაც მათი ურთიერთობა უარესდება, წყვილი სამედიცინო პროცედურას გადის, რათა სამუდამოდ წაშალონ ერთმანეთი მოგონებებიდან.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic4">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ვიღაცამ გუგულის ბუდეს გადაუფრინა</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1975</p>
+                                <p>დრამა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>One Flew Over the Cuckoo's Nest</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <!-- <a href="movies.html">სათავგადასავლო</a> -->
+                                <a href="movies.html">დრამა</a>
+                                <!-- <a href="movies.html">საოჯახო</a> -->
+                                <b>IMDB: 8.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion4">
+                                <p>1963 წლის შემოდგომაზე, კორეის ომის ვეტერანი და კრიმინალი აცხადებს სიგიჟეს და შეიყვანეს ფსიქიატრიულ დაწესებულებაში, სადაც შეშინებულ პაციენტებს ტირანი მედდის წინააღმდეგ აგროვებს.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic5">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNjA5ZTUyYjYtZTY1ZS00MTM1LWEwMjktZDY4N2Q5NjBmOThiXkEyXkFqcGdeQXVyNzA4NTc5MjE@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ავატარი: წყლის გზა</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Avatar: The Way of Water</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">მძაფრ-სიუჯეტიანი</a>
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 7.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion5">
+                                <p>ჯეიკ სალი ცხოვრობს თავის ახალშექმნილ ოჯახთან ერთად, რომელიც შეიქმნა მზის მთვარე პანდორაზე. როგორც კი ნაცნობი საფრთხე დაბრუნდება, რათა დაასრულოს ის, რაც ადრე იყო დაწყებული, ჯეიკმა უნდა იმუშაოს ნეიტირისთან და ნავის რასის არმიასთან, რათა დაიცვან თავიანთი სახლი.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic6">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZjc1Y2Y0MGYtZjRhOS00NWZiLTk2MzItOWI5NThkZGVmY2JjXkEyXkFqcGdeQXVyNzM0MTUwNTY@._V1_FMjpg_UX360_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ბონი და კლაიდი</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1967</p>
+                                <p>კრიმინალური</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Bonnie and Clyde</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">ბიოგრაფიული</a>
+                                <a href="movies.html">კრიმინალური</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 7.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion6">
+                                <p>შეწუხებულ ოფიციანტ ბონი პარკერს შეუყვარდება ყოფილი თაყვანისმცემელი, სახელად კლაიდ ბაროუ და ისინი ერთად იწყებენ ძალადობრივ დანაშაულებრივ ჩხუბს მთელი ქვეყნის მასშტაბით, იპარავენ მანქანებს და ძარცვავენ ბანკებს.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic7">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX320_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ი.თი. არამიწიერი</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1982</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>E.T. the Extra-Terrestrial</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <a href="movies.html">საოჯახო</a>
+                                <!-- <a href="movies.html">რომანტიული</a> -->
+                                <b>IMDB: 7.9</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion7">
+                                <p>პრობლემური ბავშვი იძახებს გამბედაობას, რათა დაეხმაროს მეგობრულ უცხოპლანეტელს დედამიწიდან გაქცევაში და თავის პლანეტაზე დაბრუნებაში.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic1">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMzdjNjI5MmYtODhiNS00NTcyLWEzZmUtYzVmODM5YzExNDE3XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">მენიუ</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>თრილერი</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Menu</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">კომედია</a>
+                                <a href="movies.html">თრილერი</a>
+                                <a href="movies.html">საშინელებათა</a>
+                                <b>IMDB: 7.2</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion1">
+                                <p>ახალგაზრდა წყვილი მიემგზავრება შორეულ კუნძულზე საჭმელად ექსკლუზიურ რესტორანში, სადაც შეფმა მოამზადა მდიდრული მენიუ, შოკისმომგვრელი სიურპრიზებით.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic2">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMDI1NWM1ZDItNDFhMi00YWRhLTg1YzItNTNhY2M2N2QzY2FkXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ენოლა ჰოლმსი 2</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Enola Holmes 2</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">მძაფრ-სიუჟეტიანი</a>
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <!-- <a href="movies.html">კრიმინალური</a> -->
+                                <b>IMDB: 6.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion2">
+                                <p>ახლა დაქირავებული დეტექტივი, ენოლა ჰოლმსი იღებს თავის პირველ ოფიციალურ საქმეს დაკარგული გოგონას პოვნის მიზნით, რადგან საშიში შეთქმულების ნაპერწკლები აანთებს საიდუმლოს, რომელიც მოითხოვს მეგობრების - და თავად შერლოკის - დახმარებას.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic3">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZDg2YThlMTItYzhhMy00OWE3LTljYTAtYTExMDM5NzRjOGFhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX400_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ღია ცისფერი თვალი</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>მისტიკა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Pale Blue Eye</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">კრიმინალური</a>
+                                <!-- <a href="movies.html">საშინელებათა</a> -->
+                                <a href="movies.html">მისტიკა</a>
+                                <b>IMDB: 6.8</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion3">
+                                <p>მსოფლიოში დაღლილი დეტექტივი დაქირავებულია ვესტ პოინტის იუნკერის მკვლელობის გამოსაძიებლად. იუნკერების დუმილის კოდექსით შეფერხებული, ის ითხოვს ერთ მათგანს საქმის გარკვევაში - ახალგაზრდა კაცი, რომელსაც მსოფლიო ედგარ ალან პოს სახელით იცნობდა.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic4">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@._V1_FMjpg_UX350_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">უკანასკნელი სამეფო: შვიდი მეფე უნდა მოკვდეს</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2023</p>
+                                <p>ისტორიული</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Last Kingdom: Seven Kings Must Die</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <!-- <a href="movies.html">მძაფრ-სიუჟეტიანი</a> -->
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">ისტორიული</a>
+                                <b>IMDB: 6.9</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion4">
+                                <p>მეფე ედუარდის გარდაცვალების შემდეგ, უჰტრედ ბებანბურგელი და მისი ამხანაგები თავგადასავალს აწარმოებენ დაშლილ სამეფოში იმ იმედით, რომ საბოლოოდ გააერთიანებენ ინგლისს.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic5">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMmExYjczMTQtYzc3OS00MDA2LWFkZjItZjE0NGM4YTRhYTY2L2ltYWdlXkEyXkFqcGdeQXVyNjMzMjk3ODc@._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">გაქცევა შოუშენკიდან</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1994</p>
+                                <p>დრამა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Shawshank Redemption</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">კრიმინალური</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 9.3</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion5">
+                                <p>რამდენიმე წლის განმავლობაში, ორი მსჯავრდებული აყალიბებს მეგობრობას, ეძებენ ნუგეშს და, საბოლოოდ, გამოსყიდვას ძირითადი თანაგრძნობით.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic6">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODkyYTRlMDItMDlhMC00MzkzLWI3NzQtOGVlMjdjYThlNDM3XkEyXkFqcGdeQXVyMTA1OTcyNDQ4._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ზღვის ურჩხული</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Sea Beast</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <a href="movies.html">ანიმაცია</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 7.1</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion6">
+                                <p>როდესაც ახალგაზრდა გოგონა ლეგენდარული ზღვის მონსტრების მონადირის გემზე ჩერდება, ისინი ეპიკურ მოგზაურობას იწყებენ ამოუცნობ წყლებში - და ქმნიან ისტორიას.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic7">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">შეშლილი მაქსი: მრისხანე გზა</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2015</p>
+                                <p>მძაფრ-სიუჟეტიანი</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Mad Max: Fury Road</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">მძაფრ-სიუჟეტიანი</a>
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 8.1</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion7">
+                                <p>პოსტ-აპოკალიფსური უდაბნოში, ქალი აჯანყდება ტირანი მმართველის წინააღმდეგ სამშობლოს საძიებლად, პატიმრების ჯგუფის, ფსიქოტური თაყვანისმცემლისა და მაქსის დახმარებით.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic1">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ბეჭდების მბრძანებელი: ბეჭდის საძმო</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2001</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>The Lord of the Rings: The Fellowship of the Ring</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <a href="movies.html">ფენტეზი</a>
+                                <a href="movies.html">დრამა</a>
+                                <b>IMDB: 8.8</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion1">
+                                <p>თვინიერი ჰობიტი შაირიდან და რვა თანამგზავრი გაემგზავრნენ მოგზაურობაში, რათა გაანადგურონ ძლიერი ერთი ბეჭედი და გადაარჩინონ შუა დედამიწა ბნელი ლორდი საურონისგან.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic2">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">მოხუცების ადგილი აქ არ არის</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2007</p>
+                                <p>კრიმინალური</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>No Country for Old Men</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">კრიმინალური</a>
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">თრილერი</a>
+                                <b>IMDB: 8.2</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion2">
+                                <p>ძალადობა და არეულობა ხდება მას შემდეგ, რაც მონადირე რიო გრანდეს მახლობლად ნარკოტიკების გარიგებას და ორ მილიონ დოლარზე მეტ ფულს წააწყდება.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic3">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_FMjpg_UY500_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">უნაკლო გონების მარადიული სინათლე</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2004</p>
+                                <p>დრამა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Eternal Sunshine of the Spotless Mind</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">დრამა</a>
+                                <a href="movies.html">რომანტიული</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 8.3</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion3">
+                                <p>როდესაც მათი ურთიერთობა უარესდება, წყვილი სამედიცინო პროცედურას გადის, რათა სამუდამოდ წაშალონ ერთმანეთი მოგონებებიდან.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic4">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ვიღაცამ გუგულის ბუდეს გადაუფრინა</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1975</p>
+                                <p>დრამა</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>One Flew Over the Cuckoo's Nest</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <!-- <a href="movies.html">სათავგადასავლო</a> -->
+                                <a href="movies.html">დრამა</a>
+                                <!-- <a href="movies.html">საოჯახო</a> -->
+                                <b>IMDB: 8.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion4">
+                                <p>1963 წლის შემოდგომაზე, კორეის ომის ვეტერანი და კრიმინალი აცხადებს სიგიჟეს და შეიყვანეს ფსიქიატრიულ დაწესებულებაში, სადაც შეშინებულ პაციენტებს ტირანი მედდის წინააღმდეგ აგროვებს.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic5">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNjA5ZTUyYjYtZTY1ZS00MTM1LWEwMjktZDY4N2Q5NjBmOThiXkEyXkFqcGdeQXVyNzA4NTc5MjE@._V1_FMjpg_UX340_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ავატარი: წყლის გზა</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>2022</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Avatar: The Way of Water</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">მძაფრ-სიუჯეტიანი</a>
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 7.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion5">
+                                <p>ჯეიკ სალი ცხოვრობს თავის ახალშექმნილ ოჯახთან ერთად, რომელიც შეიქმნა მზის მთვარე პანდორაზე. როგორც კი ნაცნობი საფრთხე დაბრუნდება, რათა დაასრულოს ის, რაც ადრე იყო დაწყებული, ჯეიკმა უნდა იმუშაოს ნეიტირისთან და ნავის რასის არმიასთან, რათა დაიცვან თავიანთი სახლი.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic6">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZjc1Y2Y0MGYtZjRhOS00NWZiLTk2MzItOWI5NThkZGVmY2JjXkEyXkFqcGdeQXVyNzM0MTUwNTY@._V1_FMjpg_UX360_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ბონი და კლაიდი</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1967</p>
+                                <p>კრიმინალური</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>Bonnie and Clyde</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">ბიოგრაფიული</a>
+                                <a href="movies.html">კრიმინალური</a>
+                                <!-- <a href="movies.html">დრამა</a> -->
+                                <b>IMDB: 7.7</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion6">
+                                <p>შეწუხებულ ოფიციანტ ბონი პარკერს შეუყვარდება ყოფილი თაყვანისმცემელი, სახელად კლაიდ ბაროუ და ისინი ერთად იწყებენ ძალადობრივ დანაშაულებრივ ჩხუბს მთელი ქვეყნის მასშტაბით, იპარავენ მანქანებს და ძარცვავენ ბანკებს.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wholemovieArounderOut" id="themovietopic7">
+                        <a href="filmpage.html" class="wholemovieArounder" id="wholemovieArounder">
+                            <div class="movieposterArounder1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX320_.jpg);">
+                                <div class="movieposterArounder1insider">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="wholemovieArounderMainHeadtitle">ი.თი. არამიწიერი</p>
+                            <div class="wholemoviedropdownInfo">
+                                <p>1982</p>
+                                <p>სათავგადასავლო</p>
+                            </div>
+                        </a>
+                        <div class="wholemovieArounderHiddenInfo">
+                            <h4>E.T. the Extra-Terrestrial</h4>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoGenres">
+                                <a href="movies.html">სათავგადასავლო</a>
+                                <a href="movies.html">საოჯახო</a>
+                                <!-- <a href="movies.html">რომანტიული</a> -->
+                                <b>IMDB: 7.9</b>
+                            </div>
+                            <hr class="specialHiddeninfoHR">
+                            <div class="hiddeninfoDescriotion" id="hiddeninfoDescriotion7">
+                                <p>პრობლემური ბავშვი იძახებს გამბედაობას, რათა დაეხმაროს მეგობრულ უცხოპლანეტელს დედამიწიდან გაქცევაში და თავის პლანეტაზე დაბრუნებაში.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <footer class="footer1Large">
+
+            <div class="midFooter">
+                <div class="footer1">
+                    <a href="index.html"><img src="styles/icons/sitelogo.png" alt="sitelogo"></a>
+                    <div class="footerSocials">
+                        <a href="https://www.facebook.com/" id="facebook"><img src="styles/icons/01.facebook.png"></a>
+                        <a href="https://www.instagram.com/" id="Instagram"><img src="styles/icons/01.instagram.png"></a>
+                        <a href="https://www.messenger.com/" id="Messenger"><img src="styles/icons/01.messanger.png"></a>
+                        <a href="https://twitter.com/" id="Twitter"><img src="styles/icons/01.twitter.png"></a>
+                        <a href="https://www.youtube.com/" id="Youtube"><img src="styles/icons/01.youtube.png"></a>
+                    </div>
+                    <input type="placeholder" placeholder="გამოიწერე სიახლეები მეილზე">
+                    <button>სიახლის გამოწერა</button>
+                </div>
+
+                <div class="footer2">
+                    <h4>ფილმები</h4>
+                    <a href="index.html">კომედია</a>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">მძაფრ-სიუჟეტიანი</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ფენტეზი</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer3">
+                    <h4>სერიალები</h4>
+                    <a href="index.html">კრიმინალური</a>
+                    <a href="index.html">თრილერი</a>
+                    <a href="index.html">დრამა</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer4">
+                    <h4>ანიმაციები</h4>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">საოჯახო</a>
+                    <a href="index.html">კომედი</a>
+                    <a href="index.html">ანიმე</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">ფენტეზი</a>
+                </div>
+
+                <div class="footer5">
+                    <h4>სიახლეები</h4>
+                    <a href="index.html">კინო</a>
+                    <a href="index.html">სერიალი</a>
+                    <a href="index.html">თეატრები</a>
+                    <a href="index.html">ჰოლივუდი</a>
+                    <a href="index.html">მსასხიობები</a>
+                    <a href="index.html">კინოსტუდია</a>
+                </div>
+            </div>
+
+            <div></div>
+        </footer>
+        <footer class="footer2copyright">
+            <p>2023 ©საავტორო უფლებები: აკაკი კინწურაშვილი</p>
+        </footer>
+
+    </body>
+</html>

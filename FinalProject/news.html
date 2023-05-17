@@ -1,0 +1,662 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="movies, tv shows, animation, anime, ფილმები, სერიალები, ანიმაცია, ანიმე">
+        <meta name="keywords" content="movies, tv shows, animation, anime, free online, cinema, movie-news, news, ფილმები, სერიალები, ანიმაცია, ანიმე, ონლაინში, კინოსიახლე, სიხლეები">
+        <meta name="author" content="Akaki Kintsurashvili">
+        <title>Final Website</title>
+        <link rel="stylesheet" href="styles/news.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    </head>
+
+
+
+    <body>
+
+        <div class="sidesocialbar">
+            <a href="https://www.facebook.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #1877f2;">FACEBOOK</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.facebook.png">
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ee2a7b;">INSTAGRAM</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.instagram.png">
+                </div>
+            </a>
+
+            <a href="https://www.messenger.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #0084ff;">MESSENGER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.messanger.png">
+                </div>
+            </a>
+
+            <a href="https://twitter.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #03a9f4;">TWITTER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.twitter.png">
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ff0000;">YOUTUBE</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.youtube.png">
+                </div>
+            </a>
+        </div>
+
+        <header>
+            <div class="mobNavmenu1SpeciialBorder">
+
+                <div class="mobNavmenu1">
+                
+                    <div class="burgernavmenuMob1">
+                        <div class="burgnavmeni1Button" id="burgnavmeni1Button" onclick="openSidenav1()">
+                            <!-- <i class="fa-solid fa-bars fa-2xl"></i> -->
+                            <div class="burgnuvButtonBackrounder"></div>
+                        </div>
+                        <ul id="burgnavList" class="burgnavList">
+                            <div class="burgermenu1LogoButton">
+                                <h2>ნავიგაცია</h2>
+                                <!-- <img src="styles/icons/sitelogo.png" alt="saitlogo"> -->
+                                <i class="fa-solid fa-xmark fa-xl" id="sidebarCloseButton" onclick="closeSidenav1()"></i>
+                            </div>
+                            <li><a href="index.html"><i class="fa fa-home"></i>მთავარი</a></li>
+                            <li><a href="movies.html"><i class="fa-solid fa-video"></i>ფილმები</a></li>
+                            <li><a href="tvshow.html"><i class="fa-solid fa-film"></i>სერიალი</a></li>
+                            <li><a href="animation.html"><i class="fa-solid fa-photo-film"></i>ანიმაცია</a></li>
+                            <li><a href="news.html"><i class="fa-solid fa-file-pen"></i></i>სიახლეები</a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i>კონტაქტი</a></li>
+                            <li><a href="account.html"><i class="fa-solid fa-user"></i>ანგარიში</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- <div class="mobsearchAround">
+                        <input type="search" placeholder="მოძებნე ფილმი">
+                        <button><img src="styles/icons/search2buttonv2.png"></button>
+                    </div> -->
+
+                    <div class="navmenPlusSearchv2Around">
+                        <div class="specialsearchv2siteLogoAround">
+                            <a href="index.html" class="specialsearchv2siteLogoInsider">
+                                <img src="styles/icons/sitelogo.png" class="specialsearchv2siteLogo">
+                            </a>
+                        </div>
+
+                        <a href="account.html" class="searchv2specialHome">
+                            <i class="fa-solid fa-user-large"></i>
+                        </a>
+
+                        <div class="navPlusSearchButtonAround">
+                            <button class="specialbuttonv2search" onclick="extendedSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="navplusSerchv2Container" id="navplusSerchv2Container">
+                                <input type="placeholder" placeholder="საიტზე ძებნა...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            </div>
+
+            <script type="text/Javascript">
+
+                function openSidenav1() {
+                    document.getElementById("burgnavList").style.left = "0";
+                    document.getElementById("burgnavList").style.opacity = "1";
+                }
+
+                function closeSidenav1() {
+                    document.getElementById("burgnavList").style.left = "-220px";
+                    document.getElementById("burgnavList").style.opacity = "0";
+                }
+
+                function extendedSearch() {
+                    var x = document.getElementById("navplusSerchv2Container");
+                    if (x.style.display === "flex") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "flex";
+                    }
+                }
+
+            </script>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <div class="navbarArounder">
+
+                <a href="index.html" class="logo1here"><img id="logo1here" src="styles/icons/sitelogo.png"></a>
+
+                <nav class="navbar1">
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="movies.html">ფილმები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">ქართულად</a>
+                                    <a href="movies.html">ინგლისურად</a>
+                                    <a href="movies.html">სხვა ენა</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">კრიმინალური</a>
+                                    <a href="movies.html">თრილერი</a>
+                                    <a href="movies.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">სათავგადასავლო</a>
+                                    <a href="movies.html">ისტორიული</a>
+                                    <a href="movies.html">საომარი</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="tvshow.html">სერიალი</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">ქართულად</a>
+                                    <a href="tvshow.html">ინგლისურად</a>
+                                    <a href="tvshow.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">დრამა</a>
+                                    <a href="tvshow.html">თრილერი</a>
+                                    <a href="tvshow.html">სათავგადასავლო</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="animation.html">ანიმაცია</a></li>
+                        <li><a href="news.html">სიახლეები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="news.html">ფილმები</a>
+                                    <a href="news.html">სერიალი</a>
+                                    <a href="news.html">ანიმაცია</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="news.html">მსახიობები</a>
+                                    <a href="news.html">ჰოლივუდი</a>
+                                    <a href="news.html">სხვა</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                        <li><a href="account.html">ანგარიში</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="account.html">შესვლა</a>
+                                    <a href="account.html">რეგისტრაცია</a>
+                                    <a href="account.html">აღდგენა</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="search1Around">
+                    <input type="hearch" placeholder="მოძებვნე ფილმი">
+                    <button>ძებნა</button>
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <main>
+
+            <div class="searchv2splitter">
+                
+                <div class="searchv2Around">
+                    <img class="img1" src="styles/icons/sitelogov2.png">
+                    <div class="searchv2">
+                        <div class="searchv2zoomiconAround">
+                            <img src="styles/icons/searchzoomicon.png" alt="searchico">
+                        </div>
+                        <input type="placeholder" name="searchplace" placeholder="მოძებნე ფილმი">
+                        <button class="searchv2buttonv1">ძებნა</button>
+                        <button class="searchv2buttonv2"><img src="styles/icons/search2buttonv2.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="maintopicsSection">
+                <div class="maintopicsInsider1">
+                    <a href="#" class="maintopicLeftAround" style="background-image: url(https://pbs.twimg.com/media/FpB-WJ4XEA0if7e.jpg:small);">
+                        <h2>"უკანასკნელი ჩვენგანი" სეზონი 2 გადაიდო, ცნობილია ახალი ვადები</h2>
+                    </a>
+                    
+                    <div class="maintopicRightAround">
+                        <a href="#" class="columerinside1" id="columerinside1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZDUxODFhYTItZmQ2ZC00YWRiLTliYzItYTlhNGVkYWJlY2M0XkEyXkFqcGdeQWpnYW1i._V1_.jpg);">
+                            <p>"ვენომ 3" მარველის მინიშნება ახალ ბოროტმოქმედზე</p>
+                        </a>
+
+                        <a href="#" class="columerinside1" id="columerinside2" style="background-image: url(https://media.gq-magazine.co.uk/photos/62e299b92385b75b995a47ee/3:2/w_1000,h_500,c_limit/oppenhiemer_0001_Cillian%20murphy%20TCDPEBL_EC017.jpg);">
+                            <p>"ალესილი კეპები" ფილმის გამოსვლა იგვიანებს, მიზეზად კილიან მერფი სახელდება </p>
+                        </a>
+
+                        <a href="#" class="columerinside1" id="columerinside3" style="background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/2023/04/ben-affleck-nervous-hypnotic.jpg);">
+                            <p>ბენა აფლეკის უკვე მეორე თრილერი გვხვდება კინოთეატრებში 2023 წელს</p>
+                        </a>
+
+                        <a href="#" class="columerinside1" id="columerinside4" style="background-image: url(https://variety.com/wp-content/uploads/2023/03/Little-Mermaid-Preview-Oscars-2.jpg?w=1000);">
+                            <p>პატარა ქალთევზა" ორიგინალი მუსიკა ფილმში არ გამოიყენეს</p>
+                        </a>
+
+                        <!-- <a href="#" class="columerinside1" id="columerinside1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZDUxODFhYTItZmQ2ZC00YWRiLTliYzItYTlhNGVkYWJlY2M0XkEyXkFqcGdeQWpnYW1i._V1_.jpg);">
+                            <p>"ვენომ 3" მარველის მინიშნება ახალ ბოროტმოქმედზე</p>
+                        </a>
+
+                        <a href="#" class="columerinside1" id="columerinside1" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZDUxODFhYTItZmQ2ZC00YWRiLTliYzItYTlhNGVkYWJlY2M0XkEyXkFqcGdeQWpnYW1i._V1_.jpg);">
+                            <p>"ვენომ 3" მარველის მინიშნება ახალ ბოროტმოქმედზე</p>
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="middlesideSectionNews">
+                <div class="middlesideSectionNewsArounder">
+
+                    <div class="allarticleArounder">
+
+                        <div class="rightsideArticlesmainHeatitle">
+                            <h2>ფილმები</h2>
+                            <a href="news.html">სრული სია</a>
+                        </div>
+                        <div class="movinewsTopicContainer">
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Melissa-Barrera-erotic-horror-movie.jpg?resize=500,300">
+                                </div>
+                                <p>მელისა ბარერა და ნიკოლას ჰოლტი შეასრულებენ მთავარ როლს ახალ ეროტიული საშინელებათა ფილმში</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">კინო</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Fast-X-clip-e1683751528177.jpg?resize=500,300">
+                                </div>
+                                <p>"ფორსაჟი X" ახალ ვიდეოში ჩანს ჩარლიზ ტერონის და მიშელ როდრიგესის ორთაბრძოლა</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">კინო</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Emma-Stone-Poor-Things.jpg?resize=500,300">
+                                </div>
+                                <p>ფრანკენშტეინის ახალი ფილმის თრეილერიდან ირკვევა ემა სტოუნის მონაწილეობა</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">კინო</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/God-is-a-Bullet-e1683746882954.jpeg?w=500">
+                                </div>
+                                <p>"ღმერთი არის ტყვია" ახალი ფილმი ნიკოლაი კოსტერ-ვალდაუს და ჯეიმი ფოქსის მონაწილეობით</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">კინო</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/run-rabbit-e1683734121891.jpg?resize=500,300">
+                                </div>
+                                <p>"გაიქეცი კურდღელო გაიქეცი" სარა სნუკი თამაშობს ნეტფლიქსის ახალ საშინელებათა ფილმში</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">კინო</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/ursula-e1683666038213.jpg?resize=500,300">
+                                </div>
+                                <p>"პატარა ქალთევზა" მელისა მაკარტი განმარტავს ურსულას შთაგონების სწყაროს</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">კინო</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="rightsideArticlesmainHeatitle">
+                            <h2>სერიალი</h2>
+                            <a href="news.html">სრული სია</a>
+                        </div>
+                        <div class="movinewsTopicContainer">
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Heels-S2-1.jpg?resize=792,528">
+                                </div>
+                                <p>"ქუსლები" მეორე სეზონის გამოშვების თარიღი და ახალი სეზონის ფოტოები</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">სერიალი</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/the-winchesters-screenshot.png?resize=500,300">
+                                </div>
+                                <p>ზებუნებრივის წინამორბედები "ვინჩესტერები" და "კუნგ ფუ" გაუქმდა The CW-ზე</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">სერიალი</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/andor-season-2-header.png?resize=500,300">
+                                </div>
+                                <p>ანდორი სეზონი 2: ტონი გილროი ეწინააღმდეგება დისნეის მითითებებს და წყვეტს ვარსკვლავური ომების სერიებზე მუშაობას</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">სერიალი</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Outlander-s7-pic-e1683826455864.jpg?resize=500,300">
+                                </div>
+                                <p>უცხოელი სეზონი 7: თრეილერიდან ირკვევა სეზონის გამოშვების თარიღი</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">სერიალი</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Foundation-s2-teaser-e1683816678224.jpg?resize=500,300">
+                                </div>
+                                <p>დასაბამი სეზონი 2: ეფლ თივიზე ახალი სეზონის თრეილერი გამოჩნდა</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">სერიალი</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/crowded-room-pic-e1683731121726.jpg?resize=800,300">
+                                </div>
+                                <p>"ხალხმრავალი ოთახი" ტომ ჰოლანდი ითამაშებს მთავარ როლს ეფლის ახალ დრამაში</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">სერიალი</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="rightsideArticlesmainHeatitle">
+                            <h2>ანიმაცია</h2>
+                            <a href="news.html">სრული სია</a>
+                        </div>
+                        <div class="movinewsTopicContainer">
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/04/vinland-saga-s2-ep-17.png?resize=500,300">
+                                </div>
+                                <p>"ვინლენდის საგა სეზონი 2: მეჩვიდმეტე ეპიზოდის გამოშვების თარიღი ცნობილია</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">ანიმაცია</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/across-the-spider-verse-tv-spot-e1683296160984.jpg?w=500">
+                                </div>
+                                <p>"ადამიანი ობობა: ობობის სამყაროს გადადკვეთა" ხანგრძლივობა აჭარბებს პირველი ფილმს</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">ანიმაცია</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/04/demon-slayer-s3-ep-2.png?resize=500,300">
+                                </div>
+                                <p>დემონების მკვლელი მახვილი სეზონი 3: მეოთხე ეპიზოდის გამოშვების თარიღი გამოქვეყნდა</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">ანიმაცია</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/superman-header-shh.png?resize=500,300">
+                                </div>
+                                <p>"სუპერმენი: მემკვიდდრეობა" ფილმში მსახიობები გალაქტიკის მცველებიდან არის არჩეული</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">ანიმაცია</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/the-super-mario-bros-movie-netflix-release-date.jpg?resize=500,300">
+                                </div>
+                                <p>ბობ აიგერის ქება სუპერმარიოს ფილმისა დისნეის ოპტიმიზმს მატებს</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">ანიმაცია</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="aroundsingleTopicNews" id="aroundsingleTopicNews1">
+                                <div class="articlesingletopicImgContainer">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/04/sf6-1.jpg?resize=500,300">
+                                </div>
+                                <p>ახალი "ქუჩის ბრძოლები" როგორც იქნა პოულობს რეჟისორს</p>
+                                <div class="newstopicAddedTime">
+                                    <b class="addedtypeNews">ანიმაცია</b>
+                                    <p id="addedDatetime">14.05.2023</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+                    <aside class="rightsidenewsArounder">
+                        <div class="addbaner1">
+                            <img src="https://i.pinimg.com/originals/b6/2c/0c/b62c0c82fb5387dbadd2b9987e818d57.gif">
+                        </div>
+
+                        <article class="popularTopics1">
+                            <h2>პოპულარული</h2>
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://www.telegraph.co.uk/content/dam/tv/2023/02/28/TELEMMGLPICT000323427065_trans_NvBQzQNjv4BqD3d2dmOlWYuQkR76XZjLQKOylOV7i1cNNz18XOj47vE.jpeg?imwidth=300">
+                                </div>
+                                <p>პედრო პასკალი ითამაშებს ფილმში "ბარბაროსი" ზაკ კრეგერის ახალი საშინელებათა ფილმი</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Daredevil-Kingpin.jpg?resize=300,200">
+                                </div>
+                                <p>თავზეხელაღებულის თავიდან დაბადება, კინგ ფინის ახალი ფოტოები ვრცელდება</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://th.bing.com/th/id/OIP.vLXvAYaPVgkk4g_R5IWMDAHaEF?pid=ImgDet&rs=1">
+                                </div>
+                                <p>ვარსკვლავურ ომებში დეივ ფილონი ითამაშებს მთავარი ბოროტმოქმედის როლს</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/demon-slayer-s3-ep-5.png?resize=300,200">
+                                </div>
+                                <p>დემონების მკვლელი მახვილი სეზონი 3, მეექვსე ეპისოდის გამოშვების თარიღი გამოქვეყნდა</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://static1.showtimes.com/video/320x240/the-meg-2-the-trench-trailer-169664.jpg">
+                                </div>
+                                <p>მეგ 2: ნაპრალი, ჯეისონ სტეთემის მონაწილეობით გიგანტური ზვიგენის წინააღმდეგ</p>
+                            </a>
+                        </article>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+                        <article class="popularTopics1">
+                            <h2>ვარსკვლავები</h2>
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://www.telegraph.co.uk/content/dam/tv/2023/02/28/TELEMMGLPICT000323427065_trans_NvBQzQNjv4BqD3d2dmOlWYuQkR76XZjLQKOylOV7i1cNNz18XOj47vE.jpeg?imwidth=300">
+                                </div>
+                                <p>პედრო პასკალი ითამაშებს ფილმში "ბარბაროსი" ზაკ კრეგერის ახალი საშინელებათა ფილმი</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/Daredevil-Kingpin.jpg?resize=300,200">
+                                </div>
+                                <p>თავზეხელაღებულის თავიდან დაბადება, კინგ ფინის ახალი ფოტოები ვრცელდება</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://th.bing.com/th/id/OIP.vLXvAYaPVgkk4g_R5IWMDAHaEF?pid=ImgDet&rs=1">
+                                </div>
+                                <p>ვარსკვლავურ ომებში დეივ ფილონი ითამაშებს მთავარი ბოროტმოქმედის როლს</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/05/demon-slayer-s3-ep-5.png?resize=300,200">
+                                </div>
+                                <p>დემონების მკვლელი მახვილი სეზონი 3, მეექვსე ეპისოდის გამოშვების თარიღი გამოქვეყნდა</p>
+                            </a>
+
+                            <a href="#" class="rightSideTopic1Around">
+                                <div class="RightsideimgAround">
+                                    <img src="https://static1.showtimes.com/video/320x240/the-meg-2-the-trench-trailer-169664.jpg">
+                                </div>
+                                <p>მეგ 2: ნაპრალი, ჯეისონ სტეთემის მონაწილეობით გიგანტური ზვიგენის წინააღმდეგ</p>
+                            </a>
+                        </article>
+                    </aside>
+
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+
+        </main>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <footer class="footer1Large">
+
+            <div class="midFooter">
+                <div class="footer1">
+                    <a href="index.html"><img src="styles/icons/sitelogo.png" alt="sitelogo"></a>
+                    <div class="footerSocials">
+                        <a href="https://www.facebook.com/" id="facebook"><img src="styles/icons/01.facebook.png"></a>
+                        <a href="https://www.instagram.com/" id="Instagram"><img src="styles/icons/01.instagram.png"></a>
+                        <a href="https://www.messenger.com/" id="Messenger"><img src="styles/icons/01.messanger.png"></a>
+                        <a href="https://twitter.com/" id="Twitter"><img src="styles/icons/01.twitter.png"></a>
+                        <a href="https://www.youtube.com/" id="Youtube"><img src="styles/icons/01.youtube.png"></a>
+                    </div>
+                    <input type="placeholder" placeholder="გამოიწერე სიახლეები მეილზე">
+                    <button>სიახლის გამოწერა</button>
+                </div>
+
+                <div class="footer2">
+                    <h4>ფილმები</h4>
+                    <a href="index.html">კომედია</a>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">მძაფრ-სიუჟეტიანი</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ფენტეზი</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer3">
+                    <h4>სერიალები</h4>
+                    <a href="index.html">კრიმინალური</a>
+                    <a href="index.html">თრილერი</a>
+                    <a href="index.html">დრამა</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer4">
+                    <h4>ანიმაციები</h4>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">საოჯახო</a>
+                    <a href="index.html">კომედი</a>
+                    <a href="index.html">ანიმე</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">ფენტეზი</a>
+                </div>
+
+                <div class="footer5">
+                    <h4>სიახლეები</h4>
+                    <a href="index.html">კინო</a>
+                    <a href="index.html">სერიალი</a>
+                    <a href="index.html">თეატრები</a>
+                    <a href="index.html">ჰოლივუდი</a>
+                    <a href="index.html">მსასხიობები</a>
+                    <a href="index.html">კინოსტუდია</a>
+                </div>
+            </div>
+
+            <div></div>
+        </footer>
+        <footer class="footer2copyright">
+            <p>2023 ©საავტორო უფლებები: აკაკი კინწურაშვილი</p>
+        </footer>
+
+    </body>
+</html>
