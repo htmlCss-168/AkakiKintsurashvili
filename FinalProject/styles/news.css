@@ -9,6 +9,11 @@
     src: url(fonts/bpg_mrgvlovani_2010.ttf);
 }
 
+@font-face {
+    font-family: Anton;
+    src: url(fonts/Anton-Regular.ttf);
+}
+
 body {
     font-family: Mrgvlovani;
     background-color: var(--backColorGrey95);
