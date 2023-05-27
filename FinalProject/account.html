@@ -1,0 +1,386 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="movies, tv shows, animation, anime, ფილმები, სერიალები, ანიმაცია, ანიმე">
+        <meta name="keywords" content="movies, tv shows, animation, anime, free online, cinema, movie-news, news, ფილმები, სერიალები, ანიმაცია, ანიმე, ონლაინში, კინოსიახლე, სიხლეები">
+        <meta name="author" content="Akaki Kintsurashvili">
+        <title>Final Website</title>
+        <link rel="stylesheet" href="styles/account.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    </head>
+
+
+
+    <body>
+
+        <div class="sidesocialbar">
+            <a href="https://www.facebook.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #1877f2;">FACEBOOK</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.facebook.png">
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ee2a7b;">INSTAGRAM</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.instagram.png">
+                </div>
+            </a>
+
+            <a href="https://www.messenger.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #0084ff;">MESSENGER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.messanger.png">
+                </div>
+            </a>
+
+            <a href="https://twitter.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #03a9f4;">TWITTER</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.twitter.png">
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/" class="sidesocialSingleAround">
+                <div class="socialbarSingleHedtitle">
+                    <h1 style="color: #ff0000;">YOUTUBE</h1>
+                </div>
+                <div class="sideSocialimgArounder">
+                    <img src="styles/icons/01.youtube.png">
+                </div>
+            </a>
+        </div>
+
+        <header>
+            <div class="mobNavmenu1SpeciialBorder">
+
+                <div class="mobNavmenu1">
+                
+                    <div class="burgernavmenuMob1">
+                        <div class="burgnavmeni1Button" id="burgnavmeni1Button" onclick="openSidenav1()">
+                            <!-- <i class="fa-solid fa-bars fa-2xl"></i> -->
+                            <div class="burgnuvButtonBackrounder"></div>
+                        </div>
+                        <ul id="burgnavList" class="burgnavList">
+                            <div class="burgermenu1LogoButton">
+                                <h2>ნავიგაცია</h2>
+                                <!-- <img src="styles/icons/sitelogo.png" alt="saitlogo"> -->
+                                <i class="fa-solid fa-xmark fa-xl" id="sidebarCloseButton" onclick="closeSidenav1()"></i>
+                            </div>
+                            <li><a href="index.html"><i class="fa fa-home"></i>მთავარი</a></li>
+                            <li><a href="movies.html"><i class="fa-solid fa-video"></i>ფილმები</a></li>
+                            <li><a href="tvshow.html"><i class="fa-solid fa-film"></i>სერიალი</a></li>
+                            <li><a href="animation.html"><i class="fa-solid fa-photo-film"></i>ანიმაცია</a></li>
+                            <li><a href="news.html"><i class="fa-solid fa-file-pen"></i></i>სიახლეები</a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i>კონტაქტი</a></li>
+                            <li><a href="account.html"><i class="fa-solid fa-user"></i>ანგარიში</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- <div class="mobsearchAround">
+                        <input type="search" placeholder="მოძებნე ფილმი">
+                        <button><img src="styles/icons/search2buttonv2.png"></button>
+                    </div> -->
+
+                    <div class="navmenPlusSearchv2Around">
+                        <div class="specialsearchv2siteLogoAround">
+                            <a href="index.html" class="specialsearchv2siteLogoInsider">
+                                <img src="styles/icons/sitelogo.png" class="specialsearchv2siteLogo">
+                            </a>
+                        </div>
+
+                        <a href="account.html" class="searchv2specialHome">
+                            <i class="fa-solid fa-user-large"></i>
+                        </a>
+
+                        <div class="navPlusSearchButtonAround">
+                            <button class="specialbuttonv2search" onclick="extendedSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="navplusSerchv2Container" id="navplusSerchv2Container">
+                                <input type="placeholder" placeholder="საიტზე ძებნა...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            </div>
+
+            <script type="text/Javascript">
+
+                function openSidenav1() {
+                    document.getElementById("burgnavList").style.left = "0";
+                    document.getElementById("burgnavList").style.opacity = "1";
+                }
+
+                function closeSidenav1() {
+                    document.getElementById("burgnavList").style.left = "-220px";
+                    document.getElementById("burgnavList").style.opacity = "0";
+                }
+
+                function login() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                event.preventDefault();
+                if (username == "admin", "Admin" && password == "admin") {
+                    window.location.href = "https://htmlcss-168.github.io/AkakiKintsurashvili/FinalProject/loginSuccessful.html";
+                } else {
+                    window.location.href = "https://htmlcss-168.github.io/AkakiKintsurashvili/FinalProject/loginFailed.html";
+                }
+            }
+
+            function extendedSearch() {
+                    var x = document.getElementById("navplusSerchv2Container");
+                    if (x.style.display === "flex") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "flex";
+                    }
+                }
+
+            </script>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <div class="navbarArounder">
+
+                <a href="index.html" class="logo1here"><img id="logo1here" src="styles/icons/sitelogo.png"></a>
+
+                <nav class="navbar1">
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="movies.html">ფილმები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">ქართულად</a>
+                                    <a href="movies.html">ინგლისურად</a>
+                                    <a href="movies.html">სხვა ენა</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">კრიმინალური</a>
+                                    <a href="movies.html">თრილერი</a>
+                                    <a href="movies.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="movies.html">სათავგადასავლო</a>
+                                    <a href="movies.html">ისტორიული</a>
+                                    <a href="movies.html">საომარი</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="tvshow.html">სერიალი</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">ქართულად</a>
+                                    <a href="tvshow.html">ინგლისურად</a>
+                                    <a href="tvshow.html">დეტექტივი</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="tvshow.html">დრამა</a>
+                                    <a href="tvshow.html">თრილერი</a>
+                                    <a href="tvshow.html">სათავგადასავლო</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="animation.html">ანიმაცია</a></li>
+                        <li><a href="news.html">სიახლეები</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="news.html">ფილმები</a>
+                                    <a href="news.html">სერიალი</a>
+                                    <a href="news.html">ანიმაცია</a>
+                                </div>
+                                <div class="nav1columsection1">
+                                    <a href="news.html">მსახიობები</a>
+                                    <a href="news.html">ჰოლივუდი</a>
+                                    <a href="news.html">სხვა</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                        <li><a href="account.html">ანგარიში</a>
+                            <div class="nav1columer">
+                                <div class="nav1columsection1">
+                                    <a href="account.html">შესვლა</a>
+                                    <a href="account.html">რეგისტრაცია</a>
+                                    <a href="account.html">აღდგენა</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="search1Around">
+                    <input type="hearch" placeholder="მოძებვნე ფილმი">
+                    <button>ძებნა</button>
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <main>
+
+            <div class="searchv2splitter">
+                
+                <div class="searchv2Around">
+                    <img class="img1" src="styles/icons/sitelogov2.png">
+                    <div class="searchv2">
+                        <div class="searchv2zoomiconAround">
+                            <img src="styles/icons/searchzoomicon.png" alt="searchico">
+                        </div>
+                        <input type="placeholder" name="searchplace" placeholder="მოძებნე ფილმი">
+                        <button class="searchv2buttonv1">ძებნა</button>
+                        <button class="searchv2buttonv2"><img src="styles/icons/search2buttonv2.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+            <section class="accountSection">
+                <div class="accountSectionInsider1">
+
+                    <form onsubmit="login()" class="signinAccount">
+                        <h2>ანგარიშზე შესვლა</h2>
+
+                        <label id="username">სახელი ან მეილი:</label>
+                        <input id="username" placeholder="შეიყვანე სახელი ან მეილი">
+
+                        <label id="passsword">პაროლი:</label>
+                        <input type="password" id="password" placeholder="მომხმარებლის პაროლი">
+
+                        <div class="signinButtons">
+                            <input type="checkbox" for="checkbox" id="checkbox">
+                            <p>დამახსოვრება</p>
+                            <input type="submit" for="submit" value="შესვლა" id="button">
+                        </div>
+                        <a href="account.html">პაროლის აღდგენა</a>
+                    </form>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+                    <form class="RegisterAccount">
+                        <h2>ანგარიშის შექმნა</h2>
+
+                        <label for="username" id="username">მეილი:</label>
+                        <input type="username" for="username" id="username" placeholder="შეიყვანე მეილი">
+
+                        <label for="username" id="username">სახელი:</label>
+                        <input type="username" for="username" id="username" placeholder="აირჩიე სახელი">
+
+                        <label for="password" id="passsword">პაროლი:</label>
+                        <input type="password" for="password" id="password" placeholder="აირჩიე პაროლი">
+
+                        <label for="password" id="passsword">პაროლის გამეორება:</label>
+                        <input type="password" for="password" id="password" placeholder="გაიმეორე პაროლი">
+
+                        <label for="date" id="date">დაბადების თარიღი:</label>
+                        <div class="RegisterBirthday">
+                            <input type="numbr" for="numbr" id="numbr" placeholder="რიცხვი">
+                            <input type="month1" for="month1" id="month1" placeholder="თვე">
+                            <input type="year" for="year" id="year" placeholder="წელი">
+                        </div>
+
+                        <div class="RegisterRules">
+                            <input type="checkbox" for="checkbox" id="checkbox">
+                            <p>წავიკითხე <a href="#">საიტის მოხმარების და ქცევის წესები</a> მისაღებია და ვეთანხმები</p>
+                        </div>
+
+                        <div class="RegisterRules">
+                            <input type="checkbox" for="checkbox" id="checkbox">
+                            <p>მსურს <a href="#">სიახლის გამოწერა</a> ელექტრონულ ფოსტაზე</p>
+                        </div>
+
+                        <div class="RegisterButtons">
+                            <input type="submit" for="submit" value="რეგისტრაცია" id="button">
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        </main>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+        <footer class="footer1Large">
+
+            <div class="midFooter">
+                <div class="footer1">
+                    <a href="index.html"><img src="styles/icons/sitelogo.png" alt="sitelogo"></a>
+                    <div class="footerSocials">
+                        <a href="https://www.facebook.com/" id="facebook"><img src="styles/icons/01.facebook.png"></a>
+                        <a href="https://www.instagram.com/" id="Instagram"><img src="styles/icons/01.instagram.png"></a>
+                        <a href="https://www.messenger.com/" id="Messenger"><img src="styles/icons/01.messanger.png"></a>
+                        <a href="https://twitter.com/" id="Twitter"><img src="styles/icons/01.twitter.png"></a>
+                        <a href="https://www.youtube.com/" id="Youtube"><img src="styles/icons/01.youtube.png"></a>
+                    </div>
+                    <input type="placeholder" placeholder="გამოიწერე სიახლეები მეილზე">
+                    <button>სიახლის გამოწერა</button>
+                </div>
+
+                <div class="footer2">
+                    <h4>ფილმები</h4>
+                    <a href="index.html">კომედია</a>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">მძაფრ-სიუჟეტიანი</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ფენტეზი</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer3">
+                    <h4>სერიალები</h4>
+                    <a href="index.html">კრიმინალური</a>
+                    <a href="index.html">თრილერი</a>
+                    <a href="index.html">დრამა</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">სამეცნიერო-ფანტასტიკა</a>
+                    <a href="index.html">ისტორიული</a>
+                </div>
+
+                <div class="footer4">
+                    <h4>ანიმაციები</h4>
+                    <a href="index.html">სათავგადასავლო</a>
+                    <a href="index.html">საოჯახო</a>
+                    <a href="index.html">კომედი</a>
+                    <a href="index.html">ანიმე</a>
+                    <a href="index.html">ისტორიული</a>
+                    <a href="index.html">ფენტეზი</a>
+                </div>
+
+                <div class="footer5">
+                    <h4>სიახლეები</h4>
+                    <a href="index.html">კინო</a>
+                    <a href="index.html">სერიალი</a>
+                    <a href="index.html">თეატრები</a>
+                    <a href="index.html">ჰოლივუდი</a>
+                    <a href="index.html">მსასხიობები</a>
+                    <a href="index.html">კინოსტუდია</a>
+                </div>
+            </div>
+
+            <div></div>
+        </footer>
+        <footer class="footer2copyright">
+            <p>2023 ©საავტორო უფლებები: აკაკი კინწურაშვილი</p>
+        </footer>
+
+    </body>
+</html>
